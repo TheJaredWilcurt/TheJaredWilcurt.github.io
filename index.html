@@ -2,50 +2,238 @@
 <html>
   <head>
     <title>The Jared Wilcurt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
+    <style>
+      * {
+        box-size: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      #projects h1 {
+        font-size: 30px;
+        margin: 10px;
+        font-weight: bold;
+      }
+      #projects li {
+        margin: 0px 0px 0px 30px;
+        line-height: 1.5;
+        list-style: disc;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+
+      #quotes {
+        text-align: center;
+      }
+
+      .quote {
+        display: inline-block;
+        width: 300px;
+        margin: 10px;
+        text-align: center;
+        vertical-align: top;
+      }
+      .quote img {
+        display: block;
+        max-width: 100px;
+        max-height: 100px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        margin: 0px auto 5px;
+      }
+      .quote .quote-text {
+        display: inline-block;
+      }
+      .quote .quote-text:before, .quote .quote-text:after {
+        content: '"';
+      }
+    </style>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.js"></script>
   </head>
   <body>
-    <h1>Completed Projects</h1>
-    <ul>
-      <li><strong>Project</strong> - Scout-App (5 major releases)</li>
-      <li><strong>Project</strong> - UGUI (8 major releases)</li>
-      <li><strong>Project</strong> - Koa11y (1 major release)</li>
-      <li><strong>Project</strong> - UGUI: FLIF (4 major release, 1 upcoming)</li>
-      <li><strong>Project</strong> - GraphMyCSS.com (2 releases)</li>
-      <li><strong>Project</strong> - UGUI: WiFi (1 release)</li>
-      <li><strong>Conference Talk</strong> - A Deeper Understanding of CSS</li>
-      <li><strong>Meetup Talk</strong> - Web Dev Tooling (JS, Node, NPM, Bower, Grunt, Gulp)</li>
-      <li><strong>Meetup Talk</strong> - Making a desktop app, in under an hour (NW.js)</li>
-      <li><strong>Meetup Talk</strong> - A Deeper Understanding of CSS</li>
-      <li><strong>Project</strong> - UGUI: Git Branch Deleter (3 releases)</li>
-      <li><strong>Project</strong> - GLRittenhouse Website Port</li>
-      <li><strong>Contribution</strong> - FLIF binary builds (2 releases)</li>
-      <li><strong>Project</strong> - SassNotSass</li>
-      <li><strong>Hack-a-thon</strong> - FCC-JACK</li>
-      <li><strong>Hack-a-thon</strong> - amEco</li>
-      <li><strong>Library</strong> - CSS-Selectors-to-JS-Array (2 releases)</li>
-      <li><strong>Project</strong> - OnTopOfJira</li>
-      <li><strong>Contribution</strong> - Dropzone (bug fix)</li>
-      <li><strong>Contribution</strong> - FLIF-hub.github.io</li>
-      <li><strong>Library</strong> - NPM-Free-Server (1 release)</li>
-      <li><strong>Contribution</strong> - FLIF Benchmarks</li>
-      <li><strong>Library</strong> - 64or32</li>
-      <li><strong>Contribution</strong> - GitHub Corners</li>
-      <li><strong>Project</strong> - UGUI.io</li>
-      <li><strong>Project</strong> - Scout-App.io</li>
-      <li><strong>Project</strong> - Scout-App Classic Port</li>
-      <li><strong>Project</strong> - Simple-Donut jQuery (1 release)</li>
-      <li><strong>Project</strong> - Simple-Donut Vue (1 release)</li>
-    </ul>
+    <div id="projects">
+      <h1>Completed Projects</h1>
+      <ul v-for="project in projects">
+        <li><strong>{{ project.type }}</strong> - {{ project.title }}</li>
+      </ul>
+    </div>
+
+    <div id="quotes">
+      <div class="quote" v-for="quote in quotes">
+        <img :src="quote.photo" :alt="'Photo of ' + quote.name" :title="'Photo of ' + quote.name">
+        <span class="quote-text">{{ quote.quote }}</span>
+        - <a class="quote-name" :href="quote.url" target="_blank">{{ quote.name }}</a>
+      </div>
+    </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script>
-//url = 'https://api.meetup.com/Free-Code-Camp-Indy/events/233012739/comments?page=20&signed=true';
-var url = 'https://api.meetup.com/Free-Code-Camp-Indy/events/233012739/comments?photo-host=public&page=20&sig_id=14271946&sig=63a26770a2ba7f9829615017e8fffd98494f4887';
+      var quoteData = [
+        {
+          'name': 'Gavyn Leavitt',
+          'quote': 'Now I can start organizing my CSS in a meaningful way!',
+          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469996138/',
+          'photo': 'http://photos4.meetupstatic.com/photos/member/7/e/9/8/member_258512408.jpeg'
+        },
+        {
+          'name': 'Tara Miller',
+          'quote': 'Upgrading Your CSS was informative, interesting and fun. I got a ton out of it.',
+          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469988249/',
+          'photo': 'http://photos1.meetupstatic.com/photos/member/d/4/7/6/member_258294390.jpeg'
+        },
+        {
+          'name': 'Mark Loeser',
+          'quote': 'I really enjoyed it and learned a lot of things that I plan on putting into practice.',
+          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469987635/',
+          'photo': 'http://photos4.meetupstatic.com/photos/member/3/d/b/f/member_7515807.jpeg'
+        },
+        {
+          'name': 'Deon Seifert',
+          'quote': 'This was really informative! Thanks so much!',
+          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469971274/',
+          'photo': 'http://photos2.meetupstatic.com/photos/member/3/0/c/7/member_253572487.jpeg'
+        }
+      ];
 
-$.get(url, function (data) {
-    console.log(data);
-});
+      var quotes = new Vue({
+        el: '#quotes',
+        data: {
+          quotes: quoteData
+        }
+      });
+
+      var projectData = [
+        {
+          'type': 'Project',
+          'title': 'Scout-App (5 major releases)'
+        },
+        {
+          'type': 'Project',
+          'title': 'UGUI (8 major releases)'
+        },
+        {
+          'type': 'Project',
+          'title': 'Koa11y (1 major release)'
+        },
+        {
+          'type': 'Project',
+          'title': 'UGUI: FLIF (4 major release, 1 upcoming)'
+        },
+        {
+          'type': 'Project',
+          'title': 'GraphMyCSS.com (2 releases)'
+        },
+        {
+          'type': 'Project',
+          'title': 'UGUI: WiFi (1 release)'
+        },
+        {
+          'type': 'Conference Talk',
+          'title': 'A Deeper Understanding of CSS'
+        },
+        {
+          'type': 'Meetup Talk',
+          'title': 'Web Dev Tooling (JS, Node, NPM, Bower, Grunt, Gulp)'
+        },
+        {
+          'type': 'Meetup Talk',
+          'title': 'Making a desktop app, in under an hour (NW.js)'
+        },
+        {
+          'type': 'Meetup Talk',
+          'title': 'A Deeper Understanding of CSS'
+        },
+        {
+          'type': 'Project',
+          'title': 'UGUI: Git Branch Deleter (3 releases)'
+        },
+        {
+          'type': 'Project',
+          'title': 'GLRittenhouse Website Port'
+        },
+        {
+          'type': 'Contribution',
+          'title': 'FLIF binary builds (2 releases)'
+        },
+        {
+          'type': 'Project',
+          'title': 'SassNotSass'
+        },
+        {
+          'type': 'Hack-a-thon',
+          'title': 'FCC-JACK'
+        },
+        {
+          'type': 'Hack-a-thon',
+          'title': 'amEco'
+        },
+        {
+          'type': 'Library',
+          'title': 'CSS-Selectors-to-JS-Array (2 releases)'
+        },
+        {
+          'type': 'Project',
+          'title': 'OnTopOfJira'
+        },
+        {
+          'type': 'Contribution',
+          'title': 'Dropzone (bug fix)'
+        },
+        {
+          'type': 'Contribution',
+          'title': 'FLIF-hub.github.io'
+        },
+        {
+          'type': 'Library',
+          'title': 'NPM-Free-Server (1 release)'
+        },
+        {
+          'type': 'Contribution',
+          'title': 'FLIF Benchmarks'
+        },
+        {
+          'type': 'Library',
+          'title': '64or32'
+        },
+        {
+          'type': 'Contribution',
+          'title': 'GitHub Corners'
+        },
+        {
+          'type': 'Project',
+          'title': 'UGUI.io'
+        },
+        {
+          'type': 'Project',
+          'title': 'Scout-App.io'
+        },
+        {
+          'type': 'Project',
+          'title': 'Scout-App Classic Port'
+        },
+        {
+          'type': 'Project',
+          'title': 'Simple-Donut jQuery (1 release)'
+        },
+        {
+          'type': 'Project',
+          'title': 'Simple-Donut Vue (1 release)'
+        }
+      ];
+
+
+      var projects = new Vue({
+        el: '#projects',
+        data: {
+          projects: projectData
+        }
+      });
+
     </script>
   </body>
 </html>
