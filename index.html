@@ -59,7 +59,7 @@
     <div id="projects">
       <h1>Completed Projects</h1>
       <ul v-for="project in projects">
-        <li><strong>{{ project.type }}</strong> - {{ project.title }}</li>
+        <li><strong>{{ project.type }}</strong> - <a :href="project.url">{{ project.title }}</a> {{#if project.additional}}({{ project.additional }}){{/if}}</li>
       </ul>
     </div>
 
@@ -110,121 +110,166 @@
       var projectData = [
         {
           'type': 'Project',
-          'title': 'Scout-App (5 major releases)'
+          'url': 'https://github.com/scout-app/scout-app',
+          'title': 'Scout-App',
+          'additional': '5 major releases'
         },
         {
           'type': 'Project',
-          'title': 'UGUI (8 major releases)'
+          'url': 'https://github.com/UniversalGUI/UGUI',
+          'title': 'UGUI',
+          'additional': '8 major releases'
         },
         {
           'type': 'Project',
-          'title': 'Koa11y (1 major release)'
+          'url': 'http://thejaredwilcurt.github.io/Koa11y',
+          'title': 'Koa11y',
+          'additional': '1 major release'
         },
         {
           'type': 'Project',
-          'title': 'UGUI: FLIF (4 major release, 1 upcoming)'
+          'url': 'http://flif.info/UGUI_FLIF',
+          'title': 'UGUI: FLIF',
+          'additional': '4 major release, 1 upcoming'
         },
         {
           'type': 'Project',
-          'title': 'GraphMyCSS.com (2 releases)'
+          'url': 'http://graphmycss.com',
+          'title': 'GraphMyCSS.com',
+          'additional': '2 releases'
         },
         {
           'type': 'Project',
-          'title': 'UGUI: WiFi (1 release)'
+          'url': 'https://github.com/TheJaredWilcurt/UGUI-Wifi',
+          'title': 'UGUI: WiFi',
+          'additional': '1 release'
         },
         {
           'type': 'Conference Talk',
+          'url': '_imgs/indycode-css.png',
           'title': 'A Deeper Understanding of CSS'
         },
         {
           'type': 'Meetup Talk',
-          'title': 'Web Dev Tooling (JS, Node, NPM, Bower, Grunt, Gulp)'
+          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/236980468',
+          'title': 'Web Dev Tooling',
+          'additional': 'JS, Node, NPM, Bower, Grunt, Gulp'
         },
         {
           'type': 'Meetup Talk',
-          'title': 'Making a desktop app, in under an hour (NW.js)'
+          'url': 'https://www.meetup.com/indyjs/events/237046138',
+          'title': 'Making a desktop app, in under an hour',
+          'additional': 'NW.js'
         },
         {
           'type': 'Meetup Talk',
-          'title': 'A Deeper Understanding of CSS'
+          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739',
+          'title': 'Upgrading your CSS'
         },
         {
           'type': 'Project',
-          'title': 'UGUI: Git Branch Deleter (3 releases)'
+          'url': 'https://thejaredwilcurt.github.io/UGUI-Git-Branch-Deleter',
+          'title': 'UGUI: Git Branch Deleter',
+          'additional': '3 releases'
         },
         {
           'type': 'Project',
+          'url': 'https://github.com/TheJaredWilcurt/glr',
           'title': 'GLRittenhouse Website Port'
         },
         {
           'type': 'Contribution',
-          'title': 'FLIF binary builds (2 releases)'
+          'url': 'https://github.com/FLIF-hub/FLIF/releases',
+          'title': 'FLIF binary builds',
+          'additional': '2 releases'
         },
         {
           'type': 'Project',
+          'url': 'https://github.com/TheJaredWilcurt/SassNotSASS',
           'title': 'SassNotSass'
         },
         {
           'type': 'Hack-a-thon',
+          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/234330061',
           'title': 'FCC-JACK'
         },
         {
           'type': 'Hack-a-thon',
+          'url': 'https://playameco.github.io',
           'title': 'amEco'
         },
         {
           'type': 'Library',
-          'title': 'CSS-Selectors-to-JS-Array (2 releases)'
+          'url': 'https://github.com/TheJaredWilcurt/css-selectors-to-js-array',
+          'title': 'CSS-Selectors-to-JS-Array',
+          'additional': '2 releases'
         },
         {
           'type': 'Project',
+          'url': 'https://github.com/TheJaredWilcurt/OnTopOfJira',
           'title': 'OnTopOfJira'
         },
         {
           'type': 'Contribution',
-          'title': 'Dropzone (bug fix)'
+          'url': 'https://github.com/enyo/dropzone/pull/1226',
+          'title': 'Dropzone',
+          'additional': 'bug fix'
         },
         {
           'type': 'Contribution',
-          'title': 'FLIF-hub.github.io'
+          'url': 'http://flif.info',
+          'title': 'FLIF.info'
         },
         {
           'type': 'Library',
-          'title': 'NPM-Free-Server (1 release)'
+          'url': 'https://github.com/TheJaredWilcurt/NPM-Free-Server',
+          'title': 'NPM-Free-Server',
+          'additional': '1 release'
         },
         {
           'type': 'Contribution',
+          'url': 'https://github.com/FLIF-hub/benchmarks',
           'title': 'FLIF Benchmarks'
         },
         {
           'type': 'Library',
+          'url': 'https://github.com/peterhurford/64or32',
           'title': '64or32'
         },
         {
           'type': 'Contribution',
+          'url': 'https://github.com/tholman/github-corners/issues/5',
           'title': 'GitHub Corners'
         },
         {
           'type': 'Project',
+          'url': 'http://ugui.io',
           'title': 'UGUI.io'
         },
         {
           'type': 'Project',
+          'url': 'http://scout-app.io',
           'title': 'Scout-App.io'
         },
         {
           'type': 'Project',
+          'url': 'https://github.com/scout-app/classic',
           'title': 'Scout-App Classic Port'
         },
         {
           'type': 'Project',
-          'title': 'Simple-Donut jQuery (1 release)'
+          'url': 'https://github.com/simple-donut/simple-donut-jquery',
+          'title': 'Simple-Donut jQuery',
+          'additional': '1 release'
         },
         {
           'type': 'Project',
-          'title': 'Simple-Donut Vue (1 release)'
+          'url': 'https://github.com/simple-donut/simple-donut-vue',
+          'title': 'Simple-Donut Vue',
+          'additional': '1 release'
         }
       ];
+
 
 
       var projects = new Vue({
