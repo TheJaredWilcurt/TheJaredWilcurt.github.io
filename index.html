@@ -59,7 +59,7 @@
     <div id="projects">
       <h1>Completed Projects</h1>
       <ul v-for="project in projects">
-        <li><strong>{{ project.type }}</strong> - <a :href="project.url">{{ project.title }}</a> <span v-if="project.additional">({{ project.additional }})</span></li>
+        <li><strong>{{ project.type }}</strong> - <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.additional">({{ project.additional }})</span></li>
       </ul>
     </div>
 
