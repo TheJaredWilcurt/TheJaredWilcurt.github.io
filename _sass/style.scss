@@ -1,0 +1,38 @@
+@charset "utf-8";                    // Character type for the stylesheet
+
+
+// ITCSS: SETTINGS
+@import "_var.sass";                 // Sass Variables - Does not effect page, but other Sass files reference this file.
+
+
+// ITCSS: TOOLS
+@import "_mixins.sass";              // Sass Mixins - Does not effect page, but other Sass files reference this file.
+@import "_functions.sass";           // Sass Functions - Does not effect page, but other Sass files reference this file.
+
+
+// ITCSS: RESETS
+@import "_ven.meyer.sass";           // The Eric Meyers resets - Resets browser defaults so browsers render pages the same
+@import "_ven.normalize.sass";       // Normalize.css - Removes inconsistencies in the way different browsers render items by default
+
+
+// ITCSS: PLUGINS
+
+
+// ITCSS: GENERIC (ELEMENTS/BASE)
+@import "_base.sass";                // h1, h2, h3, p, etc.
+@import "_layout.sass";              // General layout classes, like .col-xs-4
+@import "_utility.sass";             // Utility classes, like .wrapper or .text-center
+
+
+// ITCSS: COMPONENTS
+
+
+// ITCSS: CONTAINERS
+@import "_header.sass";              // CSS for the header and navigation at the top of each page
+@import "_footer.sass";              // CSS for the footer at the bottom of every page
+
+
+// ITCSS: TRUMPS
+@import "_mediaqueries.sass";        // Adjusts the CSS of elements depending on browser or device resolution. Adaptive Web Design.
+@import "_trumps.sass";              // Use sparingly. These are meant to override above styles by using more specific selectors
+@import "_shame.sass";               // This is code you wrote to meet a deadline and need to come back and fix later
