@@ -2,65 +2,18 @@
 <html>
   <head>
     <title>The Jared Wilcurt</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
-    <style>
-      * {
-        box-size: border-box;
-      }
-
-      body {
-        font-family: sans-serif;
-      }
-
-      #projects h1 {
-        font-size: 30px;
-        margin: 10px;
-        font-weight: bold;
-      }
-      #projects li {
-        margin: 0px 0px 0px 30px;
-        line-height: 1;
-        list-style: disc;
-      }
-
-      strong {
-        font-weight: bold;
-      }
-
-      #quotes {
-        text-align: center;
-      }
-
-      .quote {
-        display: inline-block;
-        width: 300px;
-        margin: 10px;
-        text-align: center;
-        vertical-align: top;
-      }
-      .quote img {
-        display: block;
-        max-width: 100px;
-        max-height: 100px;
-        border: 5px solid #96E0A5;
-        border-radius: 50%;
-        margin: 0px auto 5px;
-        box-shadow: 1px 2px 1px 6px rgba(193, 199, 125, 0.3);
-      }
-      .quote .quote-text {
-        display: inline-block;
-      }
-      .quote .quote-text:before, .quote .quote-text:after {
-        content: '"';
-      }
-    </style>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.js"></script>
+    <link rel="stylesheet" href="_styles/style.css" />
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
     <div id="projects">
-      <h1>Completed Projects</h1>
-      <ul v-for="project in projects">
-        <li><strong>{{ project.type }}</strong> - <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.additional">({{ project.additional }})</span></li>
+      <h1>Completed Projects (since 2015)</h1>
+      <ul>
+        <li v-for="project in projects">
+          <strong>{{ project.type }}</strong> - <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.releases">({{ project.releases }})</span>
+        </li>
       </ul>
     </div>
 
@@ -72,214 +25,15 @@
       </div>
     </div>
 
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js"></script>
+    <script type="text/javascript">
+      if (typeof Vue == 'undefined') {
+        document.write(unescape("%3Cscript src='/_js/vue.min.js' type='text/javascript'%3E%3C/script%3E"));
+      }
+    </script> <!-- Load local Vue if Google CDN is unreachable -->
 
-    <script>
-      var quoteData = [
-        {
-          'name': 'Gavyn Leavitt',
-          'quote': 'Now I can start organizing my CSS in a meaningful way!',
-          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469996138/',
-          'photo': 'http://photos4.meetupstatic.com/photos/member/7/e/9/8/member_258512408.jpeg'
-        },
-        {
-          'name': 'Tara Miller',
-          'quote': 'Upgrading Your CSS was informative, interesting and fun. I got a ton out of it.',
-          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469988249/',
-          'photo': 'http://photos1.meetupstatic.com/photos/member/d/4/7/6/member_258294390.jpeg'
-        },
-        {
-          'name': 'Mark Loeser',
-          'quote': 'I really enjoyed it and learned a lot of things that I plan on putting into practice.',
-          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469987635/',
-          'photo': 'http://photos4.meetupstatic.com/photos/member/3/d/b/f/member_7515807.jpeg'
-        },
-        {
-          'name': 'Deon Seifert',
-          'quote': 'This was really informative! Thanks so much!',
-          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469971274/',
-          'photo': 'http://photos2.meetupstatic.com/photos/member/3/0/c/7/member_253572487.jpeg'
-        }
-      ];
+    <script type="text/javascript" src="_scripts/data.js"></script>
 
-      var quotes = new Vue({
-        el: '#quotes',
-        data: {
-          quotes: quoteData
-        }
-      });
-
-      var projectData = [
-        {
-          'type': 'Project',
-          'url': 'https://github.com/scout-app/scout-app',
-          'title': 'Scout-App',
-          'additional': '5 major releases'
-        },
-        {
-          'type': 'Project',
-          'url': 'https://github.com/UniversalGUI/UGUI',
-          'title': 'UGUI',
-          'additional': '8 major releases'
-        },
-        {
-          'type': 'Project',
-          'url': 'http://thejaredwilcurt.github.io/Koa11y',
-          'title': 'Koa11y',
-          'additional': '1 major release'
-        },
-        {
-          'type': 'Project',
-          'url': 'http://flif.info/UGUI_FLIF',
-          'title': 'UGUI: FLIF',
-          'additional': '4 major release, 1 upcoming'
-        },
-        {
-          'type': 'Project',
-          'url': 'http://graphmycss.com',
-          'title': 'GraphMyCSS.com',
-          'additional': '2 releases'
-        },
-        {
-          'type': 'Project',
-          'url': 'https://github.com/TheJaredWilcurt/UGUI-Wifi',
-          'title': 'UGUI: WiFi',
-          'additional': '1 release'
-        },
-        {
-          'type': 'Conference Talk',
-          'url': '_imgs/indycode-css.png',
-          'title': 'A Deeper Understanding of CSS'
-        },
-        {
-          'type': 'Meetup Talk',
-          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/236980468',
-          'title': 'Web Dev Tooling',
-          'additional': 'JS, Node, NPM, Bower, Grunt, Gulp'
-        },
-        {
-          'type': 'Meetup Talk',
-          'url': 'https://www.meetup.com/indyjs/events/237046138',
-          'title': 'Making a desktop app, in under an hour',
-          'additional': 'NW.js'
-        },
-        {
-          'type': 'Meetup Talk',
-          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739',
-          'title': 'Upgrading your CSS'
-        },
-        {
-          'type': 'Project',
-          'url': 'https://thejaredwilcurt.github.io/UGUI-Git-Branch-Deleter',
-          'title': 'UGUI: Git Branch Deleter',
-          'additional': '3 releases'
-        },
-        {
-          'type': 'Project',
-          'url': 'https://github.com/TheJaredWilcurt/glr',
-          'title': 'GLRittenhouse Website Port'
-        },
-        {
-          'type': 'Contribution',
-          'url': 'https://github.com/FLIF-hub/FLIF/releases',
-          'title': 'FLIF binary builds',
-          'additional': '2 releases'
-        },
-        {
-          'type': 'Project',
-          'url': 'https://github.com/TheJaredWilcurt/SassNotSASS',
-          'title': 'SassNotSass'
-        },
-        {
-          'type': 'Hack-a-thon',
-          'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/234330061',
-          'title': 'FCC-JACK'
-        },
-        {
-          'type': 'Hack-a-thon',
-          'url': 'https://playameco.github.io',
-          'title': 'amEco'
-        },
-        {
-          'type': 'Library',
-          'url': 'https://github.com/TheJaredWilcurt/css-selectors-to-js-array',
-          'title': 'CSS-Selectors-to-JS-Array',
-          'additional': '2 releases'
-        },
-        {
-          'type': 'Project',
-          'url': 'https://github.com/TheJaredWilcurt/OnTopOfJira',
-          'title': 'OnTopOfJira'
-        },
-        {
-          'type': 'Contribution',
-          'url': 'https://github.com/enyo/dropzone/pull/1226',
-          'title': 'Dropzone',
-          'additional': 'bug fix'
-        },
-        {
-          'type': 'Contribution',
-          'url': 'http://flif.info',
-          'title': 'FLIF.info'
-        },
-        {
-          'type': 'Library',
-          'url': 'https://github.com/TheJaredWilcurt/NPM-Free-Server',
-          'title': 'NPM-Free-Server',
-          'additional': '1 release'
-        },
-        {
-          'type': 'Contribution',
-          'url': 'https://github.com/FLIF-hub/benchmarks',
-          'title': 'FLIF Benchmarks'
-        },
-        {
-          'type': 'Library',
-          'url': 'https://github.com/peterhurford/64or32',
-          'title': '64or32'
-        },
-        {
-          'type': 'Contribution',
-          'url': 'https://github.com/tholman/github-corners/issues/5',
-          'title': 'GitHub Corners'
-        },
-        {
-          'type': 'Project',
-          'url': 'http://ugui.io',
-          'title': 'UGUI.io'
-        },
-        {
-          'type': 'Project',
-          'url': 'http://scout-app.io',
-          'title': 'Scout-App.io'
-        },
-        {
-          'type': 'Project',
-          'url': 'https://github.com/scout-app/classic',
-          'title': 'Scout-App Classic Port'
-        },
-        {
-          'type': 'Project',
-          'url': 'https://github.com/simple-donut/simple-donut-jquery',
-          'title': 'Simple-Donut jQuery',
-          'additional': '1 release'
-        },
-        {
-          'type': 'Project',
-          'url': 'https://github.com/simple-donut/simple-donut-vue',
-          'title': 'Simple-Donut Vue',
-          'additional': '1 release'
-        }
-      ];
-
-
-
-      var projects = new Vue({
-        el: '#projects',
-        data: {
-          projects: projectData
-        }
-      });
-
-    </script>
+    <link rel="stylesheet" href="_styles/fonts.css" /> <!-- Render-blocking web fonts -->
   </body>
 </html>
