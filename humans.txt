@@ -1,0 +1,13 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  The Jared Wilcurt
+
+/* SITE */
+  HTML5, CSS3, Sass, JavaScript (ES5), Vue.js
+  Sublime Text 3, Photoshop CS6, Illustrator CS6
+  TruePNG, Png Optimizer, PNGOUT Win, zopflipng, PNG Gauntlet, defluff, deflopt, SVGO-GUI
+  git, GitHub, GitHub Pages, GitHub for Desktop
+  gulp, express, jshint, sasslint
