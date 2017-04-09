@@ -1,0 +1,44 @@
+{
+    "name": "the-jared-wilcurt-site",
+    "version": "1.0.0",
+    "description": "Official website of The Jared Wilcurt.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io.git"
+    },
+    "author": "The Jared Wilcurt",
+    "bugs": {
+        "url": "https://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io/issues"
+    },
+    "homepage": "http://TheJaredWilcurt.github.io",
+    "devDependencies": {
+        "express": "^4.13.4",
+        "gulp": "^3.9.1",
+        "gulp-insert": "^0.5.0",
+        "gulp-jshint": "^2.0.1",
+        "gulp-line-ending-corrector": "^1.0.1",
+        "gulp-livereload": "^3.8.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^2.3.1",
+        "gulp-sass-lint": "^1.3.2",
+        "gulp-uglify": "^1.5.3",
+        "sass": "^0.5.0",
+        "jshint": "^2.9.2",
+        "eslint": "^3.8.1",
+        "pre-commit": "^1.1.3"
+    },
+    "scripts": {
+        "start": "gulp",
+        "installer": "npm install --loglevel=error",
+        "lint": "eslint --config=.eslintrc.js _scripts gulpfile.js",
+        "sasslint": "gulp sasslint",
+        "fix": "eslint --fix --config=.eslintrc.js _scripts gulpfile.js"
+    },
+    "sasslintConfig": ".sass-lint.yml",
+    "license": "MIT",
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io/blob/master/LICENSE"
+    }],
+    "pre-commit": [ "lint", "sasslint" ]
+}
