@@ -232,17 +232,7 @@ var projectData = [
         'releases': '2 releases',
         'roles': [
             'Developer',
-            'UX',
-            'Project Manager',
-            'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
-            'Design',
-            'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Quality Engineer'
         ],
         'tech': ''
     },
@@ -253,16 +243,7 @@ var projectData = [
         'roles': [
             'Developer',
             'UX',
-            'Project Manager',
-            'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
-            'Design',
-            'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Branding'
         ],
         'tech': ''
     },
@@ -272,17 +253,9 @@ var projectData = [
         'title': 'FCC-JACK',
         'roles': [
             'Developer',
-            'UX',
             'Project Manager',
-            'Documentation',
             'Presenter',
-            'Architect',
-            'Product Owner',
-            'Design',
-            'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Mentor'
         ],
         'tech': ''
     },
@@ -291,18 +264,11 @@ var projectData = [
         'url': 'https://playameco.github.io',
         'title': 'amEco',
         'roles': [
-            'Developer',
-            'UX',
-            'Project Manager',
-            'Documentation',
-            'Presenter',
-            'Architect',
             'Product Owner',
-            'Design',
+            'Project Manager',
+            'UX',
             'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Mentor'
         ],
         'tech': ''
     },
@@ -313,17 +279,7 @@ var projectData = [
         'releases': '2 releases',
         'roles': [
             'Developer',
-            'UX',
-            'Project Manager',
-            'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
-            'Design',
-            'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Documentation'
         ],
         'tech': ''
     },
@@ -333,12 +289,6 @@ var projectData = [
         'title': 'OnTopOfJira',
         'roles': [
             'Developer',
-            'UX',
-            'Project Manager',
-            'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
             'Design',
             'Branding',
             'Mentor',
