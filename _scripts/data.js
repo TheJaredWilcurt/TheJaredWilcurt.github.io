@@ -288,12 +288,7 @@ var projectData = [
         'url': 'https://github.com/TheJaredWilcurt/OnTopOfJira',
         'title': 'OnTopOfJira',
         'roles': [
-            'Developer',
-            'Design',
-            'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Developer'
         ],
         'tech': ''
     },
@@ -303,15 +298,6 @@ var projectData = [
         'title': 'Dropzone (bug fix)',
         'roles': [
             'Developer',
-            'UX',
-            'Project Manager',
-            'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
-            'Design',
-            'Branding',
-            'Mentor',
             'Quality Engineer',
             'Support'
         ],
@@ -322,18 +308,7 @@ var projectData = [
         'url': 'http://flif.info',
         'title': 'FLIF.info',
         'roles': [
-            'Developer',
-            'UX',
-            'Project Manager',
-            'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
-            'Design',
-            'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Developer'
         ],
         'tech': ''
     },
@@ -344,17 +319,7 @@ var projectData = [
         'releases': '1 release',
         'roles': [
             'Developer',
-            'UX',
-            'Project Manager',
-            'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
-            'Design',
-            'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Documentation'
         ],
         'tech': ''
     },
@@ -363,18 +328,8 @@ var projectData = [
         'url': 'https://github.com/FLIF-hub/benchmarks',
         'title': 'FLIF Benchmarks',
         'roles': [
-            'Developer',
-            'UX',
-            'Project Manager',
             'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
-            'Design',
-            'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Design'
         ],
         'tech': ''
     },
@@ -384,17 +339,7 @@ var projectData = [
         'title': '64or32',
         'roles': [
             'Developer',
-            'UX',
-            'Project Manager',
-            'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
-            'Design',
-            'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Documentation'
         ],
         'tech': ''
     },
@@ -404,17 +349,7 @@ var projectData = [
         'title': 'GitHub Corners',
         'roles': [
             'Developer',
-            'UX',
-            'Project Manager',
-            'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
-            'Design',
-            'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'UX'
         ],
         'tech': ''
     },
@@ -427,14 +362,9 @@ var projectData = [
             'UX',
             'Project Manager',
             'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
             'Design',
             'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Mentor'
         ],
         'tech': ''
     },
@@ -448,13 +378,10 @@ var projectData = [
             'Project Manager',
             'Documentation',
             'Presenter',
-            'Architect',
-            'Product Owner',
             'Design',
             'Branding',
             'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Quality Engineer'
         ],
         'tech': ''
     },
@@ -467,13 +394,7 @@ var projectData = [
             'UX',
             'Project Manager',
             'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
             'Design',
-            'Branding',
-            'Mentor',
-            'Quality Engineer',
             'Support'
         ],
         'tech': ''
@@ -485,17 +406,8 @@ var projectData = [
         'releases': '1 release',
         'roles': [
             'Developer',
-            'UX',
             'Project Manager',
-            'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
-            'Design',
-            'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Documentation'
         ],
         'tech': ''
     },
@@ -506,17 +418,7 @@ var projectData = [
         'releases': '1 release',
         'roles': [
             'Developer',
-            'UX',
-            'Project Manager',
-            'Documentation',
-            'Presenter',
-            'Architect',
-            'Product Owner',
-            'Design',
-            'Branding',
-            'Mentor',
-            'Quality Engineer',
-            'Support'
+            'Documentation'
         ],
         'tech': ''
     }
