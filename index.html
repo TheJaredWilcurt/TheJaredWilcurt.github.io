@@ -8,21 +8,26 @@
     <![endif]-->
   </head>
   <body>
-    <div id="projects">
-      <h1>Completed Projects (since 2015)</h1>
-      <ul>
-        <li v-for="project in projects">
-          <strong>{{ project.type }}</strong> - <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.releases">({{ project.releases }})</span>
-        </li>
-      </ul>
-    </div>
+    <div class="wrapper">
 
-    <div id="quotes">
-      <div class="quote" v-for="quote in quotes">
-        <img :src="quote.photo" :alt="'Photo of ' + quote.name" :title="'Photo of ' + quote.name">
-        <span class="quote-text">{{ quote.quote }}</span>
-        - <a class="quote-name" :href="quote.url" target="_blank">{{ quote.name }}</a>
+      <div id="projects">
+        <h1>Completed Projects (since 2015)</h1>
+
+        <div class="project" v-for="project in projects">
+          <img src="_imgs/indycode-css.png" alt="temp" />
+          <strong>{{ project.type }}</strong> - <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.releases">({{ project.releases }})</span>
+        </div>
+
       </div>
+
+      <div id="quotes">
+        <div class="quote" v-for="quote in quotes">
+          <img :src="quote.photo" :alt="'Photo of ' + quote.name" :title="'Photo of ' + quote.name">
+          <span class="quote-text">{{ quote.quote }}</span>
+          - <a class="quote-name" :href="quote.url" target="_blank">{{ quote.name }}</a>
+        </div>
+      </div>
+
     </div>
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js"></script>
