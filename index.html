@@ -15,7 +15,13 @@
 
         <div class="project" v-for="project in projects">
           <img src="_imgs/indycode-css.png" alt="temp" />
-          <strong>{{ project.type }}</strong> - <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.releases">({{ project.releases }})</span>
+          <div>
+            <div class="type">
+              <strong>{{ project.type }}</strong>
+            </div>
+            <div>
+              <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.releases">({{ project.releases }})</span>
+            </div>
         </div>
 
       </div>

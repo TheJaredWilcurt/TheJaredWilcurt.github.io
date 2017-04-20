@@ -348,14 +348,21 @@ strong {
 }
 
 .project {
-  display: inline-block;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
   width: 50%;
   height: 200px;
   vertical-align: top;
 }
 
+.project div {
+  margin: 0px 0px 0px 10px;
+}
+
 .project img {
   max-width: 200px;
+  float: left;
   vertical-align: middle;
 }
 
