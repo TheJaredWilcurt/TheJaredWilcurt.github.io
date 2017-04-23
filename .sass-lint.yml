@@ -54,6 +54,13 @@ rules:
         - bottom
         - left
         - display
+        - align-items
+        - align-self
+        - flex-direction
+        - flex-flow
+        - flex-wrap
+        - justify-content
+        - order
         - width
         - height
         - min-width
@@ -110,6 +117,7 @@ rules:
         - text-shadow
         - box-shadow
         - cursor
+        - float
         - opacity
         - vertical-align
         - visibility
