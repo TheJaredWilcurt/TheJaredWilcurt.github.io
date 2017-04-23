@@ -13,14 +13,17 @@
       <div id="projects">
         <h1>Completed Projects (since 2015)</h1>
 
-        <div class="project" v-for="project in projects">
-          <img src="_imgs/repo.svg" alt="temp" />
-          <div>
+        <div class="project half" v-for="project in projects">
+          <img :src="project.img" :alt="project.title" class="half" />
+          <div class="half">
             <div class="type">
               <strong>{{ project.type }}</strong>
             </div>
             <div>
               <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.releases">({{ project.releases }})</span>
+            </div>
+            <div class="description">
+              {{ project.description }}
             </div>
         </div>
 
