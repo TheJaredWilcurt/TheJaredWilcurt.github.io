@@ -327,7 +327,6 @@ strong {
 .thirds {
   display: inline-block;
   font-size: 18px;
-  text-align: center;
   vertical-align: top;
 }
 
@@ -351,8 +350,7 @@ strong {
   position: relative;
   display: inline-flex;
   align-items: center;
-  width: 50%;
-  height: 200px;
+  min-height: 200px;
   font-size: 20px;
   vertical-align: top;
 }
@@ -367,6 +365,17 @@ strong {
   vertical-align: middle;
 }
 
+.project .type {
+  margin-bottom: 10px;
+}
+
+.project .description {
+  margin-top: 10px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
 header {
   background-color: #FFF;
 }
@@ -375,7 +384,7 @@ footer {
   background-color: #FFF;
 }
 
-@media screen and (max-width: 1093px) {
+@media screen and (max-width: 980px) {
   .half {
     width: 100%;
   }
@@ -387,13 +396,20 @@ footer {
   }
 }
 
+@media screen and (max-width: 540px) {
+  .project {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
 #quotes {
   text-align: center;
 }
 
 .quote {
   display: inline-block;
-  width: 300px;
+  max-width: 300px;
   margin: 10px;
   text-align: center;
   vertical-align: top;
