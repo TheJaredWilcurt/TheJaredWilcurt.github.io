@@ -12,6 +12,7 @@ var sassLint = require('gulp-sass-lint');
 var uglify = require('gulp-uglify');
 var insert = require('gulp-insert');
 var crlf = require('gulp-line-ending-corrector');
+var concat = require('gulp-concat');
 
 // Basic error logging function to be used below
 function errorLog (error) {
@@ -19,10 +20,18 @@ function errorLog (error) {
     this.emit('end');
 }
 
+gulp.task('concat', function () {
+    gulp.src(['./_scripts/data.js', './_scripts/main.js'])
+        .pipe(concat('all.js'))
+        .pipe(insert.append('\n'))
+        .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))
+        .pipe(gulp.dest('_scripts'));
+});
+
 // Uglify JS - Targets all .js files in the _js folder and converts
 // them to functionally identical code that uses less bytes in the _scripts folder
 gulp.task('uglify', function () {
-    gulp.src('_scripts/*.js')
+    gulp.src('_scripts/all.js')
         .pipe(uglify())
         .on('error', errorLog)
         .pipe(insert.append('\n'))
@@ -95,7 +104,7 @@ gulp.task('html', function () {
 // Uglify, Process the Sass, and reload the browser automatically
 gulp.task('watch', function () {
     gulp.watch('_scripts/*.js', ['lint']);
-    gulp.watch('_scripts/*.js', ['uglify']);
+    gulp.watch('_scripts/*.js', ['concat', 'uglify']);
     gulp.watch('_sass/*', ['sass', 'sassfont']);
     gulp.watch('*.html', ['html']);
 
@@ -119,4 +128,4 @@ gulp.task('open', function () {
 
 // The default Gulp task that happens when you run gulp.
 // It runs all the other gulp tasks above in the correct order.
-gulp.task('default', ['sass', 'sassfont', 'lint', 'uglify', 'watch', 'serve', 'open']);
+gulp.task('default', ['sass', 'sassfont', 'lint', 'concat', 'uglify', 'watch', 'serve', 'open']);

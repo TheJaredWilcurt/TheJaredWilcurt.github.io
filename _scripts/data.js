@@ -1,6 +1,5 @@
-var Vue = window.Vue;
 
-var quoteData = [
+window.quoteData = [
     {
         'name': 'Gavyn Leavitt',
         'quote': 'Now I can start organizing my CSS in a meaningful way!',
@@ -26,14 +25,6 @@ var quoteData = [
         'photo': 'http://photos2.meetupstatic.com/photos/member/3/0/c/7/member_253572487.jpeg'
     }
 ];
-
-// eslint-disable-next-line no-unused-vars
-var quotes = new Vue({
-    el: '#quotes',
-    data: {
-        quotes: quoteData
-    }
-});
 
 /*
 
@@ -77,7 +68,7 @@ Support
 
 */
 
-var projectData = [
+window.projectData = [
     {
         'type': 'Project',
         'url': 'https://github.com/scout-app/scout-app',
@@ -481,12 +472,3 @@ var projectData = [
         'tech': ''
     }
 ];
-
-
-// eslint-disable-next-line no-unused-vars
-var projects = new Vue({
-    el: '#projects',
-    data: {
-        projects: projectData
-    }
-});
