@@ -360,7 +360,7 @@ strong {
 }
 
 .project img {
-  max-width: 200px;
+  max-height: 100px;
   float: left;
   vertical-align: middle;
 }
@@ -371,7 +371,7 @@ strong {
 
 .project .description {
   margin-top: 10px;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
   line-height: 1.4;
 }
@@ -400,6 +400,9 @@ footer {
   .project {
     flex-direction: column;
     padding: 10px;
+  }
+  .project img {
+    max-height: 150px;
   }
 }
 
