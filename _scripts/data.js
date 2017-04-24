@@ -70,11 +70,11 @@ Support
 
 window.projectData = [
     {
+        'title': 'Scout-App',
         'type': 'Project',
         'url': 'https://github.com/scout-app/scout-app',
-        'title': 'Scout-App',
         'description': 'Cross-Platform Desktop App. Processes Sass into CSS. Translated to 17 languages. Downloaded 300,000+ times.',
-        'img': '_imgs/scout-app.svg',
+        'img': '_imgs/scout-app.png',
         'releases': '5 major releases',
         'roles': [
             'Developer',
@@ -89,11 +89,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'UGUI',
         'type': 'Project',
         'url': 'https://github.com/UniversalGUI/UGUI',
-        'title': 'UGUI',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/ugui.png',
         'releases': '8 major releases',
         'roles': [
             'Developer',
@@ -108,11 +108,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'Koa11y',
         'type': 'Project',
         'url': 'http://thejaredwilcurt.github.io/Koa11y',
-        'title': 'Koa11y',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/koa11y.png',
         'releases': '1 major release',
         'roles': [
             'Developer',
@@ -128,11 +128,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'UGUI: FLIF',
         'type': 'Project',
         'url': 'http://flif.info/UGUI_FLIF',
-        'title': 'UGUI: FLIF',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/flif.png',
         'releases': '4 major release, 1 upcoming',
         'roles': [
             'Developer',
@@ -143,9 +143,9 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'GraphMyCSS.com',
         'type': 'Project',
         'url': 'http://graphmycss.com',
-        'title': 'GraphMyCSS.com',
         'description': '',
         'img': '_imgs/repo.svg',
         'releases': '2 releases',
@@ -156,11 +156,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'UGUI: WiFi',
         'type': 'Project',
         'url': 'https://github.com/TheJaredWilcurt/UGUI-Wifi',
-        'title': 'UGUI: WiFi',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/ugui-wifi.png',
         'releases': '1 release',
         'roles': [
             'Developer',
@@ -170,11 +170,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'A Deeper Understanding of CSS',
         'type': 'Conference Talk',
         'url': '_imgs/indycode-css.png',
-        'title': 'A Deeper Understanding of CSS',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/indycode.png',
         'roles': [
             'Presenter',
             'Design'
@@ -182,22 +182,22 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'Web Dev Tooling',
         'type': 'Meetup Talk',
         'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/236980468',
-        'title': 'Web Dev Tooling',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/meetup.png',
         'roles': [
             'Presenter'
         ],
         'tech': 'JS, Node, NPM, Bower, Grunt, Gulp'
     },
     {
+        'title': 'Making a desktop app, in under an hour',
         'type': 'Meetup Talk',
         'url': 'https://www.meetup.com/indyjs/events/237046138',
-        'title': 'Making a desktop app, in under an hour',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/meetup.png',
         'roles': [
             'Presenter',
             'Developer'
@@ -205,22 +205,22 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'Upgrading your CSS',
         'type': 'Meetup Talk',
         'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739',
-        'title': 'Upgrading your CSS',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/meetup.png',
         'roles': [
             'Presenter'
         ],
         'tech': ''
     },
     {
+        'title': 'UGUI: Git Branch Deleter',
         'type': 'Project',
         'url': 'https://thejaredwilcurt.github.io/UGUI-Git-Branch-Deleter',
-        'title': 'UGUI: Git Branch Deleter',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/git-branch-deleter.png',
         'releases': '3 releases',
         'roles': [
             'Developer'
@@ -228,11 +228,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'GLRittenhouse Website Port',
         'type': 'Project',
         'url': 'https://github.com/TheJaredWilcurt/glr',
-        'title': 'GLRittenhouse Website Port',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/glr.png',
         'roles': [
             'Developer',
             'Project Manager',
@@ -241,11 +241,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'FLIF binary builds',
         'type': 'Contribution',
         'url': 'https://github.com/FLIF-hub/FLIF/releases',
-        'title': 'FLIF binary builds',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/flif.png',
         'releases': '2 releases',
         'roles': [
             'Developer',
@@ -254,11 +254,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'SassNotSass',
         'type': 'Project',
         'url': 'https://github.com/TheJaredWilcurt/SassNotSASS',
-        'title': 'SassNotSass',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/sassnotsass.svg',
         'roles': [
             'Developer',
             'UX',
@@ -267,9 +267,9 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'FCC-JACK',
         'type': 'Hack-a-thon',
         'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/234330061',
-        'title': 'FCC-JACK',
         'description': '',
         'img': '_imgs/repo.svg',
         'roles': [
@@ -281,11 +281,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'amEco',
         'type': 'Hack-a-thon',
         'url': 'https://playameco.github.io',
-        'title': 'amEco',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/ameco.png',
         'roles': [
             'Product Owner',
             'Project Manager',
@@ -296,9 +296,9 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'CSS-Selectors-to-JS-Array',
         'type': 'Library',
         'url': 'https://github.com/TheJaredWilcurt/css-selectors-to-js-array',
-        'title': 'CSS-Selectors-to-JS-Array',
         'description': '',
         'img': '_imgs/repo.svg',
         'releases': '2 releases',
@@ -309,9 +309,9 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'OnTopOfJira',
         'type': 'Project',
         'url': 'https://github.com/TheJaredWilcurt/OnTopOfJira',
-        'title': 'OnTopOfJira',
         'description': '',
         'img': '_imgs/repo.svg',
         'roles': [
@@ -320,11 +320,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'Dropzone (bug fix)',
         'type': 'Contribution',
         'url': 'https://github.com/enyo/dropzone/pull/1226',
-        'title': 'Dropzone (bug fix)',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/dropzone.png',
         'roles': [
             'Developer',
             'Quality Engineer',
@@ -333,20 +333,20 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'FLIF.info',
         'type': 'Contribution',
         'url': 'http://flif.info',
-        'title': 'FLIF.info',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/flif.png',
         'roles': [
             'Developer'
         ],
         'tech': ''
     },
     {
+        'title': 'NPM-Free-Server',
         'type': 'Library',
         'url': 'https://github.com/TheJaredWilcurt/NPM-Free-Server',
-        'title': 'NPM-Free-Server',
         'description': '',
         'img': '_imgs/repo.svg',
         'releases': '1 release',
@@ -357,11 +357,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'FLIF Benchmarks',
         'type': 'Contribution',
         'url': 'https://github.com/FLIF-hub/benchmarks',
-        'title': 'FLIF Benchmarks',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/flif.png',
         'roles': [
             'Documentation',
             'Design'
@@ -369,9 +369,9 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': '64or32',
         'type': 'Library',
         'url': 'https://github.com/peterhurford/64or32',
-        'title': '64or32',
         'description': '',
         'img': '_imgs/repo.svg',
         'roles': [
@@ -381,11 +381,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'GitHub Corners',
         'type': 'Contribution',
         'url': 'https://github.com/tholman/github-corners/issues/5',
-        'title': 'GitHub Corners',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/github-corners.svg',
         'roles': [
             'Developer',
             'UX'
@@ -393,11 +393,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'UGUI.io',
         'type': 'Project',
         'url': 'http://ugui.io',
-        'title': 'UGUI.io',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/ugui.png',
         'roles': [
             'Developer',
             'UX',
@@ -410,11 +410,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'Scout-App.io',
         'type': 'Project',
         'url': 'http://scout-app.io',
-        'title': 'Scout-App.io',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/scout-app.png',
         'roles': [
             'Developer',
             'UX',
@@ -429,11 +429,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'Scout-App Classic Port',
         'type': 'Project',
         'url': 'https://github.com/scout-app/classic',
-        'title': 'Scout-App Classic Port',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/scout-classic.png',
         'roles': [
             'Developer',
             'UX',
@@ -445,11 +445,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'Simple-Donut jQuery',
         'type': 'Project',
         'url': 'https://github.com/simple-donut/simple-donut-jquery',
-        'title': 'Simple-Donut jQuery',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/simple-donut.png',
         'releases': '1 release',
         'roles': [
             'Developer',
@@ -459,11 +459,11 @@ window.projectData = [
         'tech': ''
     },
     {
+        'title': 'Simple-Donut Vue',
         'type': 'Project',
         'url': 'https://github.com/simple-donut/simple-donut-vue',
-        'title': 'Simple-Donut Vue',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/simple-donut.png',
         'releases': '1 release',
         'roles': [
             'Developer',

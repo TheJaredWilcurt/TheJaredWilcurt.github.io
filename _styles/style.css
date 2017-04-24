@@ -320,6 +320,7 @@ strong {
 .wrapper {
   max-width: 1403px;
   margin: 0px auto;
+  padding: 20px;
 }
 
 .full,
@@ -371,6 +372,7 @@ strong {
 
 .project .description {
   margin-top: 10px;
+  padding: 0px 8px 0px 0px;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
   line-height: 1.4;
@@ -402,7 +404,7 @@ footer {
     padding: 10px;
   }
   .project img {
-    max-height: 150px;
+    max-height: 144px;
   }
 }
 
