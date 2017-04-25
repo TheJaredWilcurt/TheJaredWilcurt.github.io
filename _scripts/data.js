@@ -111,7 +111,7 @@ window.projectData = [
         'title': 'Koa11y',
         'type': 'Project',
         'url': 'http://thejaredwilcurt.github.io/Koa11y',
-        'description': '',
+        'description': 'Easily check a webpage for accessibility (a11y) issues. This is a cross-platform desktop app that spins up a headless browser, navigates to the desired URL, scans it for a11y issues based on your chosen guideline (WCAG2 (A/AA/AAA), Section 508), then outputs a report in your desired format (HTML, JSON, Markdown, XML, CSV)',
         'img': '_imgs/koa11y.png',
         'releases': '1 major release',
         'roles': [
