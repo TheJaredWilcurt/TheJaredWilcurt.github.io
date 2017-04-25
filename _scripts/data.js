@@ -147,7 +147,7 @@ window.projectData = [
         'type': 'Project',
         'url': 'http://graphmycss.com',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/graphmycss.png',
         'releases': '2 releases',
         'roles': [
             'Developer',
