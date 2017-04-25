@@ -92,7 +92,7 @@ window.projectData = [
         'title': 'UGUI',
         'type': 'Project',
         'url': 'https://github.com/UniversalGUI/UGUI',
-        'description': '',
+        'description': 'The Universal GUI is a framework and library to bootstrap making cross-platform desktop apps. It specializes in creating GUI\'s for command line applications, requiring only knowledge of HTML. However it can be used for more advanced projects like Scout-App or Koa11y.',
         'img': '_imgs/ugui.png',
         'releases': '8 major releases',
         'roles': [
@@ -271,7 +271,7 @@ window.projectData = [
         'type': 'Hack-a-thon',
         'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/234330061',
         'description': '',
-        'img': '_imgs/repo.svg',
+        'img': '_imgs/meetup.png',
         'roles': [
             'Developer',
             'Project Manager',
@@ -432,7 +432,7 @@ window.projectData = [
         'title': 'Scout-App Classic Port',
         'type': 'Project',
         'url': 'https://github.com/scout-app/classic',
-        'description': '',
+        'description': 'The original website for the 2012 version of Scout-App. Retained most of the original code and design. Updated some code and optimized images. Moved branch to its own repo to be accessible on the new Scout-App website under Scout-App.io/classic.',
         'img': '_imgs/scout-classic.png',
         'roles': [
             'Developer',
