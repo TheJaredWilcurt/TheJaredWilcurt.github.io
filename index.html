@@ -6,6 +6,14 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js"></script>
+    <script type="text/javascript">
+      if (typeof Vue == 'undefined') {
+        document.write(unescape("%3Cscript src='/_js/vue.min.js' type='text/javascript'%3E%3C/script%3E"));
+      }
+    </script> <!-- Load local Vue if Google CDN is unreachable -->
+
+    <script type="text/javascript" src="_js/all.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -38,15 +46,6 @@
       </div>
 
     </div>
-
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js"></script>
-    <script type="text/javascript">
-      if (typeof Vue == 'undefined') {
-        document.write(unescape("%3Cscript src='/_js/vue.min.js' type='text/javascript'%3E%3C/script%3E"));
-      }
-    </script> <!-- Load local Vue if Google CDN is unreachable -->
-
-    <script type="text/javascript" src="_js/all.js"></script>
 
     <link rel="stylesheet" href="_styles/fonts.css" /> <!-- Render-blocking web fonts -->
   </body>
