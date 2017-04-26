@@ -131,7 +131,7 @@ window.projectData = [
         'title': 'UGUI: FLIF',
         'type': 'Project',
         'url': 'http://flif.info/UGUI_FLIF',
-        'description': '',
+        'description': 'A simple drag and drop tool for converting to and from FLIF image files.',
         'img': '_imgs/flif.png',
         'releases': '4 major release, 1 upcoming',
         'roles': [
@@ -146,7 +146,7 @@ window.projectData = [
         'title': 'GraphMyCSS.com',
         'type': 'Project',
         'url': 'http://graphmycss.com',
-        'description': '',
+        'description': 'A website where you can paste in any arbitrary CSS and have a graph dynamically generated to show levels of selector specificity throughout the file.',
         'img': '_imgs/graphmycss.png',
         'releases': '2 releases',
         'roles': [
@@ -159,7 +159,7 @@ window.projectData = [
         'title': 'UGUI: WiFi',
         'type': 'Project',
         'url': 'https://github.com/TheJaredWilcurt/UGUI-Wifi',
-        'description': '',
+        'description': 'Displays a list of wifi networks (access points) that are within range and allows you to connect directly to them. This was originally created in under an hour to help someone in the NW.js chatroom. Later on, it was re-built for my talk "Building a desktop app in under an hour".',
         'img': '_imgs/ugui-wifi.png',
         'releases': '1 release',
         'roles': [
@@ -173,7 +173,7 @@ window.projectData = [
         'title': 'A Deeper Understanding of CSS',
         'type': 'Conference Talk',
         'url': '_imgs/indycode-css.png',
-        'description': '',
+        'description': 'I was a presenter at the first annual Indy.Code() conference. I gave a breakout session, 1 hour talk, on CSS. The talk covered how selector specificity is calculated and how the browser knows which style to apply from the cascade. It also covered browser default styles, user agent styles, and the purpose of CSS resets/normalizers and the difference between them. Then wrapped up with implementing all of the above topics using the Inverted Triangle CSS Methodology (ITCSS).',
         'img': '_imgs/indycode.png',
         'roles': [
             'Presenter',
@@ -185,7 +185,7 @@ window.projectData = [
         'title': 'Web Dev Tooling',
         'type': 'Meetup Talk',
         'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/236980468',
-        'description': '',
+        'description': 'Myself and Gwen Faraday run the local Free Code Camp group. Development tooling was a highly requested topic. So we teamed up to give a presentation. I covered JavaScript, Node, NPM, Bower, Grunt, and Gulp. She covered Browserify, Rollup, and Webpack.',
         'img': '_imgs/meetup.png',
         'roles': [
             'Presenter'
@@ -196,7 +196,7 @@ window.projectData = [
         'title': 'Making a desktop app, in under an hour',
         'type': 'Meetup Talk',
         'url': 'https://www.meetup.com/indyjs/events/237046138',
-        'description': '',
+        'description': 'This was a talk I gave for the largest JavaScript meetup group in Indianapolis. It was a live coding presentation in which I walked the group though a basic "Hello World" example, followed by taking questiongs while building a real world example based on UGUI: Wifi (a project previously created in under an hour).',
         'img': '_imgs/meetup.png',
         'roles': [
             'Presenter',
@@ -208,7 +208,7 @@ window.projectData = [
         'title': 'Upgrading your CSS',
         'type': 'Meetup Talk',
         'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739',
-        'description': '',
+        'description': 'A precursor to "A Deeper Understanding of CSS" talk, this time given to the local FreeCodeCamp Indy group. It covers all the same topics as mentioned above. Some quotes from those that came to this talk can be seen below.',
         'img': '_imgs/meetup.png',
         'roles': [
             'Presenter'
@@ -219,7 +219,7 @@ window.projectData = [
         'title': 'UGUI: Git Branch Deleter',
         'type': 'Project',
         'url': 'https://thejaredwilcurt.github.io/UGUI-Git-Branch-Deleter',
-        'description': '',
+        'description': 'This is a tool to easily check the status of tickets in Jira/GUS/Github, before easily deleting their local associated Git branch.',
         'img': '_imgs/git-branch-deleter.png',
         'releases': '3 releases',
         'roles': [
@@ -231,7 +231,7 @@ window.projectData = [
         'title': 'GLRittenhouse Website Port',
         'type': 'Project',
         'url': 'https://github.com/TheJaredWilcurt/glr',
-        'description': '',
+        'description': 'Porting an old static website over to GitHub\'s free hosting as a living archive.',
         'img': '_imgs/glr.png',
         'roles': [
             'Developer',
@@ -244,7 +244,7 @@ window.projectData = [
         'title': 'FLIF binary builds',
         'type': 'Contribution',
         'url': 'https://github.com/FLIF-hub/FLIF/releases',
-        'description': '',
+        'description': 'I\'m an early member of the FLIF image format community. I\'m responsible for creating the command line tools for Windows (32/64), OSX (64), and Ubuntu (32/64). To better enable the spread and usage of the format.',
         'img': '_imgs/flif.png',
         'releases': '2 releases',
         'roles': [
@@ -254,10 +254,10 @@ window.projectData = [
         'tech': ''
     },
     {
-        'title': 'SassNotSass',
+        'title': 'SassNotSASS',
         'type': 'Project',
         'url': 'https://github.com/TheJaredWilcurt/SassNotSASS',
-        'description': '',
+        'description': 'One-day novelty project. Created a site to explain the proper capitalization of Sass (not SASS as is often typed).',
         'img': '_imgs/sassnotsass.svg',
         'roles': [
             'Developer',
@@ -270,7 +270,7 @@ window.projectData = [
         'title': 'FCC-JACK',
         'type': 'Hack-a-thon',
         'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/234330061',
-        'description': '',
+        'description': 'A 3 hour project made during a Free Code Camp Indy mini-hackaton. I worked with a team of 3 others and helped mentor and explain coding concepts while working on a short project.',
         'img': '_imgs/meetup.png',
         'roles': [
             'Developer',
@@ -284,7 +284,7 @@ window.projectData = [
         'title': 'amEco',
         'type': 'Hack-a-thon',
         'url': 'https://playameco.github.io',
-        'description': '',
+        'description': 'amEco was the result of a 3 Day long hackathon for "Greater Lafayette Startup Weekend 2016". I helped to organize and play the role of a project manager, ensuring tasks were scoped to MVP and that no one was waiting on anyone else to continue. The idea behind amEco was to gamify recycling and other environmentally conscious habbits. The team came in second place.',
         'img': '_imgs/ameco.png',
         'roles': [
             'Product Owner',
@@ -299,7 +299,7 @@ window.projectData = [
         'title': 'CSS-Selectors-to-JS-Array',
         'type': 'Library',
         'url': 'https://github.com/TheJaredWilcurt/css-selectors-to-js-array',
-        'description': '',
+        'description': 'This is a library I created to process any arbitrary string of CSS into a JavaScript array of just the CSS selectors. It was created for GraphMyCSS.com.',
         'img': '_imgs/repo.svg',
         'releases': '2 releases',
         'roles': [
@@ -312,7 +312,7 @@ window.projectData = [
         'title': 'OnTopOfJira',
         'type': 'Project',
         'url': 'https://github.com/TheJaredWilcurt/OnTopOfJira',
-        'description': '',
+        'description': 'A short 1 hour project created at the request of a coworker who had to handle customer escalations. He wanted to have a small window set to "Always on top" to keep track of escalations in Jira.',
         'img': '_imgs/repo.svg',
         'roles': [
             'Developer'
@@ -323,7 +323,7 @@ window.projectData = [
         'title': 'Dropzone (bug fix)',
         'type': 'Contribution',
         'url': 'https://github.com/enyo/dropzone/pull/1226',
-        'description': '',
+        'description': 'I detected a bug in our app at work and tracked it down to the Dropzone library. After investigating further, and discussing it on their issues board, I created a pull request to solve the problem.',
         'img': '_imgs/dropzone.png',
         'roles': [
             'Developer',
@@ -336,7 +336,7 @@ window.projectData = [
         'title': 'FLIF.info',
         'type': 'Contribution',
         'url': 'http://flif.info',
-        'description': '',
+        'description': 'I\'ve helped with formatting of content, and structuring of files, and general maintenance.',
         'img': '_imgs/flif.png',
         'roles': [
             'Developer'
@@ -347,7 +347,7 @@ window.projectData = [
         'title': 'NPM-Free-Server',
         'type': 'Library',
         'url': 'https://github.com/TheJaredWilcurt/NPM-Free-Server',
-        'description': '',
+        'description': 'A very small (both in filesize and lines of code) webserver written in vanilla Node, so it can be ran as a standalone file without the need to install any dependencies.',
         'img': '_imgs/repo.svg',
         'releases': '1 release',
         'roles': [
@@ -360,7 +360,7 @@ window.projectData = [
         'title': 'FLIF Benchmarks',
         'type': 'Contribution',
         'url': 'https://github.com/FLIF-hub/benchmarks',
-        'description': '',
+        'description': 'The FLIF Benchmarks repo is a collection of image sets that vary in content. It is used in the testing of FLIF to ensure that it can succeed as a general purpose image compressor. I\'ve contributed many of my own images and a few image compression corpuses I\'ve collected over the years that I used when testing PNG compression.',
         'img': '_imgs/flif.png',
         'roles': [
             'Documentation',
@@ -372,7 +372,7 @@ window.projectData = [
         'title': '64or32',
         'type': 'Library',
         'url': 'https://github.com/peterhurford/64or32',
-        'description': '',
+        'description': 'I needed a way of detecting if a user\'s machine was 32-Bit or 64-Bit so I could display the correct download button for my desktop app websites. The first google result was 64or32.com. Based on the existing code, I rewrote it to be a simple library that others could use, contacted the owner and helped update the site and repo to act more as a library.',
         'img': '_imgs/repo.svg',
         'roles': [
             'Developer',
@@ -384,7 +384,7 @@ window.projectData = [
         'title': 'GitHub Corners',
         'type': 'Contribution',
         'url': 'https://github.com/tholman/github-corners/issues/5',
-        'description': '',
+        'description': 'I created a simple proof of concept for dynamically generating GitHub corners.',
         'img': '_imgs/github-corners.svg',
         'roles': [
             'Developer',
@@ -396,7 +396,7 @@ window.projectData = [
         'title': 'UGUI.io',
         'type': 'Project',
         'url': 'http://ugui.io',
-        'description': '',
+        'description': 'The website for the UGUI framework/library. It has detailed API documentation, and a completely annotated source code for UGUI. I used this website as a means mentor others learning web development, to give them experience on a real world project.',
         'img': '_imgs/ugui.png',
         'roles': [
             'Developer',
@@ -413,7 +413,7 @@ window.projectData = [
         'title': 'Scout-App.io',
         'type': 'Project',
         'url': 'http://scout-app.io',
-        'description': '',
+        'description': 'The Scout-App website, featuring tutorial video, download links, contributors, mixin library documentation, and more.',
         'img': '_imgs/scout-app.png',
         'roles': [
             'Developer',
@@ -448,7 +448,7 @@ window.projectData = [
         'title': 'Simple-Donut jQuery',
         'type': 'Project',
         'url': 'https://github.com/simple-donut/simple-donut-jquery',
-        'description': '',
+        'description': '"Simple-Donut" is a project I started, in which the same donut chart is recreated in multiple frontend libraries/frameworks. Although it can be used like ToDoMVC, as a means of comparing the frameworks, its primary purpose is as a usable component that can be added to existing projects. This version was written taking advantage of jQuery.',
         'img': '_imgs/simple-donut.png',
         'releases': '1 release',
         'roles': [
@@ -462,7 +462,7 @@ window.projectData = [
         'title': 'Simple-Donut Vue',
         'type': 'Project',
         'url': 'https://github.com/simple-donut/simple-donut-vue',
-        'description': '',
+        'description': 'This version of the Simple-Donut was built using the Vue.js framework, which is awesome.',
         'img': '_imgs/simple-donut.png',
         'releases': '1 release',
         'roles': [
