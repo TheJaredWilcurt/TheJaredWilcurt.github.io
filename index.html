@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>The Jared Wilcurt</title>
-    <link rel="stylesheet" href="_styles/style.css" />
+    <link rel="stylesheet" href="_styles/style.min.css" />
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -19,7 +19,7 @@
       <div id="projects">
         <h1>Completed Projects (since 2015)</h1>
 
-        <div class="project half" v-for="project in projects">
+        <div class="project half" v-for="(project, index) in projects">
           <img :src="project.img" :alt="project.title" />
           <div>
             <div class="type">
@@ -30,6 +30,14 @@
             </div>
             <div class="description">
               {{ project.description }}
+            </div>
+            <div class="roles">
+              <strong>Roles:</strong>
+              {{ projects[index].roles.join(', ') }}
+            </div>
+            <div class="technology">
+              <strong>Technology:</strong>
+              {{ projects[index].tech.join(', ') }}
             </div>
         </div>
 
@@ -46,7 +54,9 @@
 
     </div>
 
-    <script type="text/javascript" src="_js/all.js"></script>
-    <link rel="stylesheet" href="_styles/fonts.css" /> <!-- Render-blocking web fonts -->
+    <!--<script type="text/javascript" src="_js/all.js"></script>-->
+    <script type="text/javascript" src="_scripts/all.js"></script>
+
+    <link rel="stylesheet" href="_styles/fonts.min.css" /> <!-- Render-blocking web fonts -->
   </body>
 </html>

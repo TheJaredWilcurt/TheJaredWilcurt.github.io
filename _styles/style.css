@@ -370,12 +370,21 @@ strong {
   margin-bottom: 10px;
 }
 
-.project .description {
-  margin-top: 10px;
+.project .description,
+.project .roles,
+.project .technology {
   padding: 0px 8px 0px 0px;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
   line-height: 1.4;
+}
+
+.project .description {
+  margin-top: 10px;
+}
+
+.project .technology {
+  margin-bottom: 10px;
 }
 
 header {

@@ -28,43 +28,38 @@ window.quoteData = [
 
 /*
 
-Types:
+  Types:
+    Projects
+    Conference Talk
+    Meetup Talk
+    Contribution
+    Hackathon
+    Library
 
-Projects
-Conference Talk
-Meetup Talk
-Contribution
-Hackathon
-Library
+  Tech:
+    NW.js
+    UGUI
+    Bootstrap
+    Sass
+    jQuery
+    Node
+    Vue
+    Vanilla
+    Gulp
 
-
-Tech:
-
-NW.js
-UGUI
-Bootstrap
-Sass
-jQuery
-Node
-Vue
-Vanilla
-Gulp
-
-
-Role:
-
-Developer
-UX
-Project Manager
-Documentation
-Presenter
-Architect
-Product Owner
-Design
-Branding
-Mentor
-Qualty Engineer
-Support
+  Role:
+    Developer
+    UX
+    Project Manager
+    Documentation
+    Presenter
+    Architect
+    Product Owner
+    Design
+    Branding
+    Mentor
+    Qualty Engineer
+    Support
 
 */
 
@@ -86,7 +81,17 @@ window.projectData = [
             'Quality Engineer',
             'Support'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'UGUI',
@@ -105,7 +110,17 @@ window.projectData = [
             'Branding',
             'Quality Engineer'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'Koa11y',
@@ -125,7 +140,17 @@ window.projectData = [
             'Quality Engineer',
             'Support'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'UGUI: FLIF',
@@ -140,7 +165,17 @@ window.projectData = [
             'Project Manager',
             'Quality Engineer'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'GraphMyCSS.com',
@@ -153,7 +188,17 @@ window.projectData = [
             'Developer',
             'Branding'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'UGUI: WiFi',
@@ -167,7 +212,17 @@ window.projectData = [
             'Presenter',
             'Design'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'A Deeper Understanding of CSS',
@@ -179,7 +234,17 @@ window.projectData = [
             'Presenter',
             'Design'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'Web Dev Tooling',
@@ -190,7 +255,16 @@ window.projectData = [
         'roles': [
             'Presenter'
         ],
-        'tech': 'JS, Node, NPM, Bower, Grunt, Gulp'
+        'tech': [
+            'JS',
+            'Node',
+            'NPM',
+            'Bower',
+            'Grunt',
+            'Gulp',
+            'Sass',
+            'Vanilla'
+        ]
     },
     {
         'title': 'Making a desktop app, in under an hour',
@@ -202,7 +276,17 @@ window.projectData = [
             'Presenter',
             'Developer'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'Upgrading your CSS',
@@ -213,7 +297,17 @@ window.projectData = [
         'roles': [
             'Presenter'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'UGUI: Git Branch Deleter',
@@ -225,7 +319,17 @@ window.projectData = [
         'roles': [
             'Developer'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'GLRittenhouse Website Port',
@@ -238,7 +342,17 @@ window.projectData = [
             'Project Manager',
             'Branding'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'FLIF binary builds',
@@ -251,7 +365,17 @@ window.projectData = [
             'Developer',
             'Quality Engineer'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'SassNotSASS',
@@ -264,7 +388,17 @@ window.projectData = [
             'UX',
             'Branding'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'FCC-JACK',
@@ -278,7 +412,17 @@ window.projectData = [
             'Presenter',
             'Mentor'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'amEco',
@@ -293,7 +437,17 @@ window.projectData = [
             'Branding',
             'Mentor'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'CSS-Selectors-to-JS-Array',
@@ -306,7 +460,17 @@ window.projectData = [
             'Developer',
             'Documentation'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'OnTopOfJira',
@@ -317,7 +481,17 @@ window.projectData = [
         'roles': [
             'Developer'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'Dropzone (bug fix)',
@@ -330,7 +504,17 @@ window.projectData = [
             'Quality Engineer',
             'Support'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'FLIF.info',
@@ -341,7 +525,17 @@ window.projectData = [
         'roles': [
             'Developer'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'NPM-Free-Server',
@@ -354,7 +548,17 @@ window.projectData = [
             'Developer',
             'Documentation'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'FLIF Benchmarks',
@@ -366,7 +570,17 @@ window.projectData = [
             'Documentation',
             'Design'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': '64or32',
@@ -378,7 +592,17 @@ window.projectData = [
             'Developer',
             'Documentation'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'GitHub Corners',
@@ -390,7 +614,17 @@ window.projectData = [
             'Developer',
             'UX'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'UGUI.io',
@@ -407,7 +641,17 @@ window.projectData = [
             'Branding',
             'Mentor'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'Scout-App.io',
@@ -426,7 +670,17 @@ window.projectData = [
             'Mentor',
             'Quality Engineer'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'Scout-App Classic Port',
@@ -442,7 +696,17 @@ window.projectData = [
             'Design',
             'Support'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'Simple-Donut jQuery',
@@ -456,7 +720,17 @@ window.projectData = [
             'Project Manager',
             'Documentation'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     },
     {
         'title': 'Simple-Donut Vue',
@@ -469,6 +743,16 @@ window.projectData = [
             'Developer',
             'Documentation'
         ],
-        'tech': ''
+        'tech': [
+            // 'NW.js',
+            // 'UGUI',
+            // 'Bootstrap',
+            // 'Sass',
+            // 'jQuery',
+            // 'Node',
+            // 'Vue',
+            // 'Vanilla',
+            // 'Gulp'
+        ]
     }
 ];
