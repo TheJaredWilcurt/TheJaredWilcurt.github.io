@@ -39,6 +39,8 @@ window.quoteData = [
   Tech:
     NW.js
     UGUI
+    Pa11y
+    PhantomJS
     Bootstrap
     Sass
     jQuery
@@ -46,6 +48,15 @@ window.quoteData = [
     Vue
     Vanilla
     Gulp
+    Chokidar
+    Bower
+    FS-Extra
+    ESLint
+    SassLint
+    Bootswatch
+    7-Zip (Node)
+    JSON-to-CSV
+    CSV-to-JSON
 
   Role:
     Developer
@@ -82,15 +93,20 @@ window.projectData = [
             'Support'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+            'NW.js',
+            'UGUI',
+            'Bootstrap',
+            'jQuery',
+            'Sass',
+            'FS-Extra',
+            'Bootswatch',
+            'Chokidar',
+            'Node',
+            'Bower',
+            'ESLint',
+            'SassLint',
+            '7-Zip (Node)',
+            'CSV-to-JSON'
         ]
     },
     {
@@ -111,22 +127,19 @@ window.projectData = [
             'Quality Engineer'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+            'NW.js',
+            'jQuery',
+            'Bootstrap',
+            'Sass',
+            'Node',
+            'Bootswatch'
         ]
     },
     {
         'title': 'Koa11y',
         'type': 'Project',
         'url': 'http://thejaredwilcurt.github.io/Koa11y',
-        'description': 'Easily check a webpage for accessibility (a11y) issues. This is a cross-platform desktop app that spins up a headless browser, navigates to the desired URL, scans it for a11y issues based on your chosen guideline (WCAG2 (A/AA/AAA), Section 508), then outputs a report in your desired format (HTML, JSON, Markdown, XML, CSV)',
+        'description': 'Easily check a webpage for accessibility (a11y) issues. This is a cross-platform desktop app that spins up a headless browser, navigates to the desired URL, scans it for a11y issues based on your chosen guideline (WCAG2 (A/AA/AAA), Section 508), then outputs a report in your desired format (HTML, JSON, Markdown, XML, CSV).',
         'img': '_imgs/koa11y.png',
         'releases': '1 major release',
         'roles': [
@@ -141,15 +154,19 @@ window.projectData = [
             'Support'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+            'NW.js',
+            'UGUI',
+            'Pa11y',
+            'PhantomJS',
+            'Sass',
+            'jQuery',
+            'Node',
+            'FS-Extra',
+            'ESLint',
+            'SassLint',
+            'Bootstrap',
+            'Bootswatch',
+            'JSON-to-CSV'
         ]
     },
     {
@@ -166,15 +183,17 @@ window.projectData = [
             'Quality Engineer'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+            'NW.js',
+            'UGUI',
+            'FLIF',
+            'ImageMagick',
+            'Sass',
+            'jQuery',
+            'Node',
+            'Bootstrap',
+            'ESLint',
+            'SassLint',
+            'Bootswatch'
         ]
     },
     {
@@ -189,15 +208,7 @@ window.projectData = [
             'Branding'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -213,15 +224,7 @@ window.projectData = [
             'Design'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -235,15 +238,7 @@ window.projectData = [
             'Design'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -277,15 +272,7 @@ window.projectData = [
             'Developer'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -298,15 +285,7 @@ window.projectData = [
             'Presenter'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -320,15 +299,7 @@ window.projectData = [
             'Developer'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -343,15 +314,7 @@ window.projectData = [
             'Branding'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -366,15 +329,7 @@ window.projectData = [
             'Quality Engineer'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -389,15 +344,7 @@ window.projectData = [
             'Branding'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -413,15 +360,7 @@ window.projectData = [
             'Mentor'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -438,15 +377,7 @@ window.projectData = [
             'Mentor'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -461,15 +392,7 @@ window.projectData = [
             'Documentation'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -482,15 +405,7 @@ window.projectData = [
             'Developer'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -505,15 +420,7 @@ window.projectData = [
             'Support'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -526,15 +433,7 @@ window.projectData = [
             'Developer'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -549,15 +448,7 @@ window.projectData = [
             'Documentation'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -571,15 +462,7 @@ window.projectData = [
             'Design'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -593,15 +476,7 @@ window.projectData = [
             'Documentation'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -615,15 +490,7 @@ window.projectData = [
             'UX'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -642,15 +509,7 @@ window.projectData = [
             'Mentor'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -671,15 +530,7 @@ window.projectData = [
             'Quality Engineer'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -697,15 +548,7 @@ window.projectData = [
             'Support'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -721,15 +564,7 @@ window.projectData = [
             'Documentation'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     },
     {
@@ -744,15 +579,7 @@ window.projectData = [
             'Documentation'
         ],
         'tech': [
-            // 'NW.js',
-            // 'UGUI',
-            // 'Bootstrap',
-            // 'Sass',
-            // 'jQuery',
-            // 'Node',
-            // 'Vue',
-            // 'Vanilla',
-            // 'Gulp'
+
         ]
     }
 ];

@@ -30,6 +30,7 @@
     },
     "scripts": {
         "start": "gulp",
+        "serve": "gulp sans-open",
         "installer": "npm install --loglevel=error",
         "lint": "eslint --config=.eslintrc.js _scripts gulpfile.js",
         "sasslint": "gulp sasslint",

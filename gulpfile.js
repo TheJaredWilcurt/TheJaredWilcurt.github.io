@@ -129,3 +129,5 @@ gulp.task('open', function () {
 // The default Gulp task that happens when you run gulp.
 // It runs all the other gulp tasks above in the correct order.
 gulp.task('default', ['sass', 'sassfont', 'lint', 'concat', 'uglify', 'watch', 'serve', 'open']);
+
+gulp.task('sans-open', ['sass', 'sassfont', 'lint', 'concat', 'uglify', 'watch', 'serve']);
