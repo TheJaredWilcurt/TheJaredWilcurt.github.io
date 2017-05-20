@@ -21,7 +21,11 @@ function errorLog (error) {
 }
 
 gulp.task('concat', function () {
-    gulp.src(['./_scripts/data.js', './_scripts/main.js'])
+    gulp.src([
+        './_scripts/quoteData.js',
+        './_scripts/projectData.js',
+        './_scripts/main.js'
+    ])
         .pipe(concat('all.js'))
         .pipe(insert.append('\n'))
         .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))

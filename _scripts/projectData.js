@@ -1,31 +1,3 @@
-
-window.quoteData = [
-    {
-        'name': 'Gavyn Leavitt',
-        'quote': 'Now I can start organizing my CSS in a meaningful way!',
-        'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469996138/',
-        'photo': 'http://photos4.meetupstatic.com/photos/member/7/e/9/8/member_258512408.jpeg'
-    },
-    {
-        'name': 'Tara Miller',
-        'quote': 'Upgrading Your CSS was informative, interesting and fun. I got a ton out of it.',
-        'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469988249/',
-        'photo': 'http://photos1.meetupstatic.com/photos/member/d/4/7/6/member_258294390.jpeg'
-    },
-    {
-        'name': 'Mark Loeser',
-        'quote': 'I really enjoyed it and learned a lot of things that I plan on putting into practice.',
-        'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469987635/',
-        'photo': 'http://photos4.meetupstatic.com/photos/member/3/d/b/f/member_7515807.jpeg'
-    },
-    {
-        'name': 'Deon Seifert',
-        'quote': 'This was really informative! Thanks so much!',
-        'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469971274/',
-        'photo': 'http://photos2.meetupstatic.com/photos/member/3/0/c/7/member_253572487.jpeg'
-    }
-];
-
 /*
 
   Types:
@@ -71,7 +43,6 @@ window.quoteData = [
     Mentor
     Qualty Engineer
     Support
-
 */
 
 window.projectData = [
@@ -82,6 +53,7 @@ window.projectData = [
         'description': 'Cross-Platform Desktop App. Processes Sass into CSS. Translated to 17 languages. Downloaded 300,000+ times.',
         'img': '_imgs/scout-app.png',
         'releases': '5 major releases',
+        'major': true,
         'roles': [
             'Developer',
             'UX',
@@ -116,6 +88,7 @@ window.projectData = [
         'description': 'The Universal GUI is a framework and library to bootstrap making cross-platform desktop apps. It specializes in creating GUI\'s for command line applications, requiring only knowledge of HTML. However it can be used for more advanced projects like Scout-App or Koa11y.',
         'img': '_imgs/ugui.png',
         'releases': '8 major releases',
+        'major': true,
         'roles': [
             'Developer',
             'UX',
@@ -142,6 +115,7 @@ window.projectData = [
         'description': 'Easily check a webpage for accessibility (a11y) issues. This is a cross-platform desktop app that spins up a headless browser, navigates to the desired URL, scans it for a11y issues based on your chosen guideline (WCAG2 (A/AA/AAA), Section 508), then outputs a report in your desired format (HTML, JSON, Markdown, XML, CSV).',
         'img': '_imgs/koa11y.png',
         'releases': '1 major release',
+        'major': true,
         'roles': [
             'Developer',
             'UX',
