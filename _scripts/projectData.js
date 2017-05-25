@@ -182,7 +182,12 @@ window.projectData = [
             'Branding'
         ],
         'tech': [
-
+            'SVG Line Graph',
+            'Rework',
+            'Specificity',
+            'CSS-Selectors-To-JS-Array',
+            'Sass',
+            'jQuery'
         ]
     },
     {
@@ -198,7 +203,14 @@ window.projectData = [
             'Design'
         ],
         'tech': [
-
+            'NW.js',
+            'UGUI',
+            'Bootstrap',
+            'Sass',
+            'jQuery',
+            'Node',
+            'Bootswatch',
+            'WiFi-Control'
         ]
     },
     {
@@ -268,7 +280,7 @@ window.projectData = [
         'url': 'https://thejaredwilcurt.github.io/UGUI-Git-Branch-Deleter',
         'description': 'This is a tool to easily check the status of tickets in Jira/GUS/Github, before easily deleting their local associated Git branch.',
         'img': '_imgs/git-branch-deleter.png',
-        'releases': '3 releases',
+        'releases': '5 releases',
         'roles': [
             'Developer'
         ],
