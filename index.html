@@ -14,10 +14,25 @@
     </script> <!-- Load local Vue if Google CDN is unreachable -->
   </head>
   <body>
-    <div class="wrapper">
+    <header>
+      <h1>The Jared Wilcurt</h1>
+      <p>
+        Cross-Platform Desktop App Developer,<br />
+        Frontend Web Developer,<br  />
+        Software Engineer,<br  />
+        UI Engineer<br  /><br />
+        <strong>Indianpolis, Indiana, USA</strong>
+      </p>
+      <nav>
+        <a href="#">Projects</a>
+        <a href="#">Talks</a>
+        <a href="https://github.com/TheJaredWilcurt" target="_blank">GitHub</a>
+      </nav>
+    </header>
 
+    <div class="wrapper">
       <div id="projects">
-        <h1>Completed Projects (since 2015)</h1>
+        <h1 class="decorated">Completed Projects (since 2015)</h1>
 
         <div class="project half" v-for="(project, index) in projects" v-if="!project.major">
           <img :src="project.img" :alt="project.title" />
@@ -44,8 +59,11 @@
 
       </div>
 
+      <div id="talks">
+      </div>
+
       <div id="quotes">
-        <h1>Quotes from talks</h1>
+        <h1 class="decorated">Quotes from talks</h1>
         <div class="quote" v-for="quote in quotes">
           <img :src="quote.photo" :alt="'Photo of ' + quote.name" :title="'Photo of ' + quote.name">
           <span class="quote-text">{{ quote.quote }}</span>

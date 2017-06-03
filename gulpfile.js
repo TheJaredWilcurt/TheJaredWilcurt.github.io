@@ -46,10 +46,6 @@ gulp.task('uglify', function () {
 // Create expanded and .min versions of Sass styles in the _styles folder as CSS
 gulp.task('sass', function () {
     gulp.src('_sass/style.scss')
-        .pipe(sass({ outputStyle: 'expanded' })
-        .on('error', sass.logError))
-        .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))
-        .pipe(gulp.dest('_styles/'))
         .pipe(rename('style.min.css'))
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))
@@ -60,10 +56,6 @@ gulp.task('sass', function () {
 // Create expanded and .min versions of Sass styles in the _styles folder as CSS
 gulp.task('sassfont', function () {
     gulp.src('_sass/fonts.scss')
-        .pipe(sass({ outputStyle: 'expanded' })
-        .on('error', sass.logError))
-        .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))
-        .pipe(gulp.dest('_styles/'))
         .pipe(rename('fonts.min.css'))
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))
