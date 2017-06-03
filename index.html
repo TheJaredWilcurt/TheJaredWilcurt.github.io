@@ -32,6 +32,33 @@
 
     <div class="wrapper">
       <div id="projects">
+
+        <h1 class="decorated">Project Highlights</h1>
+
+        <div class="project half" v-for="(project, index) in projects" v-if="project.major">
+          <img :src="project.img" :alt="project.title" />
+          <div>
+            <div class="type">
+              <strong>{{ project.type }}</strong>
+            </div>
+            <div>
+              <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.releases">({{ project.releases }})</span>
+            </div>
+            <div class="description">
+              {{ project.description }}
+            </div>
+            <div class="roles">
+              <strong>Roles:</strong>
+              {{ projects[index].roles.join(', ') }}
+            </div>
+            <div class="technology">
+              <strong>Technology:</strong>
+              {{ projects[index].tech.join(', ') }}
+            </div>
+          </div>
+        </div>
+
+
         <h1 class="decorated">Completed Projects (since 2015)</h1>
 
         <div class="project half" v-for="(project, index) in projects" v-if="!project.major">
