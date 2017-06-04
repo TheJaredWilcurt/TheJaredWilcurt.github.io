@@ -1,9 +1,13 @@
 
+.toggle-description
+    display: block
+    margin: -31px 0px 0px 0px
+    text-align: right
+
 .project
     position: relative
     display: inline-flex
     align-items: center
-    min-height: 200px
     font-size: 20px
     vertical-align: top
     div
@@ -25,3 +29,31 @@
         margin-top: 10px
     .technology
         margin-bottom: 10px
+
+.show-description
+    min-height: 200px
+
+.hide-description
+    min-height: 125px
+
+#projects
+    nav
+        span
+            display: inline-block
+            &:first-of-type label
+                border-radius: 10px 0px 0px 10px
+                padding-left: 16px
+            &:last-of-type label
+                border-radius: 0px 10px 10px 0px
+                padding-right: 16px
+        input
+            display: none
+            &:checked + label
+                background: #F00
+                background: rgba($primary, 0.67)
+                color: $backgroundColor
+        label
+            display: inline-block
+            background: rgba($primary, 0.1)
+            border: 1px solid $primary
+            padding: 6px 11px

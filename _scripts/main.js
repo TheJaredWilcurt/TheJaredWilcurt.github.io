@@ -14,6 +14,21 @@ var quotes = new Vue({
 var projects = new Vue({
     el: '#projects',
     data: {
-        projects: projectData
+        projects: projectData,
+        showDetails: false
+    },
+    computed: {
+        allProjectTypes: function () {
+            var allTypes = [];
+            this.projects.forEach(function (project) {
+                if (typeof(project.type) === 'string') {
+                    allTypes.push(project.type);
+                }
+            });
+            var uniqueArray = allTypes.filter(function (item, pos) {
+                return allTypes.indexOf(item) == pos;
+            });
+            return uniqueArray;
+        }
     }
 });

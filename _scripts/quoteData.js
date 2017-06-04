@@ -40,11 +40,12 @@ window.quoteData = [
         'quote': 'This is awesome, the first tutorial to show how to work with Sass in the windows environment. In addition it covers all of the missing information posted in other videos. Great job!﻿',
         'url': 'https://www.youtube.com/watch?v=CV2fdPMdkn0',
         'photo': 'https://yt3.ggpht.com/-5BPTnK87cgE/AAAAAAAAAAI/AAAAAAAAAAA/NKxVPW41-kw/s100-c-k-no-mo-rj-c0xffffff/photo.jpg'
-    },
+    }/*,
     {
         'name': '',
         'quote': '',
         'url': '',
         'photo': ''
     }
+    */
 ];
