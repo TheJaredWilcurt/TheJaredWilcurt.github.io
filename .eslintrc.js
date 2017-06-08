@@ -3,6 +3,9 @@ module.exports = {
         "browser": true,
         "node": true
     },
+    'parserOptions': {
+        'sourceType': 'module'
+    },
     "extends": "eslint:recommended",
     "rules": {
         "comma-dangle":                ["error", "never"],

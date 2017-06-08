@@ -4,7 +4,6 @@
 // Includes - Defining what will be used below.
 // These are pulled in from the node_modules folder.
 var gulp = require('gulp');
-var jshint = require('gulp-jshint');
 var livereload = require('gulp-livereload');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
@@ -12,7 +11,8 @@ var sassLint = require('gulp-sass-lint');
 var uglify = require('gulp-uglify');
 var insert = require('gulp-insert');
 var crlf = require('gulp-line-ending-corrector');
-var concat = require('gulp-concat');
+var rollup = require('rollup-stream');
+var source = require('vinyl-source-stream');
 
 // Basic error logging function to be used below
 function errorLog (error) {
@@ -20,21 +20,20 @@ function errorLog (error) {
     this.emit('end');
 }
 
-gulp.task('concat', function () {
-    gulp.src([
-        './_scripts/quoteData.js',
-        './_scripts/projectData.js',
-        './_scripts/main.js'
-    ])
-        .pipe(concat('all.js'))
-        .pipe(insert.append('\n'))
-        .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))
-        .pipe(gulp.dest('_scripts'));
+// Concats and tree shakes JS into one file
+gulp.task('rollup', function () {
+    return rollup(
+        {
+            entry: './_scripts/main.js',
+            format: 'iife'
+        })
+        .pipe(source('all.js'))
+        .pipe(gulp.dest('./_scripts/'));
 });
 
 // Uglify JS - Targets all .js files in the _js folder and converts
 // them to functionally identical code that uses less bytes in the _scripts folder
-gulp.task('uglify', function () {
+gulp.task('uglify', ['rollup'], function () {
     gulp.src('_scripts/all.js')
         .pipe(uglify())
         .on('error', errorLog)
@@ -63,13 +62,6 @@ gulp.task('sassfont', function () {
         .pipe(livereload());
 });
 
-// Lint the main.js file to ensure code consistency and catch any errors
-gulp.task('lint', function () {
-    return gulp.src('_scripts/main.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-});
-
 gulp.task('sasslint', function () {
     gulp.src(['_sass/*.scss', '_sass/*.sass'])
         .pipe(sassLint())
@@ -96,11 +88,10 @@ gulp.task('html', function () {
         .pipe(livereload());
 });
 
-// Watch for changes in JS, Sass, and HTML files, then Lint,
+// Watch for changes in JS, Sass, and HTML files,
 // Uglify, Process the Sass, and reload the browser automatically
 gulp.task('watch', function () {
-    gulp.watch('_scripts/*.js', ['lint']);
-    gulp.watch('_scripts/*.js', ['concat', 'uglify']);
+    gulp.watch(['_scripts/*.js', '!_scripts/all.js'], ['rollup', 'uglify']);
     gulp.watch('_sass/*', ['sass', 'sassfont']);
     gulp.watch('*.html', ['html']);
 
@@ -124,6 +115,6 @@ gulp.task('open', function () {
 
 // The default Gulp task that happens when you run gulp.
 // It runs all the other gulp tasks above in the correct order.
-gulp.task('default', ['sass', 'sassfont', 'lint', 'concat', 'uglify', 'watch', 'serve', 'open']);
+gulp.task('default', ['sass', 'sassfont', 'rollup', 'uglify', 'watch', 'serve', 'open']);
 
-gulp.task('sans-open', ['sass', 'sassfont', 'lint', 'concat', 'uglify', 'watch', 'serve']);
+gulp.task('sans-open', ['sass', 'sassfont', 'rollup', 'uglify', 'watch', 'serve']);
