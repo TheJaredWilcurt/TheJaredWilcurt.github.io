@@ -39,6 +39,7 @@ gulp.task('uglify', ['rollup'], function () {
         .on('error', errorLog)
         .pipe(insert.append('\n'))
         .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))
+        .pipe(rename('main.min.js'))
         .pipe(gulp.dest('_js'));
 });
 
