@@ -81,9 +81,19 @@ gulp.task('serve', function (done) {
     });
 });
 
+gulp.task('refreshsass', ['sass', 'sassfont'], function () {
+    gulp.src('*.css')
+        .pipe(livereload());
+});
+
+gulp.task('refreshjs', ['uglify'], function () {
+    gulp.src('*.js')
+        .pipe(livereload());
+});
+
 // Enable live reload listening from HTML files in the browser
 // if you have the LiveReload browser extension installed.
-gulp.task('html', function () {
+gulp.task('refreshhtml', function () {
     gulp.src('*.html')
         .pipe(livereload());
 });
@@ -91,9 +101,9 @@ gulp.task('html', function () {
 // Watch for changes in JS, Sass, and HTML files,
 // Uglify, Process the Sass, and reload the browser automatically
 gulp.task('watch', function () {
-    gulp.watch(['_scripts/*.js', '!_scripts/all.js'], ['rollup', 'uglify']);
-    gulp.watch('_sass/*', ['sass', 'sassfont']);
-    gulp.watch('*.html', ['html']);
+    gulp.watch(['_scripts/*.js', '!_scripts/all.js'], ['refreshjs']);
+    gulp.watch('_sass/*', ['refreshsass']);
+    gulp.watch('*.html', ['refreshhtml']);
 
     livereload.listen();
 });

@@ -1,6 +1,8 @@
-import quoteData from './quoteData.js';
 import projectData from './projectData.js';
 import talkData from './talkData.js';
+import quoteData from './quoteData.js';
+import communityData from './communityData.js';
+
 
 var Vue = window.Vue;
 
@@ -47,6 +49,24 @@ var talks = new Vue({
     el: '#talks',
     data: {
         talks: talkData,
+        showDetails: false
+    },
+    computed: {
+        detailsClassToggle: function () {
+            var detailsClass = 'hide-description';
+            if (this.showDetails) {
+                detailsClass = 'show-description';
+            }
+            return detailsClass;
+        }
+    }
+});
+
+// eslint-disable-next-line no-unused-vars
+var community = new Vue({
+    el: '#community',
+    data: {
+        groups: communityData,
         showDetails: false
     },
     computed: {

@@ -155,6 +155,13 @@
       </div>
 
       <div id="community">
+        <h1 class="decorated">Community Involvement</h1>
+        <div class="community" v-for="group in groups">
+          <span>{{ group.name }}</span>
+          <span>{{ group.time }}</span>
+          <span>{{ group.description }}</span>
+          <span>{{ group.role.join(', ') }}</span>
+        </div>
       </div>
 
     </div>
