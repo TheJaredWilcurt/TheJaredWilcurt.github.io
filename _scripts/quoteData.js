@@ -1,4 +1,4 @@
-window.quoteData = [
+var quoteData = [
     {
         'name': 'Gavyn Leavitt',
         'quote': 'Now I can start organizing my CSS in a meaningful way!',
@@ -49,3 +49,5 @@ window.quoteData = [
     }
     */
 ];
+
+export default quoteData;

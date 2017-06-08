@@ -26,6 +26,7 @@
       <nav>
         <a href="#">Projects</a>
         <a href="#">Talks</a>
+        <a href="#">Community</a>
         <a href="https://github.com/TheJaredWilcurt" target="_blank">GitHub</a>
       </nav>
     </header>
@@ -63,16 +64,20 @@
           Completed Projects (since 2015)
         </h1>
         <label class="toggle-description">
-            <input type="checkbox" v-model="showDetails">
-            <span v-if="showDetails">Hide</span>
-            <span v-else>Show</span> project details
+          <input type="checkbox" v-model="showDetails">
+          <span v-if="showDetails">Hide</span>
+          <span v-else>Show</span> project details
         </label>
         <nav>
           <span v-for="type in allProjectTypes">
             <input type="checkbox" :id="type.toLowerCase().replace(/ /, '')"><label :for="type.toLowerCase().replace(/ /, '')">{{type}}</label>
           </span>
         </nav>
-        <div :class="[showDetails ? 'show-description' : 'hide-description', 'project half']" v-for="(project, index) in projects" v-if="!project.major">
+        <div
+          :class="[detailsClassToggle, 'project half']"
+          v-for="(project, index) in projects"
+          v-if="!project.major && project.type.toLowerCase().indexOf('talk') < 0"
+        >
           <img :src="project.img" :alt="project.title" />
           <div>
             <div class="type">
@@ -96,10 +101,48 @@
             </span>
           </div>
         </div>
-
       </div>
 
       <div id="talks">
+        <h1 class="projects-title decorated">
+          Talks
+        </h1>
+
+        <label class="toggle-description">
+            <input type="checkbox" v-model="showDetails">
+            <span v-if="showDetails">Hide</span>
+            <span v-else>Show</span> talks details
+        </label>
+
+        <div
+          :class="[detailsClassToggle, 'project half']"
+          v-for="(talk, index) in talks"
+          v-if="talk.type.toLowerCase().indexOf('talk') > -1"
+        >
+          <img :src="talk.img" :alt="talk.title" />
+          <div>
+            <div class="type">
+              <strong>{{ talk.type }}</strong>
+            </div>
+            <div>
+              <a :href="talk.url" target="_blank">{{ talk.title }}</a> <span v-if="talk.releases">({{ talk.releases }})</span>
+            </div>
+            <span v-if="showDetails">
+              <div class="description">
+                {{ talk.description }}
+              </div>
+              <div class="roles">
+                <strong>Roles:</strong>
+                {{ talks[index].roles.join(', ') }}
+              </div>
+              <div class="technology">
+                <strong>Technology:</strong>
+                {{ talks[index].tech.join(', ') }}
+              </div>
+            </span>
+          </div>
+        </div>
+
       </div>
 
       <div id="quotes">
@@ -109,6 +152,9 @@
           <span class="quote-text">{{ quote.quote }}</span>
           - <a class="quote-name" :href="quote.url" target="_blank">{{ quote.name }}</a>
         </div>
+      </div>
+
+      <div id="community">
       </div>
 
     </div>
