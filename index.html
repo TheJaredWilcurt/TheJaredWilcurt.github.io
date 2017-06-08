@@ -156,15 +156,20 @@
 
       <div id="community">
         <h1 class="decorated">Community Involvement</h1>
-        <div class="community" v-for="group in groups">
-          <span>{{ group.name }}</span>
-          <span>{{ group.time }}</span>
-          <span>{{ group.description }}</span>
-          <span>{{ group.role.join(', ') }}</span>
-        </div>
+        <ul class="community">
+          <li v-for="group in groups">
+            <strong>{{ group.name }}</strong> ({{ group.time }})
+            <ul>
+              <li><strong>Description:</strong> {{ group.description || '(coming soon)' }}</li>
+              <li><strong>Role:</strong> {{ group.role.join(', ') }}</li>
+            </ul>
+          </li>
+        </ul>
       </div>
 
     </div>
+
+    <footer></footer>
 
     <script type="text/javascript" src="_js/all.js"></script>
     <!-- <script type="text/javascript" src="_scripts/all.js"></script> -->
