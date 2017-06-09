@@ -128,8 +128,7 @@
               <a :href="talk.url" target="_blank">{{ talk.title }}</a> <span v-if="talk.releases">({{ talk.releases }})</span>
             </div>
             <span v-if="showDetails">
-              <div class="description">
-                {{ talk.description }}
+              <div class="description" v-html="talk.description">
               </div>
               <div class="roles">
                 <strong>Roles:</strong>
@@ -156,14 +155,23 @@
 
       <div id="community">
         <h1 class="decorated">Community Involvement</h1>
+
+        <label class="toggle-description">
+            <input type="checkbox" v-model="showDetails">
+            <span v-if="showDetails">Hide</span>
+            <span v-else>Show</span> community details
+        </label>
+
         <ul class="community">
-          <li v-for="group in groups">
-            <strong>{{ group.name }}</strong> ({{ group.time }})
-            <ul>
-              <li><strong>Description:</strong> {{ group.description || '(coming soon)' }}</li>
-              <li><strong>Role:</strong> {{ group.role.join(', ') }}</li>
-            </ul>
-          </li>
+          <div class="half" v-for="group in groups">
+            <li>
+              <strong>{{ group.name }}</strong> ({{ group.time }})
+              <ul>
+                <li v-if="showDetails"><strong>Description:</strong> {{ group.description || '(coming soon)' }}</li>
+                <li><strong>Role:</strong> {{ group.role.join(', ') }}</li>
+              </ul>
+            </li>
+          </div>
         </ul>
       </div>
 
