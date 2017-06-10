@@ -17,11 +17,27 @@ var quotes = new Vue({
 // eslint-disable-next-line no-unused-vars
 var projects = new Vue({
     el: '#projects',
-    data: {
-        projects: projectData,
-        showDetails: false
+    data: function () {
+        var allTypes = {};
+        projectData.forEach(function (project) {
+            if (typeof(project.type) === 'string') {
+                allTypes[project.type] = true;
+            }
+        });
+
+        return {
+            projects: projectData,
+            typesChecked: allTypes,
+            showDetails: false
+        };
     },
     computed: {
+        filteredProjects: function () {
+            var self = this;
+            return this.projects.filter(function (project) {
+                return self.typesChecked[project.type];
+            });
+        },
         allProjectTypes: function () {
             var allTypes = [];
             this.projects.forEach(function (project) {

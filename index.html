@@ -70,12 +70,13 @@
         </label>
         <nav>
           <span v-for="type in allProjectTypes">
-            <input type="checkbox" :id="type.toLowerCase().replace(/ /, '')"><label :for="type.toLowerCase().replace(/ /, '')">{{type}}</label>
+            <input type="checkbox" v-model="typesChecked[type]" :id="type.toLowerCase().replace(/ /, '')">
+            <label :for="type.toLowerCase().replace(/ /, '')">{{type}}</label>
           </span>
         </nav>
         <div
           :class="[detailsClassToggle, 'project half']"
-          v-for="(project, index) in projects"
+          v-for="(project, index) in filteredProjects"
           v-if="!project.major && project.type.toLowerCase().indexOf('talk') < 0"
         >
           <img :src="project.img" :alt="project.title" />
