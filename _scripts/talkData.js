@@ -53,7 +53,9 @@ var talkData = [
             'Design'
         ],
         'tech': [
-
+            'Google Slides',
+            'Chrome Developer Tools',
+            'JSFiddle'
         ]
     },
     {

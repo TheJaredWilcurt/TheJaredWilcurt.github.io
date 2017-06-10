@@ -95,7 +95,7 @@
                 <strong>Roles:</strong>
                 {{ projects[index].roles.join(', ') }}
               </div>
-              <div class="technology">
+              <div class="technology" v-if="projects[index].tech.length > 0">
                 <strong>Technology:</strong>
                 {{ projects[index].tech.join(', ') }}
               </div>
@@ -135,7 +135,7 @@
                 <strong>Roles:</strong>
                 {{ talks[index].roles.join(', ') }}
               </div>
-              <div class="technology">
+              <div class="technology" v-if="talks[index].tech.length > 0">
                 <strong>Technology:</strong>
                 {{ talks[index].tech.join(', ') }}
               </div>

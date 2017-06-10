@@ -4,3 +4,4 @@
 node_modules/*
 thumbs.db
 _scripts/all.js
+npm-debug.*
