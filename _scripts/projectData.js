@@ -16,7 +16,7 @@
     jQuery
     Node
     Vue
-    Vanilla
+    VanillaJS
     Gulp
     Chokidar
     Bower
@@ -48,7 +48,7 @@ var projectData = [
         'title': 'Scout-App',
         'type': 'Project',
         'url': 'https://github.com/scout-app/scout-app',
-        'description': 'Cross-Platform Desktop App. Processes Sass into CSS. Translated to 17 languages. Downloaded 300,000+ times.',
+        'description': 'Cross-Platform Desktop App. Watches for file changes and processes Sass into CSS. Translated to 17 languages. Downloaded 300,000+ times. Handle multiple projects simultaneously. Ships with 20 themes. No version has been released with a known bug.',
         'img': '_imgs/scout-app.png',
         'releases': '5 major releases',
         'major': true,
@@ -145,7 +145,7 @@ var projectData = [
         'title': 'UGUI: FLIF',
         'type': 'Project',
         'url': 'http://flif.info/UGUI_FLIF',
-        'description': 'A simple drag and drop tool for converting to and from FLIF image files.',
+        'description': 'A simple drag and drop tool for converting to and from FLIF image files. The first ever FLIF GUI.',
         'img': '_imgs/flif.png',
         'releases': '4 major release, 1 upcoming',
         'roles': [
@@ -185,7 +185,8 @@ var projectData = [
             'Specificity',
             'CSS-Selectors-To-JS-Array',
             'Sass',
-            'jQuery'
+            'jQuery',
+            'GitHub Pages'
         ]
     },
     {
@@ -215,14 +216,21 @@ var projectData = [
         'title': 'UGUI: Git Branch Deleter',
         'type': 'Project',
         'url': 'https://thejaredwilcurt.github.io/UGUI-Git-Branch-Deleter',
-        'description': 'This is a tool to easily check the status of tickets in Jira/GUS/Github, before easily deleting their local associated Git branch.',
+        'description': 'This is a tool to easily check the status of tickets in Jira/GUS/Github, before easily deleting their local associated Git branch. After each major release at work, I use this to remove all local branches from 2 releases ago.',
         'img': '_imgs/git-branch-deleter.png',
         'releases': '5 releases',
         'roles': [
             'Developer'
         ],
         'tech': [
-
+            'NW.js',
+            'UGUI',
+            'Git',
+            'Bootstrap',
+            'Sass',
+            'jQuery',
+            'Node',
+            'Bootswatch'
         ]
     },
     {
@@ -237,7 +245,8 @@ var projectData = [
             'Branding'
         ],
         'tech': [
-
+            'VanillaJS',
+            'GitHub Pages'
         ]
     },
     {
@@ -252,7 +261,10 @@ var projectData = [
             'Quality Engineer'
         ],
         'tech': [
-
+            'Microsoft Visual Studio 2013 Professional',
+            'Microsoft Visual Studio 2015 Community',
+            'Oracle VM Virtual Box',
+            'VMWare Worstation'
         ]
     },
     {
@@ -267,7 +279,10 @@ var projectData = [
             'Branding'
         ],
         'tech': [
-
+            'Scout-App',
+            'GitHub Pages',
+            'Sass',
+            'Illustrator'
         ]
     },
     {
@@ -283,7 +298,11 @@ var projectData = [
             'Mentor'
         ],
         'tech': [
-
+            'HTML5 Boiler Plate',
+            'NPM-Free-Server',
+            'Bootstrap',
+            'jQuery',
+            'GitHub Pages'
         ]
     },
     {
@@ -300,7 +319,7 @@ var projectData = [
             'Mentor'
         ],
         'tech': [
-
+            'Balsamiq'
         ]
     },
     {
@@ -315,7 +334,7 @@ var projectData = [
             'Documentation'
         ],
         'tech': [
-
+            'VanillaJS'
         ]
     },
     {
