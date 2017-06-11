@@ -108,7 +108,7 @@
         <nav>
           <span v-for="type in allProjectTypes">
             <input type="checkbox" v-model="typesChecked[type]" :id="type.toLowerCase().replace(/ /, '')">
-            <label :for="type.toLowerCase().replace(/ /, '')">{{type}}</label>
+            <label :for="type.toLowerCase().replace(/ /, '')">{{type}} <span class="badge">{{typesCount[type]}}</span></label>
           </span>
         </nav>
         <div
@@ -130,11 +130,11 @@
               </div>
               <div class="roles">
                 <strong>Roles:</strong>
-                {{ projects[index].roles.join(', ') }}
+                {{ filteredProjects[index].roles.join(', ') }}
               </div>
-              <div class="technology" v-if="projects[index].tech.length > 0">
+              <div class="technology" v-if="filteredProjects[index].tech.length > 0">
                 <strong>Technology:</strong>
-                {{ projects[index].tech.join(', ') }}
+                {{ filteredProjects[index].tech.join(', ') }}
               </div>
             </span>
           </div>

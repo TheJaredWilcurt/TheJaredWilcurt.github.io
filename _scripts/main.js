@@ -56,6 +56,13 @@ var projects = new Vue({
                 detailsClass = 'show-description';
             }
             return detailsClass;
+        },
+        typesCount: function () {
+            var typeCounts = {};
+            this.projects.forEach(function (project) {
+                typeCounts[project.type] = typeCounts[project.type] + 1 || 1;
+            });
+            return typeCounts;
         }
     }
 });
