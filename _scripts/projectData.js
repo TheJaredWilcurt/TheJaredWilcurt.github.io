@@ -471,7 +471,7 @@ var projectData = [
             'Gulp',
             'Marked',
             'Docco',
-            'HighlightJS
+            'HighlightJS'
         ]
     },
     {
