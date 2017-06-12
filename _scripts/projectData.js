@@ -319,7 +319,9 @@ var projectData = [
             'Mentor'
         ],
         'tech': [
-            'Balsamiq'
+            'Balsamiq',
+            'Whiteboards',
+            'Trello'
         ]
     },
     {
@@ -347,7 +349,8 @@ var projectData = [
             'Developer'
         ],
         'tech': [
-
+            'NW.js',
+            'jQuery'
         ]
     },
     {
@@ -362,7 +365,7 @@ var projectData = [
             'Support'
         ],
         'tech': [
-
+            'VanillaJS'
         ]
     },
     {
@@ -375,7 +378,7 @@ var projectData = [
             'Developer'
         ],
         'tech': [
-
+            'GitHub Pages'
         ]
     },
     {
@@ -390,7 +393,7 @@ var projectData = [
             'Documentation'
         ],
         'tech': [
-
+            'Node'
         ]
     },
     {
@@ -404,7 +407,17 @@ var projectData = [
             'Design'
         ],
         'tech': [
-
+            'Adobe Photoshop',
+            'Adobe Flash Professional',
+            'Adobe AfterFX',
+            'Adobe Illustrator',
+            'TruePNG',
+            'Png Optimizer',
+            'PNGOUT Win',
+            'PNG Gauntlet',
+            'defluff',
+            'zopfliPng',
+            'deflOpt'
         ]
     },
     {
@@ -418,7 +431,17 @@ var projectData = [
             'Documentation'
         ],
         'tech': [
-
+        /*
+            'Bootstrap',
+            'Sass',
+            'jQuery',
+            'Node',
+            'VanillaJS',
+            'Gulp',
+            'Bower',
+            'ESLint',
+            'SassLint'
+        */
         ]
     },
     {
@@ -432,7 +455,15 @@ var projectData = [
             'UX'
         ],
         'tech': [
-
+        /*
+            'Bootstrap',
+            'Sass',
+            'jQuery',
+            'VanillaJS',
+            'Gulp',
+            'ESLint',
+            'SassLint'
+        */
         ]
     },
     {
@@ -451,7 +482,20 @@ var projectData = [
             'Mentor'
         ],
         'tech': [
-
+        /*
+            'Bootstrap',
+            'Sass',
+            'jQuery',
+            'Node',
+            'Vue',
+            'VanillaJS',
+            'Gulp',
+            'Chokidar',
+            'Bower',
+            'FS-Extra',
+            'ESLint',
+            'SassLint'
+        */
         ]
     },
     {
@@ -472,7 +516,17 @@ var projectData = [
             'Quality Engineer'
         ],
         'tech': [
-
+        /*
+            'Sass',
+            'jQuery',
+            'Node',
+            'Vue',
+            'VanillaJS',
+            'Gulp',
+            'FS-Extra',
+            'ESLint',
+            'SassLint'
+        */
         ]
     },
     {
@@ -490,7 +544,18 @@ var projectData = [
             'Support'
         ],
         'tech': [
-
+        /*
+            'Bootstrap',
+            'Sass',
+            'jQuery',
+            'Node',
+            'VanillaJS',
+            'Gulp',
+            'Bower',
+            'FS-Extra',
+            'ESLint',
+            'SassLint'
+        */
         ]
     },
     {
@@ -506,7 +571,18 @@ var projectData = [
             'Documentation'
         ],
         'tech': [
-
+        /*
+            'Bootstrap',
+            'Sass',
+            'jQuery',
+            'Node',
+            'VanillaJS',
+            'Gulp',
+            'Bower',
+            'FS-Extra',
+            'ESLint',
+            'SassLint'
+        */
         ]
     },
     {
@@ -521,7 +597,15 @@ var projectData = [
             'Documentation'
         ],
         'tech': [
-
+        /*
+            'Sass',
+            'Node',
+            'Vue',
+            'VanillaJS',
+            'Gulp',
+            'ESLint',
+            'SassLint'
+        */
         ]
     }
 ];
