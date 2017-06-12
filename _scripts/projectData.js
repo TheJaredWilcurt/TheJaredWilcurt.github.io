@@ -431,17 +431,8 @@ var projectData = [
             'Documentation'
         ],
         'tech': [
-        /*
-            'Bootstrap',
-            'Sass',
-            'jQuery',
-            'Node',
             'VanillaJS',
-            'Gulp',
-            'Bower',
-            'ESLint',
-            'SassLint'
-        */
+            'jQuery'
         ]
     },
     {
@@ -455,15 +446,8 @@ var projectData = [
             'UX'
         ],
         'tech': [
-        /*
-            'Bootstrap',
-            'Sass',
             'jQuery',
-            'VanillaJS',
-            'Gulp',
-            'ESLint',
-            'SassLint'
-        */
+            'jsFiddle'
         ]
     },
     {
@@ -482,20 +466,12 @@ var projectData = [
             'Mentor'
         ],
         'tech': [
-        /*
-            'Bootstrap',
             'Sass',
             'jQuery',
-            'Node',
-            'Vue',
-            'VanillaJS',
             'Gulp',
-            'Chokidar',
-            'Bower',
-            'FS-Extra',
-            'ESLint',
-            'SassLint'
-        */
+            'Marked',
+            'Docco',
+            'HighlightJS
         ]
     },
     {
