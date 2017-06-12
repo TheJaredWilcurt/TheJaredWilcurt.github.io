@@ -12,7 +12,8 @@
     font-size: 20px
     vertical-align: top
     div
-        margin: 0px 0px 0px 10px
+        width: 100%
+        margin: 0px 10px 0px 10px
     img
         max-height: 100px
         float: left
@@ -35,8 +36,14 @@
 .hide-description
     min-height: 125px
 
+.no-projects-found
+    margin: 68px 0px 111px 0px
+    font-weight: bold
+    text-align: center
+
 #projects
     nav
+        margin-bottom: 10px
         span
             display: inline-block
             &:first-of-type label
@@ -59,3 +66,4 @@
             background: rgba($primary, 0.1)
             border: 1px solid $primary
             padding: 6px 11px
+            cursor: pointer

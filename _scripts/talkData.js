@@ -75,7 +75,8 @@ var talkData = [
             'Grunt',
             'Gulp',
             'Sass',
-            'Vanilla'
+            'Vanilla',
+            'GitLab'
         ]
     },
     {
@@ -89,7 +90,9 @@ var talkData = [
             'Developer'
         ],
         'tech': [
-
+            'NW.js',
+            'UGUI',
+            'Adobe Illutrator'
         ]
     },
     {
@@ -102,6 +105,7 @@ var talkData = [
             'Presenter'
         ],
         'tech': [
+            'Google Slides'
         ]
     },
     {
@@ -122,12 +126,13 @@ var talkData = [
         'title': 'Cross-Platform: NW.js',
         'type': 'Meetup Talk',
         'url': '#',
-        'description': 'A lightning talk at <strong>Software Artisans</strong>. The topic for the night was "Cross-Platform". I gave a short introduction to NW.js and took questions around best practices and limitations of the technology.',
+        'description': 'A lightning talk at <strong>Indy Software Artisans</strong>. The topic for the night was "Cross-Platform". I gave a short introduction to NW.js and took questions around best practices and limitations of the technology.',
         'img': '_imgs/meetup.png',
         'roles': [
             'Presenter'
         ],
         'tech': [
+            'NW.js'
         ]
     },
     {
@@ -140,6 +145,7 @@ var talkData = [
             'Presenter'
         ],
         'tech': [
+            'NW.js'
         ]
     },
     {
@@ -152,6 +158,7 @@ var talkData = [
             'Presenter'
         ],
         'tech': [
+            'Google Slides'
         ]
     }/*,
     {

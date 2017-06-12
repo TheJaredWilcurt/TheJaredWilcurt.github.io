@@ -112,19 +112,19 @@
           </span>
         </nav>
         <div
-          :class="[detailsClassToggle, 'project half']"
+          :class="[detailsClassToggle(project), 'project half']"
           v-for="(project, index) in filteredProjects"
           v-if="!project.major && project.type.toLowerCase().indexOf('talk') < 0"
         >
-          <img :src="project.img" :alt="project.title" />
-          <div>
+          <img :src="project.img" :alt="project.title" @click="toggleCurrentDetails(project)" />
+          <div @click="toggleCurrentDetails(project)">
             <div class="type">
               <strong>{{ project.type }}</strong>
             </div>
             <div>
               <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.releases">({{ project.releases }})</span>
             </div>
-            <span v-if="showDetails">
+            <span v-if="showDetails || project.showDetails">
               <div class="description">
                 {{ project.description }}
               </div>
@@ -138,6 +138,9 @@
               </div>
             </span>
           </div>
+        </div>
+        <div v-if="filteredProjects.length < 1">
+          <p class="no-projects-found">No projects match criteria.</p>
         </div>
       </div>
 
@@ -157,15 +160,15 @@
           v-for="(talk, index) in talks"
           v-if="talk.type.toLowerCase().indexOf('talk') > -1"
         >
-          <img :src="talk.img" :alt="talk.title" />
-          <div>
+          <img :src="talk.img" :alt="talk.title" @click="toggleCurrentDetails(talk)" />
+          <div @click="toggleCurrentDetails(talk)">
             <div class="type">
               <strong>{{ talk.type }}</strong>
             </div>
             <div>
               <a :href="talk.url" target="_blank">{{ talk.title }}</a> <span v-if="talk.releases">({{ talk.releases }})</span>
             </div>
-            <span v-if="showDetails">
+            <span v-if="showDetails || talk.showDetails">
               <div class="description" v-html="talk.description">
               </div>
               <div class="roles">

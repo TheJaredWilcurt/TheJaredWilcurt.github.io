@@ -31,13 +31,24 @@ var projects = new Vue({
             showDetails: false
         };
     },
-    computed: {
-        filteredProjects: function () {
-            var self = this;
-            return this.projects.filter(function (project) {
-                return self.typesChecked[project.type];
-            });
+    created: function () {
+        this.projects.forEach(function (project) {
+            Vue.set(project, 'showDetails', false);
+        });
+    },
+    methods: {
+        detailsClassToggle: function (project) {
+            var detailsClass = 'hide-description';
+            if (this.showDetails || project.showDetails) {
+                detailsClass = 'show-description';
+            }
+            return detailsClass;
         },
+        toggleCurrentDetails: function (project) {
+            project.showDetails = !project.showDetails;
+        }
+    },
+    computed: {
         allProjectTypes: function () {
             var allTypes = [];
             this.projects.forEach(function (project) {
@@ -46,16 +57,15 @@ var projects = new Vue({
                 }
             });
             var uniqueArray = allTypes.filter(function (item, pos) {
-                return allTypes.indexOf(item) == pos;
+                return allTypes.indexOf(item) === pos;
             });
             return uniqueArray;
         },
-        detailsClassToggle: function () {
-            var detailsClass = 'hide-description';
-            if (this.showDetails) {
-                detailsClass = 'show-description';
-            }
-            return detailsClass;
+        filteredProjects: function () {
+            var self = this;
+            return this.projects.filter(function (project) {
+                return self.typesChecked[project.type];
+            });
         },
         typesCount: function () {
             var typeCounts = {};
@@ -74,7 +84,15 @@ var talks = new Vue({
         talks: talkData,
         showDetails: false
     },
-    computed: {
+    created: function () {
+        this.talks.forEach(function (talk) {
+            Vue.set(talk, 'showDetails', false);
+        });
+    },
+    methods: {
+        toggleCurrentDetails: function (talk) {
+            talk.showDetails = !talk.showDetails;
+        },
         detailsClassToggle: function () {
             var detailsClass = 'hide-description';
             if (this.showDetails) {
