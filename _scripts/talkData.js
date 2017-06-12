@@ -122,7 +122,7 @@ var talkData = [
         'title': 'Cross-Platform: NW.js',
         'type': 'Meetup Talk',
         'url': '#',
-        'description': 'A lightning talk at <strong>Software Artisans</strong>. The topic for the night was "Cross-Platform". My',
+        'description': 'A lightning talk at <strong>Software Artisans</strong>. The topic for the night was "Cross-Platform". I gave a short introduction to NW.js and took questions around best practices and limitations of the technology.',
         'img': '_imgs/meetup.png',
         'roles': [
             'Presenter'
@@ -134,7 +134,7 @@ var talkData = [
         'title': 'Desktop Apps made with Node',
         'type': 'Meetup Talk',
         'url': '#',
-        'description': 'A 15 minute lightning talk at <strong>Node.js Indy</strong>.',
+        'description': 'A 15 minute lightning talk at <strong>Node.js Indy</strong>. In this talk I walked the audience through creating a "Hello World" desktop app followed by exploring some of the NW.js API and answering questions.',
         'img': '_imgs/meetup.png',
         'roles': [
             'Presenter'
@@ -146,7 +146,7 @@ var talkData = [
         'title': 'A Deeper Understanding of CSS',
         'type': 'Meetup Talk',
         'url': '#',
-        'description': '<strong>IUPUI Computer Club</strong>',
+        'description': 'I was approached by a Computer Science student from IUPUI at a Free Code Camp Indy meetup. I had recently given a conference talk on CSS and he thought his fellow students would be interested in it. The talk was given to the <strong>IUPUI Computer Club</strong>, and was followed by a Q & A.',
         'img': '_imgs/meetup.png',
         'roles': [
             'Presenter'
