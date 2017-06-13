@@ -62,7 +62,7 @@ var talkData = [
         'title': 'Web Dev Tooling',
         'type': 'Meetup Talk',
         'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/236980468',
-        'description': 'Myself and Gwen Faraday run the local <strong>Free Code Camp</strong> group. Development tooling was a highly requested topic. So we teamed up to give a presentation. I covered JavaScript, Node, NPM, Bower, Grunt, and Gulp. She covered Browserify, Rollup, and Webpack.',
+        'description': 'Gwen Faraday and I run the local <strong>Free Code Camp</strong> group. Development tooling was a highly requested topic. So we teamed up to give a presentation. I covered JavaScript, Node, NPM, Bower, Grunt, and Gulp. She covered Browserify, Rollup, and Webpack.',
         'img': '_imgs/meetup.png',
         'roles': [
             'Presenter'
@@ -83,7 +83,7 @@ var talkData = [
         'title': 'Making a desktop app, in under an hour',
         'type': 'Meetup Talk',
         'url': 'https://www.meetup.com/indyjs/events/237046138',
-        'description': 'This was a talk I gave for the largest JavaScript meetup group in Indianapolis, <strong>Indy.js</strong>. It was a live coding presentation in which I walked the group though a basic "Hello World" example, followed by taking questiongs while building a real world example based on UGUI: Wifi (a project previously created in under an hour).',
+        'description': 'This was a talk I gave for the largest JavaScript meetup group in Indianapolis, <strong>Indy.js</strong>. It was a live coding presentation in which I walked the group though a basic "Hello World" example, followed by taking questions while building a real world example based on UGUI: WiFi (a project previously created in under an hour).',
         'img': '_imgs/meetup.png',
         'roles': [
             'Presenter',
@@ -92,7 +92,7 @@ var talkData = [
         'tech': [
             'NW.js',
             'UGUI',
-            'Adobe Illutrator'
+            'Adobe Illustrator'
         ]
     },
     {
@@ -165,7 +165,7 @@ var talkData = [
         'title': 'Comprehensive Pen Tool Tutorial',
         'type': 'YouTube',
         'url': 'https://www.youtube.com/watch?v=2u7ijgxFOHc',
-        'description': 'This is an intro to the basics of Illustrator and everything there is to know about the Pen tool. Though for Illustrator, much of it is transferrable to Photoshop and other Adobe software that has the pen tool built in as well. It covers all 4 iterations of the Pen Tool, the Select Tool (black arrow), and the Direct Select Tool (white arrow). It also covers every usage of these 6 tools on Anchor Points, Handles, and Segments, along with every modifier key (Ctrl, Alt, Shift). This video has made YouTube history by having no negative comments; something previously theorized to be possible, but had never been successfully proven.',
+        'description': 'This is an intro to the basics of Illustrator and everything there is to know about the Pen tool. Though for Illustrator, much of it is transferrable to Photoshop and other Adobe software that has the pen tool built in as well. It covers all 4 iterations of the Pen Tool, the Select Tool (black arrow), and the Direct Select Tool (white arrow). It also covers every usage of these 6 tools on Anchor Points, Handles, and Segments, along with every modifier key (Ctrl, Alt, and Shift). This video has made YouTube history by having no negative comments; something previously theorized to be possible, but had never been successfully proven.',
         'img': '_imgs/yt.png',
         'roles': [
             'Presenter'

@@ -217,7 +217,7 @@ var projectData = [
         'title': 'UGUI: WiFi',
         'type': 'Project',
         'url': 'https://github.com/TheJaredWilcurt/UGUI-Wifi',
-        'description': 'Displays a list of wifi networks (access points) that are within range and allows you to connect directly to them. This was originally created in under an hour to help someone in the NW.js chatroom. Later on, it was re-built for my talk "Building a desktop app in under an hour".',
+        'description': 'Displays a list of Wi-Fi networks (access points) that are within range and allows you to connect directly to them. This was originally created in under an hour to help someone in the NW.js chatroom. Later on, it was re-built live for my talk "Building a desktop app in under an hour".',
         'img': '_imgs/ugui-wifi.png',
         'releases': '1 release',
         'roles': [
@@ -240,7 +240,7 @@ var projectData = [
         'title': 'UGUI: Git Branch Deleter',
         'type': 'Project',
         'url': 'https://thejaredwilcurt.github.io/UGUI-Git-Branch-Deleter',
-        'description': 'This is a tool to easily check the status of tickets in Jira/GUS/Github, before easily deleting their local associated Git branch. After each major release at work, I use this to remove all local branches from 2 releases ago.',
+        'description': 'This is a tool to easily check the status of tickets in Jira/GUS/GitHub Enterprise, before easily deleting their local associated Git branch. After each major release at work, I use this to remove all local branches from 2 releases ago.',
         'img': '_imgs/git-branch-deleter.png',
         'releases': '5 releases',
         'roles': [
@@ -288,7 +288,7 @@ var projectData = [
             'Microsoft Visual Studio 2013 Professional',
             'Microsoft Visual Studio 2015 Community',
             'Oracle VM Virtual Box',
-            'VMWare Worstation'
+            'VMWare Workstation'
         ]
     },
     {
@@ -313,7 +313,7 @@ var projectData = [
         'title': 'FCC-JACK',
         'type': 'Hack-a-thon',
         'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/234330061',
-        'description': 'A 3 hour project made during a Free Code Camp Indy mini-hackaton. I worked with a team of 3 others and helped mentor and explain coding concepts while working on a short project.',
+        'description': 'A 3 hour project made during a Free Code Camp Indy mini-hackathon. I worked with a team of 3 others and helped mentor and explain coding concepts while working on a short project.',
         'img': '_imgs/meetup.png',
         'roles': [
             'Developer',
@@ -333,7 +333,7 @@ var projectData = [
         'title': 'amEco',
         'type': 'Hack-a-thon',
         'url': 'https://playameco.github.io',
-        'description': 'amEco was the result of a 3 Day long hackathon for "Greater Lafayette Startup Weekend 2016". I helped to organize and play the role of a project manager, ensuring tasks were scoped to MVP and that no one was waiting on anyone else to continue. The idea behind amEco was to gamify recycling and other environmentally conscious habbits. The team came in second place.',
+        'description': 'amEco was the result of a 3 Day long hackathon for "Greater Lafayette Startup Weekend 2016". I helped to organize and play the role of a project manager, ensuring tasks were scoped to MVP and that no one was waiting on anyone else to continue. The idea behind amEco was to gamify recycling and other environmentally conscious habits. The team came in second place.',
         'img': '_imgs/ameco.png',
         'roles': [
             'Product Owner',
@@ -378,10 +378,10 @@ var projectData = [
         ]
     },
     {
-        'title': 'Dropzone (bug fix)',
+        'title': 'Dropzone.js (bug fix)',
         'type': 'Contribution',
         'url': 'https://github.com/enyo/dropzone/pull/1226',
-        'description': 'I detected a bug in our app at work and tracked it down to the Dropzone library. After investigating further, and discussing it on their issues board, I created a pull request to solve the problem.',
+        'description': 'I detected a bug in our app at work and tracked it down to the Dropzone.js library. After investigating further, and discussing it on their issues board, I created a pull request to solve the problem.',
         'img': '_imgs/dropzone.png',
         'roles': [
             'Developer',
@@ -409,7 +409,7 @@ var projectData = [
         'title': 'NPM-Free-Server',
         'type': 'Library',
         'url': 'https://github.com/TheJaredWilcurt/NPM-Free-Server',
-        'description': 'A very small (both in filesize and lines of code) webserver written in vanilla Node, so it can be ran as a standalone file without the need to install any dependencies.',
+        'description': 'A very small (both in file size and lines of code) webserver written in vanilla Node, so it can be ran as a standalone file without the need to install any dependencies.',
         'img': '_imgs/repo.svg',
         'releases': '1 release',
         'roles': [
@@ -433,7 +433,7 @@ var projectData = [
         'tech': [
             'Adobe Photoshop',
             'Adobe Flash Professional',
-            'Adobe AfterFX',
+            'Adobe After Effects',
             'Adobe Illustrator',
             'TruePNG',
             'Png Optimizer',
@@ -471,7 +471,7 @@ var projectData = [
         ],
         'tech': [
             'jQuery',
-            'jsFiddle'
+            'JSFiddle'
         ]
     },
     {
@@ -495,7 +495,7 @@ var projectData = [
             'Gulp',
             'Marked',
             'Docco',
-            'HighlightJS'
+            'Highlight.JS'
         ]
     },
     {
@@ -529,7 +529,7 @@ var projectData = [
         'title': 'Scout-App Classic Port',
         'type': 'Project',
         'url': 'http://scout-app.io/mhs-site-fork/',
-        'description': 'The original website for the 2012 version of Scout-App. Retained most of the original code and design. Updated some code and optimized images. Moved branch to its own repo to be accessible on the new Scout-App website under Scout-App.io/classic.',
+        'description': 'The original 2012 version of Scout-App was very successful and has been linked to from many websites. Since the new version is now at a more appropriate URL, there were 2 primary goals of this project. Firstly to preserve the original website for the 2012 version as best we could in code and design. However I did updated some code and better optimize images. The living archive of the 2012 site was moved to its own repo to be accessible on the new Scout-App website under Scout-App.io/classic. The original URL had a new page created to offer visitors looking for Scout-App the original 2012 or new 2017 versions.',
         'img': '_imgs/scout-classic.png',
         'roles': [
             'Developer',
@@ -549,7 +549,7 @@ var projectData = [
         'title': 'Simple-Donut jQuery',
         'type': 'Project',
         'url': 'https://github.com/simple-donut/simple-donut-jquery',
-        'description': '"Simple-Donut" is a project I started, in which the same donut chart is recreated in multiple frontend libraries/frameworks. Although it can be used like ToDoMVC, as a means of comparing the frameworks, its primary purpose is as a usable component that can be added to existing projects. This version was written taking advantage of jQuery.',
+        'description': '"Simple-Donut" is a project I started, in which the same donut chart is recreated in multiple frontend libraries/frameworks. Although it can be used like TodoMVC, as a means of comparing the frameworks, its primary purpose is as a usable component that can be added to existing projects. This version was written taking advantage of jQuery.',
         'img': '_imgs/simple-donut.png',
         'releases': '1 release',
         'roles': [
@@ -566,7 +566,7 @@ var projectData = [
         'title': 'Simple-Donut Vue',
         'type': 'Project',
         'url': 'https://github.com/simple-donut/simple-donut-vue',
-        'description': 'This version of the Simple-Donut was built using the Vue.js framework, which is awesome.',
+        'description': 'This version of the Simple-Donut was built using the Vue.js framework, which is awesome. It can easily be adapted to existing Vue.js projects in need of a simple donut UI element.',
         'img': '_imgs/simple-donut.png',
         'releases': '1 release',
         'roles': [

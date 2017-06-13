@@ -13,7 +13,7 @@ var communityData = [
     },
     {
         'name': 'Free Code Camp Indy',
-        'description': 'This is a local, public Meetup group that focuses on extended learning outside of the FreeCodeCamp.com curriculum. We hold hackathons, monthly talks, and code \'n coffee meet ups. Myself and Gwen Faraday run the Indianapolis group. I\'ve given several talks on the group\'s most requested material (Node, NPM, Bower, Grunt/Gulp, Sass/CSS).',
+        'description': 'This is a local, public Meetup group that focuses on extended learning outside of the FreeCodeCamp.com curriculum. We hold hackathons, monthly talks, and code \'n coffee meet ups. Gwen Faraday and I run the Indianapolis group. I\'ve given several talks on the group\'s most requested material (Node, NPM, Bower, Grunt/Gulp, Sass/CSS).',
         'role': [
             'Organizer',
             'Member',
@@ -24,7 +24,7 @@ var communityData = [
     },
     {
         'name': 'Civic UX Group',
-        'description': 'This group was created as part of the Open Indy Brigade and has it\'s longest running group. I currently run this group which focuses on solving Civic issues with UX skills from group of dedicated volunteers. Our most successful project is Koa11y, a desktop app created to lower the technical barrier of entry for finding accessibility issues on the web. We\'ve also worked with IN.gov and various food assistance programs in central Indiana.',
+        'description': 'This group was created as part of the Open Indy Brigade and is its longest running group. I currently run this group which focuses on solving Civic issues with UX skills from group of dedicated volunteers. Our most successful project is Koa11y, a desktop app created to lower the technical barrier of entry for finding accessibility issues on the web. We\'ve also worked with IN.gov and various food assistance programs in central Indiana.',
         'role': [
             'Organizer',
             'Mentor'

@@ -31,7 +31,7 @@ var quoteData = [
     },
     {
         'name': 'mrcommentsandstuffz',
-        'quote': 'After self teaching Illustrator for the last couple of years, coming across this has been great! This is by far THE BEST Pen Tool tutorial out there! Great work Jared!﻿',
+        'quote': 'After self-teaching Illustrator for the last couple of years, coming across this has been great! This is by far THE BEST Pen Tool tutorial out there! Great work Jared!﻿',
         'url': 'https://www.youtube.com/watch?v=2u7ijgxFOHc',
         'photo': 'https://yt3.ggpht.com/-TqlxHgbPjhg/AAAAAAAAAAI/AAAAAAAAAAA/JyWYNRR0dYU/s100-c-k-no-mo-rj-c0xffffff/photo.jpg'
     },
