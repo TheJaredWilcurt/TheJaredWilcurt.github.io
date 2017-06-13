@@ -109,7 +109,7 @@ var projectData = [
     {
         'title': 'Koa11y',
         'type': 'Project',
-        'url': 'http://thejaredwilcurt.github.io/Koa11y',
+        'url': 'https://github.com/open-indy/Koa11y',
         'description': 'Easily check a webpage for accessibility (a11y) issues. This is a cross-platform desktop app that spins up a headless browser, navigates to the desired URL, scans it for a11y issues based on your chosen guideline (WCAG2 (A/AA/AAA), Section 508), then outputs a report in your desired format (HTML, JSON, Markdown, XML, CSV).',
         'img': '_imgs/koa11y.png',
         'releases': '1 major release',
@@ -139,6 +139,30 @@ var projectData = [
             'Bootstrap',
             'Bootswatch',
             'JSON-to-CSV'
+        ]
+    },
+    {
+        'title': 'TheJaredWilcurt.github.io',
+        'type': 'Project',
+        'url': 'http://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io',
+        'description': 'Portfolio website you are currently looking at. Built and designed from scratch using Vue.js.',
+        'img': '_imgs/meta/apl-144.png',
+        'major': true,
+        'roles': [
+            'Developer',
+            'UX',
+            'Design'
+        ],
+        'tech': [
+            'Vue',
+            'Sass',
+            'Gulp',
+            'Rollup',
+            'Express',
+            'LiveReload',
+            'Node',
+            'ESLint',
+            'SassLint'
         ]
     },
     {
@@ -492,23 +516,19 @@ var projectData = [
             'Quality Engineer'
         ],
         'tech': [
-        /*
             'Sass',
             'jQuery',
             'Node',
-            'Vue',
-            'VanillaJS',
             'Gulp',
-            'FS-Extra',
             'ESLint',
-            'SassLint'
-        */
+            'SassLint',
+            'LiveReload'
         ]
     },
     {
         'title': 'Scout-App Classic Port',
         'type': 'Project',
-        'url': 'https://github.com/scout-app/classic',
+        'url': 'http://scout-app.io/mhs-site-fork/',
         'description': 'The original website for the 2012 version of Scout-App. Retained most of the original code and design. Updated some code and optimized images. Moved branch to its own repo to be accessible on the new Scout-App website under Scout-App.io/classic.',
         'img': '_imgs/scout-classic.png',
         'roles': [
@@ -520,18 +540,9 @@ var projectData = [
             'Support'
         ],
         'tech': [
-        /*
-            'Bootstrap',
-            'Sass',
             'jQuery',
-            'Node',
-            'VanillaJS',
-            'Gulp',
-            'Bower',
-            'FS-Extra',
-            'ESLint',
-            'SassLint'
-        */
+            'Sass',
+            'Scout-App'
         ]
     },
     {
@@ -547,18 +558,8 @@ var projectData = [
             'Documentation'
         ],
         'tech': [
-        /*
-            'Bootstrap',
-            'Sass',
             'jQuery',
-            'Node',
-            'VanillaJS',
-            'Gulp',
-            'Bower',
-            'FS-Extra',
-            'ESLint',
-            'SassLint'
-        */
+            'Sass'
         ]
     },
     {
@@ -573,15 +574,8 @@ var projectData = [
             'Documentation'
         ],
         'tech': [
-        /*
-            'Sass',
-            'Node',
             'Vue',
-            'VanillaJS',
-            'Gulp',
-            'ESLint',
-            'SassLint'
-        */
+            'Sass'
         ]
     }
 ];
