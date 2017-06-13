@@ -142,7 +142,7 @@ var projectData = [
         ]
     },
     {
-        'title': 'TheJaredWilcurt.github.io',
+        'title': 'TheJaredWilcurt.com',
         'type': 'Project',
         'url': 'http://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io',
         'description': 'Portfolio website you are currently looking at. Built and designed from scratch using Vue.js.',

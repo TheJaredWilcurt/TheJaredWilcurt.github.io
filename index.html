@@ -57,7 +57,7 @@
         Cross-Platform Desktop App Developer,<br />
         Frontend Web Developer,<br  />
         Software Engineer,<br  />
-        UI Engineer<br  /><br />
+        UI Engineer<br /><br />
         <strong>Indianapolis, Indiana, USA</strong>
       </p>
       <nav>
@@ -71,7 +71,7 @@
     <div class="wrapper">
       <div id="projects">
 
-        <h1 class="decorated">Project Highlights</h1>
+        <h1 class="decorated">Project Highlights (since 2015)</h1>
 
         <div class="project half" v-for="(project, index) in projects" v-if="project.major">
           <img :src="project.img" :alt="project.title" />
@@ -79,7 +79,7 @@
             <div class="type">
               <strong>{{ project.type }}</strong>
             </div>
-            <div>
+            <div class="title">
               <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.releases">({{ project.releases }})</span>
             </div>
             <div class="description">
@@ -98,7 +98,7 @@
 
 
         <h1 class="projects-title decorated">
-          Completed Projects (since 2015)
+          Other Completed Projects (since 2015)
         </h1>
         <label class="toggle-description">
           <input type="checkbox" v-model="showDetails">
@@ -121,7 +121,7 @@
             <div class="type">
               <strong>{{ project.type }}</strong>
             </div>
-            <div>
+            <div class="title">
               <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.releases">({{ project.releases }})</span>
             </div>
             <span v-if="showDetails || project.showDetails">
@@ -164,7 +164,7 @@
             <div class="type">
               <strong>{{ talk.type }}</strong>
             </div>
-            <div>
+            <div class="title">
               <a :href="talk.url" target="_blank">{{ talk.title }}</a> <span v-if="talk.releases">({{ talk.releases }})</span>
             </div>
             <span v-if="showDetails || talk.showDetails">

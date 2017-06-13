@@ -150,7 +150,7 @@ var talkData = [
     },
     {
         'title': 'A Deeper Understanding of CSS',
-        'type': 'Meetup Talk',
+        'type': 'University Lecture',
         'url': '#',
         'description': 'I was approached by a Computer Science student from IUPUI at a Free Code Camp Indy meetup. I had recently given a conference talk on CSS and he thought his fellow students would be interested in it. The talk was given to the <strong>IUPUI Computer Club</strong>, and was followed by a Q & A.',
         'img': '_imgs/iupui.png',
