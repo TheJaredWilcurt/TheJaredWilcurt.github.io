@@ -110,7 +110,15 @@ var community = new Vue({
         groups: communityData,
         showDetails: false
     },
-    computed: {
+    created: function () {
+        this.groups.forEach(function (group) {
+            Vue.set(group, 'showDetails', false);
+        });
+    },
+    methods: {
+        toggleCurrentDetails: function (group) {
+            group.showDetails = !group.showDetails;
+        },
         detailsClassToggle: function () {
             var detailsClass = 'hide-description';
             if (this.showDetails) {

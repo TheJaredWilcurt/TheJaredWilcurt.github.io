@@ -114,7 +114,7 @@
         <div
           :class="[detailsClassToggle(project), 'project half']"
           v-for="(project, index) in filteredProjects"
-          v-if="!project.major && project.type.toLowerCase().indexOf('talk') < 0"
+          v-if="!project.major"
         >
           <img :src="project.img" :alt="project.title" @click="toggleCurrentDetails(project)" />
           <div @click="toggleCurrentDetails(project)">
@@ -158,7 +158,6 @@
         <div
           :class="[detailsClassToggle, 'project half']"
           v-for="(talk, index) in talks"
-          v-if="talk.type.toLowerCase().indexOf('talk') > -1"
         >
           <img :src="talk.img" :alt="talk.title" @click="toggleCurrentDetails(talk)" />
           <div @click="toggleCurrentDetails(talk)">
@@ -205,10 +204,10 @@
 
         <ul class="community">
           <div class="half" v-for="group in groups">
-            <li>
+            <li @click="toggleCurrentDetails(group)">
               <strong>{{ group.name }}</strong> ({{ group.time }})
               <ul>
-                <li v-if="showDetails"><strong>Description:</strong> {{ group.description || '(coming soon)' }}</li>
+                <li v-if="showDetails || group.showDetails"><strong>Description:</strong> {{ group.description || '(coming soon)' }}</li>
                 <li><strong>Role:</strong> {{ group.role.join(', ') }}</li>
               </ul>
             </li>
