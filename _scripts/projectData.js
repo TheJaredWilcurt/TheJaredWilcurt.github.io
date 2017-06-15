@@ -48,7 +48,7 @@ var projectData = [
         'title': 'Scout-App',
         'type': 'Project',
         'url': 'https://github.com/scout-app/scout-app',
-        'description': 'Cross-Platform Desktop App. Watches for file changes and processes Sass into CSS. Translated to 17 languages. Downloaded 300,000+ times. Handle multiple projects simultaneously. Ships with 20 themes. No version has been released with a known bug.',
+        'description': 'A cross-platform desktop app that manages, watches, and processes Sass into CSS for all your projects. Downloaded over 300,000 times, in 17 languages, in over 20 countries. I\'ve never released a version with a known bug.',
         'img': '_imgs/scout-app.png',
         'releases': '5 major releases',
         'major': true,
@@ -83,7 +83,7 @@ var projectData = [
         'title': 'UGUI',
         'type': 'Project',
         'url': 'https://github.com/UniversalGUI/UGUI',
-        'description': 'The Universal GUI is a framework and library to bootstrap making cross-platform desktop apps. It specializes in creating GUI\'s for command line applications, requiring only knowledge of HTML. However it can be used for more advanced projects like Scout-App or Koa11y.',
+        'description': 'UGUI (The Universal GUI), is a library and framework that makes bootstrapping cross-platform desktop apps a breeze. Primarily designed to let users easily make GUIs for command-line apps, UGUI requires only a basic knowledge of HTML to get started. Despite being easy to pick up, it\'s incredibly powerful, and both Scout-App and Koa11y were built with it.',
         'img': '_imgs/ugui.png',
         'releases': '8 major releases',
         'major': true,
@@ -110,7 +110,7 @@ var projectData = [
         'title': 'Koa11y',
         'type': 'Project',
         'url': 'https://github.com/open-indy/Koa11y',
-        'description': 'Easily check a webpage for accessibility (a11y) issues. This is a cross-platform desktop app that spins up a headless browser, navigates to the desired URL, scans it for a11y issues based on your chosen guideline (WCAG2 (A/AA/AAA), Section 508), then outputs a report in your desired format (HTML, JSON, Markdown, XML, CSV).',
+        'description': 'Koa11y is a cross-platform desktop app that allows users to easily check for accessibility (a11y) issues in their webpages. Koa11y spins up a headless browser, navigates to your URL, scans it based on your accessibility guidelines, and gives you a report in several common formats. The report includes specific lines of code, the guideline the code breaks, its location in the DOM, and in many cases direct recommendations on how best to resolve the issue.',
         'img': '_imgs/koa11y.png',
         'releases': '1 major release',
         'major': true,
@@ -145,7 +145,7 @@ var projectData = [
         'title': 'TheJaredWilcurt.com',
         'type': 'Project',
         'url': 'http://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io',
-        'description': 'Portfolio website you are currently looking at. Built and designed from scratch using Vue.js.',
+        'description': 'This website! Rebuilt using Vue.js and completely hand crafted styles in June of 2017 with care and attention. (I even asked someone to spellcheck it).',
         'img': '_imgs/meta/apl-144.png',
         'major': true,
         'roles': [
@@ -162,7 +162,8 @@ var projectData = [
             'LiveReload',
             'Node',
             'ESLint',
-            'SassLint'
+            'SassLint',
+            'GitHub Pages Hosting'
         ]
     },
     {
@@ -311,7 +312,7 @@ var projectData = [
     },
     {
         'title': 'FCC-JACK',
-        'type': 'Hack-a-thon',
+        'type': 'Hackathon',
         'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/234330061',
         'description': 'A 3 hour project made during a Free Code Camp Indy mini-hackathon. I worked with a team of 3 others and helped mentor and explain coding concepts while working on a short project.',
         'img': '_imgs/meetup.png',
@@ -331,7 +332,7 @@ var projectData = [
     },
     {
         'title': 'amEco',
-        'type': 'Hack-a-thon',
+        'type': 'Hackathon',
         'url': 'https://playameco.github.io',
         'description': 'amEco was the result of a 3 Day long hackathon for "Greater Lafayette Startup Weekend 2016". I helped to organize and play the role of a project manager, ensuring tasks were scoped to MVP and that no one was waiting on anyone else to continue. The idea behind amEco was to gamify recycling and other environmentally conscious habits. The team came in second place.',
         'img': '_imgs/ameco.png',

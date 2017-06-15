@@ -3,6 +3,37 @@ import talkData from './talkData.js';
 import quoteData from './quoteData.js';
 import communityData from './communityData.js';
 
+/**
+ * Find out how many times a technology or role is used in the site's Data
+ * @param  {array}  data Imported JSON style data.
+ * @param  {object} obj  The current object with stats on Tech and Roles
+ * @return {object}      Object comprised of tech and roles subobjects. Each lists k:v pairs of tech/role and how many times it's used.
+ */
+function listOfTechnologiesAndRoles (data, obj) {
+    obj = obj || {
+        tech: {},
+        roles: {}
+    };
+    data.forEach(function (item) {
+        if (item.tech && item.tech.length > 0) {
+            item.tech.forEach(function (technology) {
+                obj.tech[technology] = obj.tech[technology] + 1 || 1;
+            });
+        }
+        if (item.roles && item.roles.length > 0) {
+            item.roles.forEach(function (role) {
+                obj.roles[role] = obj.roles[role] + 1 || 1;
+            });
+        }
+    });
+    return obj;
+}
+
+var techAndRolesStats = listOfTechnologiesAndRoles(projectData);
+techAndRolesStats = listOfTechnologiesAndRoles(talkData, techAndRolesStats);
+// eslint-disable-next-line no-console
+console.log(techAndRolesStats);
+
 
 var Vue = window.Vue;
 
@@ -15,8 +46,16 @@ var quotes = new Vue({
 });
 
 // eslint-disable-next-line no-unused-vars
-var projects = new Vue({
-    el: '#projects',
+var projectsHighlight = new Vue({
+    el: '#projects-highlight',
+    data: {
+        projects: projectData
+    }
+});
+
+// eslint-disable-next-line no-unused-vars
+var otherProjects = new Vue({
+    el: '#other-projects',
     data: function () {
         var allTypes = {};
         projectData.forEach(function (project) {

@@ -8,8 +8,13 @@
     position: relative
     display: inline-flex
     align-items: center
-    margin-bottom: 10px
+    background: rgba(255, 255, 255, 0.2)
+    border: 2px solid rgba(88, 87, 83, 0.2)
+    border-radius: 6px
+    margin: 0px 10px 10px 0px
+    padding: 22px 14px
     font-size: 20px
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.09)
     vertical-align: top
     div
         width: 100%
@@ -43,7 +48,7 @@
     font-weight: bold
     text-align: center
 
-#projects
+.projects
     nav
         margin-bottom: 10px
         span
@@ -58,11 +63,11 @@
             display: none
             &:checked + label
                 background: #F00
-                background: rgba($primary, 0.67)
+                background: rgba($activeButton, 0.67)
                 color: $backgroundColor
                 .badge
                     background: $backgroundColor
-                    color: $primary
+                    color: $activeBadgeText
         label
             display: inline-block
             background: rgba($primary, 0.1)

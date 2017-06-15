@@ -54,10 +54,8 @@
     <header>
       <h1>The Jared Wilcurt</h1>
       <p>
-        Cross-Platform Desktop App Developer,<br />
-        Frontend Web Developer,<br  />
-        Software Engineer,<br  />
-        UI Engineer<br /><br />
+        Cross-Platform Desktop App Engineer,<br />
+        Frontend Web Developer
         <strong>Indianapolis, Indiana, USA</strong>
       </p>
       <nav>
@@ -69,11 +67,10 @@
     </header>
 
     <div class="wrapper">
-      <div id="projects">
-
+      <div id="projects-highlight" class="projects">
         <h1 class="decorated">Project Highlights (since 2015)</h1>
 
-        <div class="project half" v-for="(project, index) in projects" v-if="project.major">
+        <div class="project card" v-for="(project, index) in projects" v-if="project.major">
           <img :src="project.img" :alt="project.title" />
           <div>
             <div class="type">
@@ -95,8 +92,80 @@
             </div>
           </div>
         </div>
+      </div>
 
+      <div id="talks">
+        <h1 class="projects-title decorated">
+          Talks
+        </h1>
 
+        <label class="toggle-description">
+            <input type="checkbox" v-model="showDetails">
+            <span v-if="showDetails">Hide</span>
+            <span v-else>Show</span> talks details
+        </label>
+
+        <div
+          :class="[detailsClassToggle, 'project half']"
+          v-for="(talk, index) in talks"
+           @click="toggleCurrentDetails(talk)"
+        >
+          <img :src="talk.img" :alt="talk.title" />
+          <div>
+            <div class="type">
+              <strong>{{ talk.type }}</strong>
+            </div>
+            <div class="title">
+              <a :href="talk.url" target="_blank">{{ talk.title }}</a> <span v-if="talk.releases">({{ talk.releases }})</span>
+            </div>
+            <span v-if="showDetails || talk.showDetails">
+              <div class="description" v-html="talk.description">
+              </div>
+              <div class="roles">
+                <strong>Roles:</strong>
+                {{ talks[index].roles.join(', ') }}
+              </div>
+              <div class="technology" v-if="talks[index].tech.length > 0">
+                <strong>Technology:</strong>
+                {{ talks[index].tech.join(', ') }}
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div id="quotes">
+        <h1 class="decorated">Quotes from talks</h1>
+        <div class="quote" v-for="quote in quotes">
+          <img :src="quote.photo" :alt="'Photo of ' + quote.name" :title="'Photo of ' + quote.name">
+          <span class="quote-text">{{ quote.quote }}</span>
+          - <a class="quote-name" :href="quote.url" target="_blank">{{ quote.name }}</a>
+        </div>
+      </div>
+
+      <div id="community">
+        <h1 class="decorated">Community Involvement</h1>
+
+        <label class="toggle-description">
+            <input type="checkbox" v-model="showDetails">
+            <span v-if="showDetails">Hide</span>
+            <span v-else>Show</span> community details
+        </label>
+
+        <ul class="community">
+          <div class="half" v-for="group in groups">
+            <li @click="toggleCurrentDetails(group)">
+              <strong>{{ group.name }}</strong> ({{ group.time }})
+              <ul>
+                <li v-if="showDetails || group.showDetails"><strong>Description:</strong> {{ group.description || '(coming soon)' }}</li>
+                <li><strong>Role:</strong> {{ group.role.join(', ') }}</li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <div id="other-projects" class="projects">
         <h1 class="projects-title decorated">
           Other Completed Projects (since 2015)
         </h1>
@@ -142,77 +211,6 @@
         <div v-if="filteredProjects.length < 1">
           <p class="no-projects-found">No projects match criteria.</p>
         </div>
-      </div>
-
-      <div id="talks">
-        <h1 class="projects-title decorated">
-          Talks
-        </h1>
-
-        <label class="toggle-description">
-            <input type="checkbox" v-model="showDetails">
-            <span v-if="showDetails">Hide</span>
-            <span v-else>Show</span> talks details
-        </label>
-
-        <div
-          :class="[detailsClassToggle, 'project half']"
-          v-for="(talk, index) in talks"
-        >
-          <img :src="talk.img" :alt="talk.title" @click="toggleCurrentDetails(talk)" />
-          <div @click="toggleCurrentDetails(talk)">
-            <div class="type">
-              <strong>{{ talk.type }}</strong>
-            </div>
-            <div class="title">
-              <a :href="talk.url" target="_blank">{{ talk.title }}</a> <span v-if="talk.releases">({{ talk.releases }})</span>
-            </div>
-            <span v-if="showDetails || talk.showDetails">
-              <div class="description" v-html="talk.description">
-              </div>
-              <div class="roles">
-                <strong>Roles:</strong>
-                {{ talks[index].roles.join(', ') }}
-              </div>
-              <div class="technology" v-if="talks[index].tech.length > 0">
-                <strong>Technology:</strong>
-                {{ talks[index].tech.join(', ') }}
-              </div>
-            </span>
-          </div>
-        </div>
-
-      </div>
-
-      <div id="quotes">
-        <h1 class="decorated">Quotes from talks</h1>
-        <div class="quote" v-for="quote in quotes">
-          <img :src="quote.photo" :alt="'Photo of ' + quote.name" :title="'Photo of ' + quote.name">
-          <span class="quote-text">{{ quote.quote }}</span>
-          - <a class="quote-name" :href="quote.url" target="_blank">{{ quote.name }}</a>
-        </div>
-      </div>
-
-      <div id="community">
-        <h1 class="decorated">Community Involvement</h1>
-
-        <label class="toggle-description">
-            <input type="checkbox" v-model="showDetails">
-            <span v-if="showDetails">Hide</span>
-            <span v-else>Show</span> community details
-        </label>
-
-        <ul class="community">
-          <div class="half" v-for="group in groups">
-            <li @click="toggleCurrentDetails(group)">
-              <strong>{{ group.name }}</strong> ({{ group.time }})
-              <ul>
-                <li v-if="showDetails || group.showDetails"><strong>Description:</strong> {{ group.description || '(coming soon)' }}</li>
-                <li><strong>Role:</strong> {{ group.role.join(', ') }}</li>
-              </ul>
-            </li>
-          </div>
-        </ul>
       </div>
 
     </div>

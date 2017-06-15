@@ -8,7 +8,8 @@
 
 .full,
 .half,
-.thirds
+.thirds,
+.card
     display: inline-block
     font-size: 18px
     vertical-align: top
@@ -17,10 +18,15 @@
     width: 100%
 
 .half
-    width: 50%
+    width: 48%
+    width: calc(50% - 10px)
 
 .thirds
     width: 33.33333334%
 
 .two-thirds
     width: 66.66666666%
+
+.card
+    width: calc(50% - 10px)
+    min-height: 325px
