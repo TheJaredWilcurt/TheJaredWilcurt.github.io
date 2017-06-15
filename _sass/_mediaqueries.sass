@@ -2,6 +2,7 @@
 // Media Queries that alter the styles on the page depending on browser width
 
 @media screen and (max-width: 980px)
+    .card,
     .half
         width: 100%
 
@@ -14,6 +15,13 @@
 @media screen and (max-width: 590px)
     header h1
         font-size: 2em
+    .first-title
+        display: block
+        &:after
+            content: ''
+            padding: 0px
+            font-size: 0px
+            vertical-align: 0px
     .toggle-description
         text-align: center
     .projects nav
