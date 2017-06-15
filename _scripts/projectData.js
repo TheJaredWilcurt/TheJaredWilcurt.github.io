@@ -110,7 +110,7 @@ var projectData = [
         'title': 'Koa11y',
         'type': 'Project',
         'url': 'https://github.com/open-indy/Koa11y',
-        'description': 'Koa11y is a cross-platform desktop app that allows users to easily check for accessibility (a11y) issues in their webpages. Koa11y spins up a headless browser, navigates to your URL, scans it based on your accessibility guidelines, and gives you a report in several common formats. The report includes specific lines of code, the guideline the code breaks, its location in the DOM, and in many cases direct recommendations on how best to resolve the issue.',
+        'description': 'Koa11y is a cross-platform desktop app that allows users to easily check for accessibility (a11y) issues in their webpages. Koa11y spins up a headless browser, navigates to your URL, scans it based on your accessibility guidelines, and gives you a report in several common formats. The reports include the specific line of code that violates a guideline and in many cases direct recommendations on how best to resolve the violation.',
         'img': '_imgs/koa11y.png',
         'releases': '1 major release',
         'major': true,

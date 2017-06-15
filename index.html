@@ -52,6 +52,7 @@
   </head>
   <body>
     <header>
+      <img src="_imgs/meta/fluid.png" alt="A happy kitten" />
       <h1>The Jared Wilcurt</h1>
       <p>
         <span class="first-title">Cross-Platform Desktop App Engineer</span> Frontend Web Developer<br /><br />
@@ -91,6 +92,28 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div id="community">
+        <h1 class="decorated">Community Involvement</h1>
+
+        <label class="toggle-description">
+            <input type="checkbox" v-model="showDetails">
+            <span v-if="showDetails">Hide</span>
+            <span v-else>Show</span> community details
+        </label>
+
+        <ul class="community">
+          <div class="half" v-for="group in groups">
+            <li @click="toggleCurrentDetails(group)">
+              <strong>{{ group.name }}</strong> ({{ group.time }})
+              <ul>
+                <li v-if="showDetails || group.showDetails"><strong>Description:</strong> {{ group.description || '(coming soon)' }}</li>
+                <li><strong>Role:</strong> {{ group.role.join(', ') }}</li>
+              </ul>
+            </li>
+          </div>
+        </ul>
       </div>
 
       <div id="talks">
@@ -140,28 +163,6 @@
           <span class="quote-text">{{ quote.quote }}</span>
           - <a class="quote-name" :href="quote.url" target="_blank">{{ quote.name }}</a>
         </div>
-      </div>
-
-      <div id="community">
-        <h1 class="decorated">Community Involvement</h1>
-
-        <label class="toggle-description">
-            <input type="checkbox" v-model="showDetails">
-            <span v-if="showDetails">Hide</span>
-            <span v-else>Show</span> community details
-        </label>
-
-        <ul class="community">
-          <div class="half" v-for="group in groups">
-            <li @click="toggleCurrentDetails(group)">
-              <strong>{{ group.name }}</strong> ({{ group.time }})
-              <ul>
-                <li v-if="showDetails || group.showDetails"><strong>Description:</strong> {{ group.description || '(coming soon)' }}</li>
-                <li><strong>Role:</strong> {{ group.role.join(', ') }}</li>
-              </ul>
-            </li>
-          </div>
-        </ul>
       </div>
 
       <div id="other-projects" class="projects">

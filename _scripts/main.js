@@ -29,10 +29,10 @@ function listOfTechnologiesAndRoles (data, obj) {
     return obj;
 }
 
-var techAndRolesStats = listOfTechnologiesAndRoles(projectData);
-techAndRolesStats = listOfTechnologiesAndRoles(talkData, techAndRolesStats);
+window.techAndRolesStats = listOfTechnologiesAndRoles(projectData);
+window.techAndRolesStats = listOfTechnologiesAndRoles(talkData, window.techAndRolesStats);
 // eslint-disable-next-line no-console
-console.log(techAndRolesStats);
+console.log(window.techAndRolesStats);
 
 
 var Vue = window.Vue;
@@ -147,7 +147,7 @@ var community = new Vue({
     el: '#community',
     data: {
         groups: communityData,
-        showDetails: false
+        showDetails: true
     },
     created: function () {
         this.groups.forEach(function (group) {
