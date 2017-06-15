@@ -47,6 +47,8 @@ var projectData = [
     {
         'title': 'Scout-App',
         'type': 'Project',
+        'website': 'http://scout-app.io',
+        'repo': 'https://github.com/scout-app/scout-app',
         'url': 'https://github.com/scout-app/scout-app',
         'description': 'A cross-platform desktop app that manages, watches, and processes Sass into CSS for all your projects. Downloaded over 300,000 times, in 17 languages, in over 20 countries. I\'ve never released a version with a known bug.',
         'img': '_imgs/scout-app.png',
@@ -82,6 +84,8 @@ var projectData = [
     {
         'title': 'UGUI',
         'type': 'Project',
+        'website': 'http://ugui.io',
+        'repo': 'https://github.com/UniversalGUI/UGUI',
         'url': 'https://github.com/UniversalGUI/UGUI',
         'description': 'UGUI (The Universal GUI), is a library and framework that makes bootstrapping cross-platform desktop apps a breeze. Primarily designed to let users easily make GUIs for command-line apps, UGUI requires only a basic knowledge of HTML to get started. Despite being easy to pick up, it\'s incredibly powerful, and both Scout-App and Koa11y were built with it.',
         'img': '_imgs/ugui.png',
@@ -109,6 +113,8 @@ var projectData = [
     {
         'title': 'Koa11y',
         'type': 'Project',
+        'website': 'https://open-indy.github.io/Koa11y/',
+        'repo': 'https://github.com/open-indy/Koa11y',
         'url': 'https://github.com/open-indy/Koa11y',
         'description': 'Koa11y is a cross-platform desktop app that allows users to easily check for accessibility (a11y) issues in their webpages. Koa11y spins up a headless browser, navigates to your URL, scans it based on your accessibility guidelines, and gives you a report in several common formats. The reports include the specific line of code that violates a guideline and in many cases direct recommendations on how best to resolve the violation.',
         'img': '_imgs/koa11y.png',
@@ -144,6 +150,8 @@ var projectData = [
     {
         'title': 'TheJaredWilcurt.com',
         'type': 'Project',
+        'website': 'http://TheJaredWilcurt.com',
+        'repo': 'http://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io',
         'url': 'http://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io',
         'description': 'This website! Rebuilt using Vue.js and completely hand crafted styles in June of 2017 with care and attention. (I even asked someone to spellcheck it).',
         'img': '_imgs/meta/apl-144.png',

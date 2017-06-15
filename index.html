@@ -75,6 +75,8 @@
           <div>
             <div class="type">
               <strong>{{ project.type }}</strong>
+              <span class="small" v-if="project.website"> - <a :href="project.website" target="_blank">Website</a></span>
+              <span class="small" v-if="project.repo"> | <a :href="project.repo" target="_blank">Repo</a></span>
             </div>
             <div class="title">
               <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.releases">({{ project.releases }})</span>
@@ -184,9 +186,10 @@
           :class="[detailsClassToggle(project), 'project half']"
           v-for="(project, index) in filteredProjects"
           v-if="!project.major"
+          @click="toggleCurrentDetails(project)"
         >
-          <img :src="project.img" :alt="project.title" @click="toggleCurrentDetails(project)" />
-          <div @click="toggleCurrentDetails(project)">
+          <img :src="project.img" :alt="project.title" />
+          <div>
             <div class="type">
               <strong>{{ project.type }}</strong>
             </div>
