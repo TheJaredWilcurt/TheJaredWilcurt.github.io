@@ -24,7 +24,7 @@ var communityData = [
     },
     {
         'name': 'Civic UX Group',
-        'description': 'This group was created as part of the Open Indy Brigade and is its longest running group. I currently run this group which focuses on solving Civic issues with UX skills from group of dedicated volunteers. Our most successful project is Koa11y, a desktop app created to lower the technical barrier of entry for finding accessibility issues on the web. We\'ve also worked with IN.gov and various food assistance programs in central Indiana.',
+        'description': 'I currently run this group, which was created as part of the Open Indy Brigade and is its longest running group. Our dedicated volunteers solve Civic issues with their UX skillsets. We\'ve worked directly with IN.gov and various food assistance programs in central Indiana. Our most successful project is Koa11y, a tool for easily finding accessibility issues on the web.',
         'role': [
             'Organizer',
             'Mentor'

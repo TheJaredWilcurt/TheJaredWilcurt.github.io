@@ -4,6 +4,20 @@
 .hide
     display: none
 
+.hidden,
+.shown
+    transition: 0.3s ease-out all
+
+.hidden
+    line-height: 0
+    opacity: 0
+    overflow: hidden
+
+.shown
+    line-height: 1.28
+    opacity: 1
+    overflow: visible
+
 .small
     font-family: $secondaryFont
     font-size: 16px

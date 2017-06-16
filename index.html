@@ -68,7 +68,7 @@
     </header>
 
     <div class="wrapper">
-      <div id="projects-highlight" class="projects">
+      <section id="projects-highlight" class="projects">
         <h1 class="decorated">Project Highlights (since 2015)</h1>
 
         <div class="project card" v-for="(project, index) in projects" v-if="project.major">
@@ -95,9 +95,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="community">
+      <section id="community">
         <h1 class="decorated">Community Involvement</h1>
 
         <label class="toggle-description">
@@ -106,20 +106,24 @@
             <span v-else>Show</span> community details
         </label>
 
-        <ul class="community">
+        <div class="community">
           <div class="half" v-for="group in groups">
-            <li @click="toggleCurrentDetails(group)">
-              <strong>{{ group.name }}</strong> ({{ group.time }})
-              <ul>
-                <li v-if="showDetails || group.showDetails"><strong>Description:</strong> {{ group.description || '(coming soon)' }}</li>
-                <li><strong>Role:</strong> {{ group.role.join(', ') }}</li>
-              </ul>
-            </li>
+            <div class="community-card" @click="toggleCurrentDetails(group)">
+              <div class="card-header">
+                <strong>{{ group.name }}</strong> <span>({{ group.time }})</span>
+              </div>
+              <div class="card-body" :class="showDetails || group.showDetails ? 'shown' : 'hidden'">
+                <strong>Description:</strong> {{ group.description || '(coming soon)' }}
+              </div>
+              <div class="card-footer">
+                <strong>Role:</strong> {{ group.role.join(', ') }}
+              </div>
+            </div>
           </div>
-        </ul>
-      </div>
+        </div>
+      </section>
 
-      <div id="talks">
+      <section id="talks">
         <h1 class="projects-title decorated">
           Talks
         </h1>
@@ -157,18 +161,18 @@
             </span>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="quotes">
+      <section id="quotes">
         <h1 class="decorated">Quotes from talks</h1>
         <div class="quote" v-for="quote in quotes">
           <img :src="quote.photo" :alt="'Photo of ' + quote.name" :title="'Photo of ' + quote.name">
           <span class="quote-text">{{ quote.quote }}</span>
           - <a class="quote-name" :href="quote.url" target="_blank">{{ quote.name }}</a>
         </div>
-      </div>
+      </section>
 
-      <div id="other-projects" class="projects">
+      <section id="other-projects" class="projects">
         <h1 class="projects-title decorated">
           Other Completed Projects (since 2015)
         </h1>
@@ -215,7 +219,7 @@
         <div v-if="filteredProjects.length < 1">
           <p class="no-projects-found">No projects match criteria.</p>
         </div>
-      </div>
+      </section>
 
     </div>
 

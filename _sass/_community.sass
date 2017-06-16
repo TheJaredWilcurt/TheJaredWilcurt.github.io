@@ -1,13 +1,32 @@
 
-#community
-    line-height: 1.4em
-    ul
-        margin: 8px 0px 20px 20px
-    li
-        list-style-type: disc
-        li
-            list-style-type: circle
+.community
+    .half
+        margin: 10px 0px 15px 0px
+        padding-right: 26px
+        vertical-align: top
 
-.community .half
-    padding-right: 26px
-    vertical-align: top
+.community-card
+    background: $brightBackground
+    border: 1px solid $primary
+    border-radius: 8px
+    margin: 0px 0px 0px 0px
+    .card-header,
+    .card-body
+        border-bottom: 1px solid $primary
+    .card-header,
+    .card-body,
+    .card-footer
+        padding: 10px
+    .card-header
+        background: rgba(255, 255, 255, 0.5)
+        border-radius: 8px 8px 0px 0px
+        font-size: 1.1em
+        span
+            font-size: 0.9em
+            float: right
+    .card-body
+        min-height: 165px
+        &.hidden
+            min-height: 0px
+            padding-top: 0px
+            padding-bottom: 0px
