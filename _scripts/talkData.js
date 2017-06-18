@@ -14,7 +14,7 @@
     jQuery
     Node
     Vue
-    Vanilla
+    VanillaJS
     Gulp
     Chokidar
     Bower
@@ -68,14 +68,13 @@ var talkData = [
             'Presenter'
         ],
         'tech': [
-            'JS',
+            'VanillaJS',
             'Node',
             'NPM',
             'Bower',
             'Grunt',
             'Gulp',
             'Sass',
-            'Vanilla',
             'GitLab'
         ]
     },

@@ -47,12 +47,15 @@ rules:
     - 1
     -
       order:
+        # Effects if the element exists
         - content
+        # Highest effect of where pixels painting begins
         - position
         - top
         - right
         - bottom
         - left
+        # How the element is display
         - display
         - align-items
         - align-self
@@ -67,10 +70,12 @@ rules:
         - min-height
         - max-width
         - max-height
+        # Effects the most amount of pixel paint in the element
         - background
         - background-color
         - background-image
         - background-repeat
+        # Box model
         - border
         - border-top
         - border-top-width
@@ -102,6 +107,7 @@ rules:
         - padding-right
         - padding-bottom
         - padding-left
+        # Text treatment
         - color
         - font-family
         - font-size
@@ -115,8 +121,11 @@ rules:
         - text-align
         - text-decoration
         - text-shadow
+        # Less common properties go to the bottom
         - box-shadow
         - cursor
+        - filter
+        - -webkit-filter
         - float
         - opacity
         - vertical-align

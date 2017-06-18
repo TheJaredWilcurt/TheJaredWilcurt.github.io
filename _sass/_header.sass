@@ -10,8 +10,15 @@ header
         border-radius: 75% 79%
         margin-top: 40px
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.74)
-        filter: contrast(42%) brightness(93%) opacity(73%) sepia() blur(1px)
+        filter: contrast(42%) brightness(93%) sepia() blur(1px)
+        -webkit-filter: contrast(42%) brightness(93%) sepia() blur(1px)
+        opacity: 0.73
         transform: rotateZ(-1deg)
+        transition: 0.5s ease all;
+        &:hover
+            filter: contrast(63%) brightness(100%) sepia() blur(1px)
+            -webkite-filter: contrast(63%) brightness(100%) sepia() blur(1px)
+            transform: rotateZ(5deg)
     h1
         margin: 30px 0px
         padding: 0px
