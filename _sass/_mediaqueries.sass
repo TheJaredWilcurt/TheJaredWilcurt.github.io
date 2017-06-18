@@ -25,21 +25,26 @@
             vertical-align: 0px
     .toggle-description
         text-align: center
-    .projects nav
-        margin-top: 10px
-        text-align: center
-        span
-            display: block
-            &:first-of-type label
+    .projects
+        nav
+            margin-top: 10px
+            text-align: center
+            span
+                display: block
+                &:first-of-type label
+                    border-radius: 0px
+                &:last-of-type label
+                    border-radius: 0px
+            input + label,
+            input:checked + label
+                width: 100%
                 border-radius: 0px
-            &:last-of-type label
-                border-radius: 0px
-        input + label,
-        input:checked + label
-            width: 100%
-            border-radius: 0px
-            .badge
-                display: inline-block
+                .badge
+                    display: inline-block
+        .footer
+            .roles,
+            .technology
+                width: 100%
     .project
         flex-direction: column
         padding: 10px
