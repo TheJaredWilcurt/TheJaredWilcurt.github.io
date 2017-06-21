@@ -171,7 +171,7 @@ var projectData = [
             'Node',
             'ESLint',
             'SassLint',
-            'GitHub Pages Hosting'
+            'GitHub Pages'
         ]
     },
     {
@@ -315,7 +315,7 @@ var projectData = [
             'Scout-App',
             'GitHub Pages',
             'Sass',
-            'Illustrator'
+            'Adobe Illustrator'
         ]
     },
     {
@@ -352,6 +352,7 @@ var projectData = [
             'Mentor'
         ],
         'tech': [
+            'GitLab',
             'Balsamiq',
             'Whiteboards',
             'Trello'

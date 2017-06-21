@@ -101,23 +101,19 @@
       <section id="community">
         <h1 class="decorated">Community Involvement</h1>
 
-        <label class="toggle-description">
-            <input type="checkbox" v-model="showDetails">
-            <span v-if="showDetails">Hide</span>
-            <span v-else>Show</span> community details
-        </label>
+        <h2 @click="showAllDetails">Click to expand.</h2>
 
         <div class="community">
           <div class="half" v-for="group in groups">
             <div class="community-card" @click="toggleCurrentDetails(group)">
-              <div class="card-header">
-                <strong>{{ group.name }}</strong> <span>({{ group.time }})</span>
+              <div class="card-header" :class="group.showDetails ? 'shadow' : ''">
+                <strong>{{ group.name }}</strong> <span>{{ group.time }}</span>
               </div>
-              <div class="card-body" :class="showDetails || group.showDetails ? 'shown' : 'hidden'">
-                <strong>Description:</strong> {{ group.description || '(coming soon)' }}
+              <div class="card-body" :class="group.showDetails ? 'shown' : 'hidden'">
+                {{ group.description || '(coming soon)' }}
               </div>
               <div class="card-footer">
-                <strong>Role:</strong> {{ group.role.join(', ') }}
+                {{ group.role.join(', ') }}
               </div>
             </div>
           </div>

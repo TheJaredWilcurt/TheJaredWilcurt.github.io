@@ -3,7 +3,8 @@
 
 @media screen and (max-width: 980px)
     .card,
-    .half
+    .half,
+    .community .half
         width: 100%
 
 // sass-lint:disable indentation
@@ -47,5 +48,11 @@
         img
             max-height: 144px
             margin-bottom: 4px
+
+@media screen and (max-width: 450px)
+    .community-card .card-header span
+        display: block
+        text-align: right
+        float: none
 
 // sass-lint:enable indentation

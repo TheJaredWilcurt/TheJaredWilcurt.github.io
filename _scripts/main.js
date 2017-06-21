@@ -146,8 +146,7 @@ var talks = new Vue({
 var community = new Vue({
     el: '#community',
     data: {
-        groups: communityData,
-        showDetails: true
+        groups: communityData
     },
     created: function () {
         this.groups.forEach(function (group) {
@@ -158,12 +157,10 @@ var community = new Vue({
         toggleCurrentDetails: function (group) {
             group.showDetails = !group.showDetails;
         },
-        detailsClassToggle: function () {
-            var detailsClass = 'hide-description';
-            if (this.showDetails) {
-                detailsClass = 'show-description';
-            }
-            return detailsClass;
+        showAllDetails: function () {
+            this.groups.forEach(function (group) {
+                group.showDetails = true;
+            });
         }
     }
 });
