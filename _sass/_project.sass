@@ -4,38 +4,9 @@
     margin: -31px 0px 8px 0px
     text-align: right
 
-.projects
-    .header
-        display: flex
-        align-items: center
-        justify-content: center
-        border-bottom: 1px solid $lightBorder
-        padding: 10px
-    .body
-        border-bottom: 1px solid $lightBorder
-        padding: 8px 14px 22px 14px
-    .footer
-        margin: 0px
-        padding: 0px
-        font-size: 0px
-        .roles
-            border-right: 1px solid $lightBorder
-        .roles,
-        .technology
-            display: inline-block
-            width: 50%
-            margin: 0px
-            padding: 14px 0px 14px 10px
-            font-size: 15px
-            vertical-align: top
-    .image
-        margin: 0px 9px 0px 0px
-
-#projects-highlight .project
-    padding: 0px
-
 .project
     position: relative
+    display: inline-flex
     align-items: center
     background: $brightBackground
     border: 2px solid rgba(88, 87, 83, 0.2)
@@ -99,3 +70,8 @@
             border: 1px solid $primary
             padding: 6px 11px
             cursor: pointer
+
+#other-projects .project
+    div
+        width: 100%
+        margin: 0px 10px 0px 10px

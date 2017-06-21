@@ -25,8 +25,9 @@
 
 
 // ITCSS: COMPONENTS
+@import "_spotlight.sass";           // Styles unique to the highlighted projects
 @import "_project.sass";             // The project cards for completed projects
-@import "_quotes.sass";
+@import "_quotes.sass";              // Quotes from talks
 @import "_community.sass";           // Community section styles
 
 // ITCSS: CONTAINERS
