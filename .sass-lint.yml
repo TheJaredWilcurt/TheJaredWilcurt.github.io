@@ -109,6 +109,7 @@ rules:
         - padding-left
         # Text treatment
         - color
+        - direction
         - font-family
         - font-size
         - font-style
@@ -121,6 +122,7 @@ rules:
         - text-align
         - text-decoration
         - text-shadow
+        - unicode-bidi
         # Less common properties go to the bottom
         - box-shadow
         - cursor
@@ -132,4 +134,3 @@ rules:
         - visibility
         - z-index
       ignore-custom-properties: true
-
