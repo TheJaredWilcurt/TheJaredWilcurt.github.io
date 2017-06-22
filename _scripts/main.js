@@ -4,6 +4,51 @@ import quoteData from './quoteData.js';
 import communityData from './communityData.js';
 
 /**
+ * Takes a charCode  and rotates 47 characters and returns the new charCode
+ * @param  {number} charCode The numeric version of a character, 97 would be for 'a'
+ * @return {number}          The new charCode after rotation
+ */
+function ROT47CharCode (charCode) {
+    if (typeof(charCode) === 'number') {
+        // '!' == 33; 'O' == 79
+        if (charCode >= 33 && charCode <= 79) {
+            charCode = charCode + 47;
+        // 'P' == 80; '~' == 126
+        } else if (charCode >= 80 && charCode <= 126) {
+            charCode = charCode - 47;
+        }
+    }
+
+    return charCode;
+}
+
+/**
+ * Loops over the characters in a string, returns a ROT47 version of them
+ * @param  {string} str Any string of text.
+ * @return {string}     The rotated string, ready for use.
+ */
+function ROT47 (str) {
+    var newString = [];
+
+    for (var i = 0; i < str.length; i++) {
+        // a => 97
+        var char = str.charCodeAt(i);
+        // 97 => 50
+        var newChar = ROT47CharCode(char);
+        // 50 => '2'
+        newChar = String.fromCharCode(newChar);
+        // [] => ['2']
+        newString.push(newChar);
+    }
+
+    // ['2'] => '2'
+    newString = newString.join('');
+
+    // '2'
+    return newString;
+}
+
+/**
  * Find out how many times a technology or role is used in the site's Data
  * @param  {array}  data Imported JSON style data.
  * @param  {object} obj  The current object with stats on Tech and Roles
@@ -161,6 +206,20 @@ var community = new Vue({
             this.groups.forEach(function (group) {
                 group.showDetails = true;
             });
+        }
+    }
+});
+
+// eslint-disable-next-line no-unused-vars
+var footer = new Vue({
+    el: 'footer',
+    data: {
+        addr: ROT47('>@4]=:2>8oECF4=:(56C2y69%').replace('@', '<span class="hide">kitten</span>@'),
+        to: 'mailto:0@0.0'
+    },
+    methods: {
+        changeTo: function () {
+            this.to = ROT47('>2:=E@i%96y2C65(:=4FCEo8>2:=]4@>');
         }
     }
 });

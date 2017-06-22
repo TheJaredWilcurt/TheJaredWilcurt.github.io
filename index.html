@@ -223,7 +223,13 @@
       <div class="link-bar">
         <a href="https://github.com/TheJaredWilcurt" title="Visit my Public GitHub" target="_blank"><img src="_imgs/github.svg" alt="GitHub Icon" /></a>
       </div>
-      <div>
+      <div class="footer-content">
+        <h2>
+          <a class="mirror" @focus="changeTo" @mouseOver="changeTo" :href="to" v-html="addr"></a>
+        </h2>
+        <h1 title="If the current year is not 2017, then I have clearly been very busy.">
+          2017
+        </h1>
       </div>
     </footer>
 
