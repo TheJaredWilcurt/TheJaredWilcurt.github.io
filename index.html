@@ -73,19 +73,27 @@
         <h1 class="decorated">Project Highlights (since 2015)</h1>
 
         <div class="project card" v-for="(project, index) in projects" v-if="project.major">
-          <img :src="project.img" :alt="project.title" />
-          <div>
-            <div class="type">
-              <strong>{{ project.type }}</strong>
-              <span class="small" v-if="project.website"> - <a :href="project.website" target="_blank">Website</a></span>
-              <span class="small" v-if="project.repo"> | <a :href="project.repo" target="_blank">Repo</a></span>
+          <div class="header">
+            <div class="image">
+              <img :src="project.img" :alt="project.title" />
             </div>
-            <div class="title">
-              <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.releases">({{ project.releases }})</span>
+            <div class="type-title">
+              <div class="title">
+                <a :href="project.url" target="_blank">{{ project.title }}</a>
+                <span v-if="project.releases">({{ project.releases }})</span>
+              </div>
+              <div class="type">
+                <span class="small" v-if="project.website"><a :href="project.website" target="_blank">Website</a></span>
+                <span class="small" v-if="project.repo"> | <a :href="project.repo" target="_blank">Repo</a></span>
+              </div>
             </div>
+          </div>
+          <div class="body">
             <div class="description">
               {{ project.description }}
             </div>
+          </div>
+          <div class="footer">
             <div class="roles">
               <strong>Roles:</strong>
               {{ projects[index].roles.join(', ') }}
@@ -222,7 +230,7 @@
 
     <footer>
       <div class="link-bar">
-        <a href="https://github.com/TheJaredWilcurt" title="Visit my Public GitHub" target="_blank"><img src="_imgs/github.svg" alt="GitHub Icon" /></a>
+        <a href="https://github.com/TheJaredWilcurt" title="Visit my public GitHub" target="_blank"><img src="_imgs/github.svg" alt="GitHub Icon" /></a>
       </div>
       <div class="footer-content">
         <h2>
