@@ -155,6 +155,7 @@ var projectData = [
         'url': 'http://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io',
         'description': 'This website! Rebuilt using Vue.js and completely hand crafted styles in June of 2017 with care and attention. (I even asked someone to spellcheck it).',
         'img': '_imgs/meta/apl-144.png',
+        'releases': '4th iteration',
         'major': true,
         'roles': [
             'Developer',

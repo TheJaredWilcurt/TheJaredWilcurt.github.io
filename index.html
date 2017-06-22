@@ -79,7 +79,7 @@
             </div>
             <div class="type-title">
               <div class="title">
-                <a :href="project.url" target="_blank">{{ project.title }}</a>
+                <span>{{ project.title }}</span>
                 <span v-if="project.releases">({{ project.releases }})</span>
               </div>
               <div class="type">
@@ -150,7 +150,9 @@
               <strong>{{ talk.type }}</strong>
             </div>
             <div class="title">
-              <a :href="talk.url" target="_blank">{{ talk.title }}</a> <span v-if="talk.releases">({{ talk.releases }})</span>
+              <a v-if="talk.url !== '#'" :href="talk.url" target="_blank">{{ talk.title }}</a>
+              <span v-else>{{ talk.title }}</span>
+              <span v-if="talk.releases">({{ talk.releases }})</span>
             </div>
             <span v-if="showDetails || talk.showDetails">
               <div class="description" v-html="talk.description">
@@ -173,7 +175,8 @@
         <div class="quote" v-for="quote in quotes">
           <img :src="quote.photo" :alt="'Photo of ' + quote.name" :title="'Photo of ' + quote.name">
           <span class="quote-text">{{ quote.quote }}</span>
-          - <a class="quote-name" :href="quote.url" target="_blank">{{ quote.name }}</a>
+          - <a v-if="quote.url !== '#'" class="quote-name" :href="quote.url" target="_blank">{{ quote.name }}</a>
+          <span v-else class="quote-name">{{ quote.name }}</span>
         </div>
       </section>
 
@@ -204,7 +207,9 @@
               <strong>{{ project.type }}</strong>
             </div>
             <div class="title">
-              <a :href="project.url" target="_blank">{{ project.title }}</a> <span v-if="project.releases">({{ project.releases }})</span>
+              <a v-if="project.url !== '#'" :href="project.url" target="_blank">{{ project.title }}</a>
+              <span v-else>{{ project.title }}</span>
+              <span v-if="project.releases">({{ project.releases }})</span>
             </div>
             <span v-if="showDetails || project.showDetails">
               <div class="description">

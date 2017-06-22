@@ -151,7 +151,7 @@ var talkData = [
         'title': 'A Deeper Understanding of CSS',
         'type': 'University Lecture',
         'url': '#',
-        'description': 'I was approached by a Computer Science student from IUPUI at a Free Code Camp Indy meetup. I had recently given a conference talk on CSS and he thought his fellow students would be interested in it. The talk was given to the <strong>IUPUI Computer Club</strong>, and was followed by a Q & A.',
+        'description': 'I was approached by a Computer Science student from IUPUI at a Free Code Camp Indy meetup. I had recently given a conference talk on CSS and he thought his fellow students would be interested in it. The talk was given to the <strong>IUPUI Computer Club</strong>, and was followed by a Q &amp; A.',
         'img': '_imgs/iupui.png',
         'roles': [
             'Presenter'
@@ -172,6 +172,19 @@ var talkData = [
         'tech': [
             'Adobe Illustrator',
             'TechSmith Camtasia'
+        ]
+    },
+    {
+        'title': 'Finishing the Projects you Start (coming soon)',
+        'type': 'Meetup Talk',
+        'url': '#',
+        'description': 'This is one of the most highly requested talks by the members of the <strong>Free Code Camp Indy</strong> meetup group. It covers effective learning, defining scope, phases of a project, the differences between academic, résumé, &amp; passion projects and how to convert them from one to another.',
+        'img': '_imgs/meetup.png',
+        'roles': [
+            'Presenter'
+        ],
+        'tech': [
+            'Google Slides'
         ]
     }/*,
     {
