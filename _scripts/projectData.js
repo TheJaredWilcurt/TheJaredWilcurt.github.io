@@ -324,7 +324,7 @@ var projectData = [
         'type': 'Hackathon',
         'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/234330061',
         'description': 'A 3 hour project made during a Free Code Camp Indy mini-hackathon. I worked with a team of 3 others and helped mentor and explain coding concepts while working on a short project.',
-        'img': '_imgs/meetup.png',
+        'img': '_imgs/free-code-camp.svg',
         'roles': [
             'Developer',
             'Project Manager',
@@ -357,6 +357,33 @@ var projectData = [
             'Balsamiq',
             'Whiteboards',
             'Trello'
+        ]
+    },
+    {
+        'title': 'FCC Indy/GDI - Mini-Hack Day',
+        'type': 'Hackathon',
+        'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/237459434',
+        'description': 'A 6 hour hackathon aimed at beginners. This was a collaborative effort between Free Code Camp Indy and Girl Develop-It. I helped organize and run this event, as well as give advise and help to participating teams.',
+        'img': '_imgs/free-code-camp.svg',
+        'roles': [
+            'Organizer',
+            'Mentor'
+        ],
+        'tech': [
+            'Whiteboards'
+        ]
+    },
+    {
+        'title': 'Free Code Camp\'s first Remote Hack',
+        'type': 'Hackathon',
+        'url': 'https://free-code-camp-indy.github.io/FCC-Remote-Hack',
+        'description': 'This was the first ever remote hackathon for Free Code Camp. Particapants could form teams from around the world to compete in a 24 hour long game jam. I was asked to judge the submitted projects, provide detailed feedback, and give my selection for the winner of the event.',
+        'img': '_imgs/free-code-camp.svg',
+        'roles': [
+            'Judge'
+        ],
+        'tech': [
+            'GitHub'
         ]
     },
     {
@@ -588,7 +615,21 @@ var projectData = [
             'Vue',
             'Sass'
         ]
-    }
+    }/*,
+    {
+        'title': '',
+        'type': '',
+        'url': ''
+        'description': '',
+        'img': '',
+        'releases': '',
+        'roles': [
+            ''
+        ],
+        'tech': [
+            ''
+        ]
+    }*/
 ];
 
 export default projectData;
