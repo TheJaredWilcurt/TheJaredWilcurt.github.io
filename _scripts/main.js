@@ -154,8 +154,11 @@ var otherProjects = new Vue({
         typesCount: function () {
             var typeCounts = {};
             this.projects.forEach(function (project) {
-                typeCounts[project.type] = typeCounts[project.type] + 1 || 1;
+                if (!project.major) {
+                    typeCounts[project.type] = typeCounts[project.type] + 1 || 1;
+                }
             });
+
             return typeCounts;
         }
     }

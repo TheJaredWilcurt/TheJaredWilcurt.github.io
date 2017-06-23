@@ -126,8 +126,8 @@ rules:
         # Less common properties go to the bottom
         - box-shadow
         - cursor
-        - filter
         - -webkit-filter
+        - filter
         - float
         - opacity
         - vertical-align

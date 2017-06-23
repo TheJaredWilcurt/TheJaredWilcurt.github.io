@@ -40,6 +40,12 @@ var quoteData = [
         'quote': 'This is awesome, the first tutorial to show how to work with Sass in the windows environment. In addition it covers all of the missing information posted in other videos. Great job!﻿',
         'url': 'https://www.youtube.com/watch?v=CV2fdPMdkn0',
         'photo': '_imgs/avatars/felix.jpg'
+    },
+    {
+        'name': 'Professor Deverell (NYU)',
+        'quote': 'Scout-App really helped my students understand the process of working with Sass before creating our own NPM script for Node-Sass.',
+        'url': 'https://gitter.im/scout-app/scout-app',
+        'photo': '_imgs/avatars/deverell.jpg'
     }/*,
     {
         'name': '',

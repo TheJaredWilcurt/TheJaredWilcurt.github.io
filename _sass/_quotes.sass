@@ -12,10 +12,22 @@
         display: block
         max-width: 100px
         max-height: 100px
-        border: 5px solid #96E0A5
-        border-radius: 50%
+        background: #000
+        border: 7px outset #3C3C39
+        border-radius: 75% 79%
         margin: 0px auto 5px
-        box-shadow: 1px 2px 1px 6px rgba(193, 199, 125, 0.3)
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.74)
+        -webkit-filter: contrast(62%) brightness(87%) sepia(100%)
+        filter: contrast(62%) brightness(87%) sepia(100%)
+        opacity: 0.73
+        transition: 1s ease all;
+        &:hover
+            background: #96E0A5
+            border: 7px solid #96E0A5
+            box-shadow: 1px 2px 1px 6px rgba(193, 199, 125, 0.3)
+            -webkit-filter: contrast(100%) brightness(100%) sepia(0%)
+            filter: contrast(100%) brightness(100%) sepia(0%)
+            opacity: 1
     .quote-text
         display: inline-block
         margin: 7px 0px
