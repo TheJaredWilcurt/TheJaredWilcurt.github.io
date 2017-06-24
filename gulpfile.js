@@ -4,6 +4,7 @@
 // Includes - Defining what will be used below.
 // These are pulled in from the node_modules folder.
 var gulp = require('gulp');
+var concat = require('gulp-concat');
 var livereload = require('gulp-livereload');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
@@ -40,6 +41,13 @@ gulp.task('uglify', ['rollup'], function () {
         .pipe(insert.append('\n'))
         .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))
         .pipe(rename('main.min.js'))
+        .pipe(gulp.dest('_js'));
+});
+
+gulp.task('concat', ['uglify'], function () {
+    gulp.src(['node_modules/smoothscroll/smoothscroll.min.js', '_js/main.min.js'])
+        .pipe(concat('main.min.js'))
+        .pipe(crlf({eolc:'CRLF', encoding:'utf8'}))
         .pipe(gulp.dest('_js'));
 });
 
@@ -126,6 +134,6 @@ gulp.task('open', function () {
 
 // The default Gulp task that happens when you run gulp.
 // It runs all the other gulp tasks above in the correct order.
-gulp.task('default', ['sass', 'sassfont', 'rollup', 'uglify', 'watch', 'serve', 'open']);
+gulp.task('default', ['sass', 'sassfont', 'rollup', 'uglify', 'concat', 'watch', 'serve', 'open']);
 
-gulp.task('sans-open', ['sass', 'sassfont', 'rollup', 'uglify', 'watch', 'serve']);
+gulp.task('sans-open', ['sass', 'sassfont', 'rollup', 'uglify', 'concat', 'watch', 'serve']);
