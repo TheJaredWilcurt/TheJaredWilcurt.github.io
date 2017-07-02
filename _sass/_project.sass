@@ -33,6 +33,19 @@
         line-height: 1.4
     .description
         margin-top: 10px
+    .hidden
+        .description,
+        .roles,
+        .technology
+            padding: 0px
+            line-height: 0
+            opacity: 0
+    .hidden,
+    .shown
+        .description,
+        .roles,
+        .technology
+            transition: 0.3s ease-out all
 
 .show-description
     min-height: 200px
@@ -59,11 +72,12 @@
         input
             display: none
             &:checked + label
-                background: rgba($activeButton, 0.67)
+                background: rgba($activeButton, 0.85)
                 color: $brightText
                 .badge
                     background: $brightText
                     color: $activeBadgeText
+                    color: #AC3E2F
         label
             display: inline-block
             background: rgba($primary, 0.1)

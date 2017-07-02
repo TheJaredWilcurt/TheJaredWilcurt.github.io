@@ -56,14 +56,17 @@
       <h1>The Jared Wilcurt</h1>
       <p>
         <span class="first-title">Cross-Platform Desktop App Engineer</span> Frontend Web Developer<br /><br />
-        <strong>Indianapolis, Indiana, USA</strong>
+        <strong>Indianapolis, Indiana, <span title="USA #1!">USA</span></strong>
       </p>
       <nav>
+        Sections:<br />
         <a href="#projects-highlight">Spotlight</a>
         <a href="#community">Community</a>
         <a href="#talks">Talks</a>
         <a href="#other-projects">Projects</a>
-        -
+        <br />
+        <br />
+        External links:<br />
         <a href="https://github.com/TheJaredWilcurt" target="_blank">GitHub</a>
       </nav>
     </header>
@@ -154,7 +157,7 @@
               <span v-else>{{ talk.title }}</span>
               <span v-if="talk.releases">({{ talk.releases }})</span>
             </div>
-            <span v-if="showDetails || talk.showDetails">
+            <span :class="showDetails || talk.showDetails ? 'shown' : 'hidden'">
               <div class="description" v-html="talk.description">
               </div>
               <div class="roles">
@@ -211,7 +214,7 @@
               <span v-else>{{ project.title }}</span>
               <span v-if="project.releases">({{ project.releases }})</span>
             </div>
-            <span v-if="showDetails || project.showDetails">
+            <span :class="showDetails || project.showDetails ? 'shown' : 'hidden'">
               <div class="description">
                 {{ project.description }}
               </div>
