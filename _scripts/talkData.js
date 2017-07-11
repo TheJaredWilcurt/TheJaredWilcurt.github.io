@@ -61,7 +61,7 @@ var talkData = [
     {
         'title': 'Making your first Desktop App (coming soon)',
         'type': 'Workshop',
-        'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/241580127/',
+        'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/241581122/',
         'description': 'A beginner friendly, 2 hour workshop on creating a cross-platform desktop app and packaging it for distribution.',
         'img': '_imgs/meetup.png',
         'roles': [
