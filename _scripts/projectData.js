@@ -50,7 +50,7 @@ var projectData = [
         'website': 'http://scout-app.io',
         'repo': 'https://github.com/scout-app/scout-app',
         'url': 'https://github.com/scout-app/scout-app',
-        'description': 'A cross-platform desktop app that manages, watches, and processes Sass into CSS for all your projects. Downloaded over 300,000 times, in 17 languages, in over 20 countries. I\'ve never released a version with a known bug.',
+        'description': 'A cross-platform desktop app that manages, watches, and processes Sass into CSS for all your projects. Downloaded over 300,000 times, in 22 languages, in over 20 countries. I\'ve never released a version with a known bug.',
         'img': '_imgs/scout-app.png',
         'releases': '5 major releases',
         'major': true,
