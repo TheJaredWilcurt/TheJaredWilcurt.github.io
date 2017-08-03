@@ -95,7 +95,7 @@ gulp.task('refreshsass', ['sass', 'sassfont'], function () {
         .pipe(livereload());
 });
 
-gulp.task('refreshjs', ['uglify'], function () {
+gulp.task('refreshjs', ['concat'], function () {
     gulp.src('*.js')
         .pipe(livereload());
 });

@@ -1,9 +1,21 @@
 var quoteData = [
     {
+        'name': 'Kalalau Cantrell',
+        'quote': 'Had a great time, learned a good deal about the tools behind desktop apps. Also, it was an added bonus to see a little bit of what Vue can do. Thanks for putting the course together!',
+        'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/241581122/#event_comment-482423967',
+        'photo': '_imgs/avatars/kalalau.jpg'
+    },
+    {
         'name': 'Gavyn Leavitt',
         'quote': 'Now I can start organizing my CSS in a meaningful way!',
         'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469996138/',
         'photo': '_imgs/avatars/gavyn.jpg'
+    },
+    {
+        'name': 'Mark McConnell',
+        'quote': 'Great workshop. It was amazing to see web code transformed into a desktop app!',
+        'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/241581122/#event_comment-482423384',
+        'photo': '_imgs/avatars/markm.jpg'
     },
     {
         'name': 'Tara Miller',
@@ -46,12 +58,18 @@ var quoteData = [
         'quote': 'Scout-App really helped my students understand the process of working with Sass before creating our own NPM script for Node-Sass.',
         'url': 'https://gitter.im/scout-app/scout-app',
         'photo': '_imgs/avatars/deverell.jpg'
+    },
+    {
+        'name': 'David',
+        'quote': 'Jared did an awesome job at resolving the issues or misunderstandings that anyone had. It was awesome to get to build the desktop app.',
+        'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/241581122/#event_comment-482425583',
+        'photo': '_imgs/avatars/david.jpg'
     }/*,
     {
         'name': '',
         'quote': '',
         'url': '',
-        'photo': ''
+        'photo': '_imgs/avatars/.jpg'
     }
     */
 ];

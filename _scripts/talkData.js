@@ -59,10 +59,10 @@ var talkData = [
         ]
     },
     {
-        'title': 'Making your first Desktop App (coming soon)',
+        'title': 'Making your first Desktop App',
         'type': 'Workshop',
-        'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/241581122/',
-        'description': 'A beginner friendly, 2 hour workshop on creating a cross-platform desktop app and packaging it for distribution. This workshop was one of the highest requested topics for <strong>Free Code Camp</strong> Indy.',
+        'url': 'https://www.meetup.com/Free-Code-Camp-Indy/events/241581122',
+        'description': 'A beginner friendly, 2 hour workshop on creating a cross-platform desktop app and packaging it for distribution. This workshop was one of the highest requested topics for <strong>Free Code Camp Indy</strong>. It introduces the command line, Node, NPM, NW.js, and Vue.js. The instructions were designed to work the same for any OS (Win/Lin/OSX).',
         'img': '_imgs/meetup.png',
         'roles': [
             'Presenter',
@@ -70,6 +70,7 @@ var talkData = [
         ],
         'tech': [
             'NW.js',
+            'Vue',
             'GitLab'
         ]
     },
@@ -193,7 +194,7 @@ var talkData = [
         'title': 'Finishing the Projects you Start (coming soon)',
         'type': 'Meetup Talk',
         'url': '#',
-        'description': 'This is one of the most highly requested talks by the members of the <strong>Free Code Camp Indy</strong> meetup group. It covers effective learning, defining scope, phases of a project, the differences between academic, résumé, &amp; passion projects and how to convert them from one to another.',
+        'description': 'This is the most requested talk by the members of the <strong>Free Code Camp Indy</strong> meetup group. It covers effective learning, defining scope, phases of a project, the differences between academic, résumé, &amp; passion projects and how to convert them from one to another.',
         'img': '_imgs/meetup.png',
         'roles': [
             'Presenter'
