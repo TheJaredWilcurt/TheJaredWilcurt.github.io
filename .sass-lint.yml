@@ -130,6 +130,10 @@ rules:
         - filter
         - float
         - opacity
+        - overflow
+        - overflow-x
+        - overflow-y
+        - src
         - vertical-align
         - visibility
         - z-index
