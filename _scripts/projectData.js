@@ -132,12 +132,11 @@ var projectData = [
             'Support'
         ],
         'tech': [
+            'Vue',
             'NW.js',
-            'UGUI',
             'Pa11y',
             'PhantomJS',
             'Sass',
-            'jQuery',
             'Node',
             'FS-Extra',
             'ESLint',

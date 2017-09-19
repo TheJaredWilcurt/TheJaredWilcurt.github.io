@@ -23,13 +23,25 @@ var communityData = [
         'time': '1 year'
     },
     {
+        'name': 'Vue.js Indy',
+        'description': 'A group dedicated to exploring and learning about the fasting growing JavaScript framework in history, Vue.js. We have talks, work on projects together, have discussions and share. Very welcoming to beginners and those just learning Vue or even just learning JavaScript.',
+        'role': [
+            'Founder',
+            'Organizer',
+            'Member',
+            'Mentor',
+            'Presenter'
+        ],
+        'time': '<1 year'
+    },
+    {
         'name': 'Civic UX Group',
         'description': 'I currently run this group, which was created as part of the Open Indy Brigade and is its longest running group. Our dedicated volunteers solve Civic issues with their UX skillsets. We\'ve worked directly with IN.gov and various food assistance programs in central Indiana. Our most successful project is Koa11y, a tool for easily finding accessibility issues on the web.',
         'role': [
             'Organizer',
             'Mentor'
         ],
-        'time': '1.5 years'
+        'time': '2 years'
     },
     {
         'name': 'Coder Dojo Indy',
@@ -37,7 +49,7 @@ var communityData = [
         'role': [
             'Mentor'
         ],
-        'time': '2 years'
+        'time': '2.5 years'
     },
     {
         'name': 'Indy.JS',
