@@ -25,7 +25,7 @@ function errorLog (error) {
 gulp.task('rollup', function () {
     return rollup(
         {
-            entry: './_scripts/main.js',
+            input: './_scripts/main.js',
             format: 'iife'
         })
         .pipe(source('all.js'))
@@ -137,3 +137,5 @@ gulp.task('open', function () {
 gulp.task('default', ['sass', 'sassfont', 'rollup', 'uglify', 'concat', 'watch', 'serve', 'open']);
 
 gulp.task('sans-open', ['sass', 'sassfont', 'rollup', 'uglify', 'concat', 'watch', 'serve']);
+
+gulp.task('build', ['sass', 'sassfont', 'rollup', 'uglify', 'concat']);
