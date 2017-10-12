@@ -191,9 +191,9 @@ var talkData = [
         ]
     },
     {
-        'title': 'Finishing the Projects you Start (coming soon)',
+        'title': 'Finishing the Projects you Start',
         'type': 'Meetup Talk',
-        'url': '#',
+        'url': 'https://www.meetup.com/preview/Free-Code-Camp-Indy/events/243632614',
         'description': 'This is the most requested talk by the members of the <strong>Free Code Camp Indy</strong> meetup group. It covers effective learning, defining scope, phases of a project, the differences between academic, résumé, &amp; passion projects and how to convert them from one to another.',
         'img': '_imgs/meetup.png',
         'roles': [
