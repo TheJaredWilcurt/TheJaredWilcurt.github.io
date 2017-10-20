@@ -1,13 +1,13 @@
-import projectData from './projectData.js';
-import talkData from './talkData.js';
-import quoteData from './quoteData.js';
-import communityData from './communityData.js';
-
+// import projectData from './projectData.js';
+// import talkData from './talkData.js';
+// import communityData from './communityData.js';
+// import axios from '../node_modules/axios/dist/axios.min.js';
+/*
 /**
  * Takes a charCode  and rotates 47 characters and returns the new charCode
  * @param  {number} charCode The numeric version of a character, 97 would be for 'a'
  * @return {number}          The new charCode after rotation
- */
+ *
 function ROT47CharCode (charCode) {
     if (typeof(charCode) === 'number') {
         // '!' == 33; 'O' == 79
@@ -26,7 +26,7 @@ function ROT47CharCode (charCode) {
  * Loops over the characters in a string, returns a ROT47 version of them
  * @param  {string} str Any string of text.
  * @return {string}     The rotated string, ready for use.
- */
+ *
 function ROT47 (str) {
     var newString = [];
 
@@ -53,7 +53,7 @@ function ROT47 (str) {
  * @param  {array}  data Imported JSON style data.
  * @param  {object} obj  The current object with stats on Tech and Roles
  * @return {object}      Object comprised of tech and roles subobjects. Each lists k:v pairs of tech/role and how many times it's used.
- */
+ *
 function listOfTechnologiesAndRoles (data, obj) {
     obj = obj || {
         tech: {},
@@ -78,18 +78,31 @@ window.techAndRolesStats = listOfTechnologiesAndRoles(projectData);
 window.techAndRolesStats = listOfTechnologiesAndRoles(talkData, window.techAndRolesStats);
 // eslint-disable-next-line no-console
 console.log(window.techAndRolesStats);
-
+*/
 
 var Vue = window.Vue;
+var axios = window.axios;
 
 // eslint-disable-next-line no-unused-vars
 var quotes = new Vue({
     el: '#quotes',
     data: {
-        quotes: quoteData
+        quotes: []
+    },
+    methods: {},
+    mounted: function () {
+        axios.get('/_scripts/quoteData.json')
+            .then(function (response) {
+                this.quotes = response.data;
+            }.bind(this))
+            .catch(function (err) {
+                // TODO: handle error states
+                // eslint-disable-next-line no-console
+                console.log(err);
+            });
     }
 });
-
+/*
 // eslint-disable-next-line no-unused-vars
 var projectsHighlight = new Vue({
     el: '#projects-highlight',
@@ -226,3 +239,4 @@ var footer = new Vue({
         }
     }
 });
+*/

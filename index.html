@@ -49,6 +49,8 @@
         document.write(unescape("%3Cscript src='/_js/vue.min.js' type='text/javascript'%3E%3C/script%3E"));
       }
     </script> <!-- Load local Vue if Google CDN is unreachable -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+    <script src="//cdn.polyfill.io/v2/polyfill.min.js?features=String.prototype.startsWith,Promise" type="text/javascript"></script>
   </head>
   <body>
     <header>
@@ -252,8 +254,9 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="_js/main.min.js"></script>
+    <!-- <script type="text/javascript" src="_js/main.min.js"></script> -->
     <!-- <script type="text/javascript" src="_scripts/all.js"></script> -->
+    <script type="text/javascript" src="_scripts/main.js"></script>
 
     <link rel="stylesheet" href="_styles/fonts.min.css" /> <!-- Render-blocking web fonts -->
   </body>
