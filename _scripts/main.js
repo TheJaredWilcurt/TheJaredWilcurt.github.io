@@ -1,13 +1,8 @@
-// import projectData from './projectData.js';
-// import talkData from './talkData.js';
-// import communityData from './communityData.js';
-// import axios from '../node_modules/axios/dist/axios.min.js';
-/*
 /**
  * Takes a charCode  and rotates 47 characters and returns the new charCode
  * @param  {number} charCode The numeric version of a character, 97 would be for 'a'
  * @return {number}          The new charCode after rotation
- *
+ */
 function ROT47CharCode (charCode) {
     if (typeof(charCode) === 'number') {
         // '!' == 33; 'O' == 79
@@ -26,7 +21,7 @@ function ROT47CharCode (charCode) {
  * Loops over the characters in a string, returns a ROT47 version of them
  * @param  {string} str Any string of text.
  * @return {string}     The rotated string, ready for use.
- *
+ */
 function ROT47 (str) {
     var newString = [];
 
@@ -73,6 +68,12 @@ function listOfTechnologiesAndRoles (data, obj) {
     });
     return obj;
 }
+
+
+import projectData from './projectData.js';
+import talkData from './talkData.js';
+import communityData from './communityData.js';
+import axios from '../node_modules/axios/dist/axios.min.js';
 
 window.techAndRolesStats = listOfTechnologiesAndRoles(projectData);
 window.techAndRolesStats = listOfTechnologiesAndRoles(talkData, window.techAndRolesStats);
@@ -176,18 +177,14 @@ var otherProjects = new Vue({
         }
     }
 });
+*/
 
 // eslint-disable-next-line no-unused-vars
 var talks = new Vue({
     el: '#talks',
     data: {
-        talks: talkData,
+        talks: [],
         showDetails: false
-    },
-    created: function () {
-        this.talks.forEach(function (talk) {
-            Vue.set(talk, 'showDetails', false);
-        });
     },
     methods: {
         toggleCurrentDetails: function (talk) {
@@ -199,10 +196,28 @@ var talks = new Vue({
                 detailsClass = 'show-description';
             }
             return detailsClass;
+        },
+        setAllDetailsToHidden: function () {
+            this.talks.forEach(function (talk) {
+                Vue.set(talk, 'showDetails', false);
+            });
         }
+    },
+    mounted: function () {
+        axios.get('/_scripts/talkData.json')
+            .then(function (response) {
+                this.talks = response.data;
+                this.setAllDetailsToHidden();
+            }.bind(this))
+            .catch(function (err) {
+                // TODO: handle error states
+                // eslint-disable-next-line no-console
+                console.log(err);
+            });
     }
 });
 
+/*
 // eslint-disable-next-line no-unused-vars
 var community = new Vue({
     el: '#community',
@@ -225,6 +240,7 @@ var community = new Vue({
         }
     }
 });
+*/
 
 // eslint-disable-next-line no-unused-vars
 var footer = new Vue({
@@ -239,4 +255,3 @@ var footer = new Vue({
         }
     }
 });
-*/
