@@ -43,12 +43,7 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js"></script>
-    <script type="text/javascript">
-      if (typeof Vue == 'undefined') {
-        document.write(unescape("%3Cscript src='/_js/vue.min.js' type='text/javascript'%3E%3C/script%3E"));
-      }
-    </script> <!-- Load local Vue if Google CDN is unreachable -->
+    <script type="text/javascript" src="//cdn.polyfill.io/v2/polyfill.min.js?features=String.prototype.startsWith,Promise"></script>
   </head>
   <body>
     <header>
@@ -75,8 +70,8 @@
     <div class="wrapper">
       <section id="projects-highlight" class="projects">
         <h1 class="decorated">Project Highlights (since 2015)</h1>
-
-        <div class="project card" v-for="(project, index) in projects" v-if="project.major">
+        <div class="error" v-if="networkRequestFailed" v-html="requestFailed()"></div>
+        <div class="project card" v-for="(project, index) in projects" v-if="projects.length > 0 && !networkRequestFailed && project.major">
           <div class="header">
             <div class="image">
               <img :src="project.img" :alt="project.title" />
@@ -112,20 +107,22 @@
 
       <section id="community">
         <h1 class="decorated">Community Involvement</h1>
+        <div class="error" v-if="networkRequestFailed" v-html="requestFailed()"></div>
+        <div v-if="groups.length > 0 && !networkRequestFailed">
+          <h2 @click="showAllDetails">Click to expand.</h2>
 
-        <h2 @click="showAllDetails">Click to expand.</h2>
-
-        <div class="community">
-          <div class="half" v-for="group in groups">
-            <div class="community-card" @click="toggleCurrentDetails(group)">
-              <div class="card-header" :class="group.showDetails ? 'shadow' : ''">
-                <strong>{{ group.name }}</strong> <span>{{ group.time }}</span>
-              </div>
-              <div class="card-body" :class="group.showDetails ? 'shown' : 'hidden'">
-                {{ group.description || '(coming soon)' }}
-              </div>
-              <div class="card-footer">
-                {{ group.role.join(', ') }}
+          <div class="community">
+            <div class="half" v-for="group in groups">
+              <div class="community-card" @click="toggleCurrentDetails(group)">
+                <div class="card-header" :class="group.showDetails ? 'shadow' : ''">
+                  <strong>{{ group.name }}</strong> <span>{{ group.time }}</span>
+                </div>
+                <div class="card-body" :class="group.showDetails ? 'shown' : 'hidden'">
+                  {{ group.description || '(coming soon)' }}
+                </div>
+                <div class="card-footer">
+                  {{ group.role.join(', ') }}
+                </div>
               </div>
             </div>
           </div>
@@ -133,51 +130,47 @@
       </section>
 
       <section id="talks">
-        <h1 class="projects-title decorated">
-          Talks
-        </h1>
+        <h1 class="projects-title decorated">Talks</h1>
+        <div class="error" v-if="networkRequestFailed" v-html="requestFailed()">asdf</div>
+        <div v-if="talks.length > 0 && !networkRequestFailed">
+          <label class="toggle-description">
+              <input type="checkbox" v-model="showDetails">
+              <span v-if="showDetails">Hide</span>
+              <span v-else>Show</span> talks details
+          </label>
 
-        <label class="toggle-description">
-            <input type="checkbox" v-model="showDetails">
-            <span v-if="showDetails">Hide</span>
-            <span v-else>Show</span> talks details
-        </label>
-
-        <div
-          :class="[detailsClassToggle, 'project half']"
-          v-for="(talk, index) in talks"
-           @click="toggleCurrentDetails(talk)"
-        >
-          <img :src="talk.img" :alt="talk.title" />
-          <div>
-            <div class="type">
-              <strong>{{ talk.type }}</strong>
+          <div :class="[detailsClassToggle, 'project half']" v-for="(talk, index) in talks" @click="toggleCurrentDetails(talk)">
+            <img :src="talk.img" :alt="talk.title" />
+            <div>
+              <div class="type">
+                <strong>{{ talk.type }}</strong>
+              </div>
+              <div class="title">
+                <a v-if="talk.url !== '#'" :href="talk.url" target="_blank">{{ talk.title }}</a>
+                <span v-else>{{ talk.title }}</span>
+                <span v-if="talk.releases">({{ talk.releases }})</span>
+              </div>
+              <span :class="showDetails || talk.showDetails ? 'shown' : 'hidden'">
+                <div class="description" v-html="talk.description">
+                </div>
+                <div class="roles">
+                  <strong>Roles:</strong>
+                  {{ talks[index].roles.join(', ') }}
+                </div>
+                <div class="technology" v-if="talks[index].tech.length > 0">
+                  <strong>Technology:</strong>
+                  {{ talks[index].tech.join(', ') }}
+                </div>
+              </span>
             </div>
-            <div class="title">
-              <a v-if="talk.url !== '#'" :href="talk.url" target="_blank">{{ talk.title }}</a>
-              <span v-else>{{ talk.title }}</span>
-              <span v-if="talk.releases">({{ talk.releases }})</span>
-            </div>
-            <span :class="showDetails || talk.showDetails ? 'shown' : 'hidden'">
-              <div class="description" v-html="talk.description">
-              </div>
-              <div class="roles">
-                <strong>Roles:</strong>
-                {{ talks[index].roles.join(', ') }}
-              </div>
-              <div class="technology" v-if="talks[index].tech.length > 0">
-                <strong>Technology:</strong>
-                {{ talks[index].tech.join(', ') }}
-              </div>
-            </span>
           </div>
         </div>
       </section>
 
       <section id="quotes">
         <h1 class="decorated" title="I am generally well received.">Quotes, Testimonials, &amp; Endorsements<br><small>from talks, tutorials, and workshops</small></h1>
-
-        <div class="quote" v-for="quote in quotes">
+        <div class="error" v-if="networkRequestFailed" v-html="requestFailed()">asdf</div>
+        <div class="quote" v-for="quote in quotes" v-if="quotes.length > 0 && !networkRequestFailed">
           <img :src="quote.photo" :alt="'Photo of ' + quote.name">
           <span class="quote-text">{{ quote.quote }}</span>
           – <a v-if="quote.url !== '#'" class="quote-name" :href="quote.url" target="_blank">{{ quote.name }}</a>
@@ -189,53 +182,55 @@
         <h1 class="projects-title decorated">
           Other Completed Projects (since 2015)
         </h1>
-        <label class="toggle-description">
-          <input type="checkbox" v-model="showDetails">
-          <span v-if="showDetails">Hide</span>
-          <span v-else>Show</span> project details
-        </label>
-        <nav>
-          <span v-for="type in allProjectTypes">
-            <input type="checkbox" v-model="typesChecked[type]" :id="type.toLowerCase().replace(/ /, '')">
-            <label :for="type.toLowerCase().replace(/ /, '')">{{type}} <span class="badge">{{typesCount[type]}}</span></label>
-          </span>
-        </nav>
-        <div
-          :class="[detailsClassToggle(project), 'project half']"
-          v-for="(project, index) in filteredProjects"
-          v-if="!project.major"
-          @click="toggleCurrentDetails(project)"
-        >
-          <img :src="project.img" :alt="project.title" />
-          <div>
-            <div class="type">
-              <strong>{{ project.type }}</strong>
-            </div>
-            <div class="title">
-              <a v-if="project.url !== '#'" :href="project.url" target="_blank">{{ project.title }}</a>
-              <span v-else>{{ project.title }}</span>
-              <span v-if="project.releases">({{ project.releases }})</span>
-            </div>
-            <span :class="showDetails || project.showDetails ? 'shown' : 'hidden'">
-              <div class="description">
-                {{ project.description }}
-              </div>
-              <div class="roles">
-                <strong>Roles:</strong>
-                {{ filteredProjects[index].roles.join(', ') }}
-              </div>
-              <div class="technology" v-if="filteredProjects[index].tech.length > 0">
-                <strong>Technology:</strong>
-                {{ filteredProjects[index].tech.join(', ') }}
-              </div>
+        <div class="error" v-if="networkRequestFailed" v-html="requestFailed()"></div>
+        <div v-if="projects.length > 0 && !networkRequestFailed">
+          <label class="toggle-description">
+            <input type="checkbox" v-model="showDetails">
+            <span v-if="showDetails">Hide</span>
+            <span v-else>Show</span> project details
+          </label>
+          <nav>
+            <span v-for="type in allProjectTypes">
+              <input type="checkbox" v-model="typesChecked[type]" :id="type.toLowerCase().replace(/ /, '')">
+              <label :for="type.toLowerCase().replace(/ /, '')">{{type}} <span class="badge">{{typesCount[type]}}</span></label>
             </span>
+          </nav>
+          <div
+            :class="[detailsClassToggle(project), 'project half']"
+            v-for="(project, index) in filteredProjects"
+            v-if="!project.major"
+            @click="toggleCurrentDetails(project)"
+          >
+            <img :src="project.img" :alt="project.title" />
+            <div>
+              <div class="type">
+                <strong>{{ project.type }}</strong>
+              </div>
+              <div class="title">
+                <a v-if="project.url !== '#'" :href="project.url" target="_blank">{{ project.title }}</a>
+                <span v-else>{{ project.title }}</span>
+                <span v-if="project.releases">({{ project.releases }})</span>
+              </div>
+              <span :class="showDetails || project.showDetails ? 'shown' : 'hidden'">
+                <div class="description">
+                  {{ project.description }}
+                </div>
+                <div class="roles">
+                  <strong>Roles:</strong>
+                  {{ filteredProjects[index].roles.join(', ') }}
+                </div>
+                <div class="technology" v-if="filteredProjects[index].tech.length > 0">
+                  <strong>Technology:</strong>
+                  {{ filteredProjects[index].tech.join(', ') }}
+                </div>
+              </span>
+            </div>
+          </div>
+          <div v-if="filteredProjects.length < 1">
+            <p class="no-projects-found">No projects match criteria.</p>
           </div>
         </div>
-        <div v-if="filteredProjects.length < 1">
-          <p class="no-projects-found">No projects match criteria.</p>
-        </div>
       </section>
-
     </div>
 
     <footer>
@@ -252,9 +247,19 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="_js/main.min.js"></script>
-    <!-- <script type="text/javascript" src="_scripts/all.js"></script> -->
-
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+    <!-- Load local library copies if CDN is unreachable -->
+    <script type="text/javascript">
+      if (typeof(Vue) == 'undefined') {
+        document.write(unescape("%3Cscript src='/_scripts/ven.vue.min.js' type='text/javascript'%3E%3C/script%3E"));
+      }
+      if (typeof(axios) == 'undefined') {
+        document.write(unescape("%3Cscript src='/_scripts/ven.axios.min.js' type='text/javascript'%3E%3C/script%3E"));
+      }
+    </script>
+    <script type="text/javascript" src="_scripts/main.js"></script>
+    <script type="text/javascript" src="_scripts/ven.smoothscroll.min.js"></script>
     <link rel="stylesheet" href="_styles/fonts.min.css" /> <!-- Render-blocking web fonts -->
   </body>
 </html>
