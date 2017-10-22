@@ -70,8 +70,6 @@ function listOfTechnologiesAndRoles (data, obj) {
 }
 
 window.techAndRolesStats = listOfTechnologiesAndRoles([]);
-// import projectData from './projectData.js';
-// window.techAndRolesStats = listOfTechnologiesAndRoles(projectData, window.techAndRolesStats);
 // eslint-disable-next-line no-console
 console.log(window.techAndRolesStats);
 
@@ -79,55 +77,20 @@ var Vue = window.Vue;
 var axios = window.axios;
 
 // eslint-disable-next-line no-unused-vars
-var quotes = new Vue({
-    el: '#quotes',
-    data: {
-        quotes: []
-    },
-    methods: {},
-    mounted: function () {
-        axios.get('/_scripts/quoteData.json')
-            .then(function (response) {
-                this.quotes = response.data;
-            }.bind(this))
-            .catch(function (err) {
-                // TODO: handle error states
-                // eslint-disable-next-line no-console
-                console.log(err);
-            });
-    }
-});
-
-/*
-// eslint-disable-next-line no-unused-vars
 var projectsHighlight = new Vue({
     el: '#projects-highlight',
     data: {
-        projects: projectData
+        projects: []
     }
 });
 
 // eslint-disable-next-line no-unused-vars
 var otherProjects = new Vue({
     el: '#other-projects',
-    data: function () {
-        var allTypes = {};
-        projectData.forEach(function (project) {
-            if (typeof(project.type) === 'string') {
-                allTypes[project.type] = true;
-            }
-        });
-
-        return {
-            projects: projectData,
-            typesChecked: allTypes,
-            showDetails: false
-        };
-    },
-    created: function () {
-        this.projects.forEach(function (project) {
-            Vue.set(project, 'showDetails', false);
-        });
+    data: {
+        projects: [],
+        typesChecked: {},
+        showDetails: false
     },
     methods: {
         detailsClassToggle: function (project) {
@@ -139,6 +102,20 @@ var otherProjects = new Vue({
         },
         toggleCurrentDetails: function (project) {
             project.showDetails = !project.showDetails;
+        },
+        createTypesChecked: function () {
+            var allTypes = {};
+            this.projects.forEach(function (project) {
+                if (typeof(project.type) === 'string') {
+                    allTypes[project.type] = true;
+                }
+            });
+            this.typesChecked = allTypes;
+        },
+        setAllDetailsToHidden: function () {
+            this.projects.forEach(function (project) {
+                Vue.set(project, 'showDetails', false);
+            });
         }
     },
     computed: {
@@ -155,10 +132,9 @@ var otherProjects = new Vue({
             return uniqueArray;
         },
         filteredProjects: function () {
-            var self = this;
             return this.projects.filter(function (project) {
-                return self.typesChecked[project.type];
-            });
+                return this.typesChecked[project.type];
+            }.bind(this));
         },
         typesCount: function () {
             var typeCounts = {};
@@ -172,7 +148,56 @@ var otherProjects = new Vue({
         }
     }
 });
-*/
+
+axios.get('/_scripts/projectData.json')
+    .then(function (response) {
+        projectsHighlight.projects = response.data;
+        otherProjects.projects = response.data;
+        otherProjects.setAllDetailsToHidden();
+        otherProjects.createTypesChecked();
+        window.techAndRolesStats = listOfTechnologiesAndRoles(response.data, window.techAndRolesStats);
+    }.bind(this))
+    .catch(function (err) {
+        // TODO: handle error states
+        // eslint-disable-next-line no-console
+        console.log(err);
+    });
+
+// eslint-disable-next-line no-unused-vars
+var community = new Vue({
+    el: '#community',
+    data: {
+        groups: []
+    },
+    methods: {
+        toggleCurrentDetails: function (group) {
+            group.showDetails = !group.showDetails;
+        },
+        showAllDetails: function () {
+            this.groups.forEach(function (group) {
+                group.showDetails = true;
+            });
+        },
+        setAllDetailsToHidden: function () {
+            this.groups.forEach(function (group) {
+                Vue.set(group, 'showDetails', false);
+            });
+        }
+    },
+    mounted: function () {
+        axios.get('/_scripts/communityData.json')
+            .then(function (response) {
+                this.groups = response.data;
+                this.setAllDetailsToHidden();
+                window.techAndRolesStats = listOfTechnologiesAndRoles(response.data, window.techAndRolesStats);
+            }.bind(this))
+            .catch(function (err) {
+                // TODO: handle error states
+                // eslint-disable-next-line no-console
+                console.log(err);
+            });
+    }
+});
 
 // eslint-disable-next-line no-unused-vars
 var talks = new Vue({
@@ -213,34 +238,17 @@ var talks = new Vue({
     }
 });
 
-
 // eslint-disable-next-line no-unused-vars
-var community = new Vue({
-    el: '#community',
+var quotes = new Vue({
+    el: '#quotes',
     data: {
-        groups: []
+        quotes: []
     },
-    methods: {
-        toggleCurrentDetails: function (group) {
-            group.showDetails = !group.showDetails;
-        },
-        showAllDetails: function () {
-            this.groups.forEach(function (group) {
-                group.showDetails = true;
-            });
-        },
-        setAllDetailsToHidden: function () {
-            this.groups.forEach(function (group) {
-                Vue.set(group, 'showDetails', false);
-            });
-        }
-    },
+    methods: {},
     mounted: function () {
-        axios.get('/_scripts/communityData.json')
+        axios.get('/_scripts/quoteData.json')
             .then(function (response) {
-                this.groups = response.data;
-                this.setAllDetailsToHidden();
-                window.techAndRolesStats = listOfTechnologiesAndRoles(response.data, window.techAndRolesStats);
+                this.quotes = response.data;
             }.bind(this))
             .catch(function (err) {
                 // TODO: handle error states
@@ -249,7 +257,6 @@ var community = new Vue({
             });
     }
 });
-
 
 // eslint-disable-next-line no-unused-vars
 var footer = new Vue({
