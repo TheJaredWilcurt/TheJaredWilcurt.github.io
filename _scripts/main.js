@@ -48,7 +48,7 @@ function ROT47 (str) {
  * @param  {array}  data Imported JSON style data.
  * @param  {object} obj  The current object with stats on Tech and Roles
  * @return {object}      Object comprised of tech and roles subobjects. Each lists k:v pairs of tech/role and how many times it's used.
- *
+ */
 function listOfTechnologiesAndRoles (data, obj) {
     obj = obj || {
         tech: {},
@@ -69,17 +69,11 @@ function listOfTechnologiesAndRoles (data, obj) {
     return obj;
 }
 
-
-import projectData from './projectData.js';
-import talkData from './talkData.js';
-import communityData from './communityData.js';
-import axios from '../node_modules/axios/dist/axios.min.js';
-
-window.techAndRolesStats = listOfTechnologiesAndRoles(projectData);
-window.techAndRolesStats = listOfTechnologiesAndRoles(talkData, window.techAndRolesStats);
+window.techAndRolesStats = listOfTechnologiesAndRoles([]);
+// import projectData from './projectData.js';
+// window.techAndRolesStats = listOfTechnologiesAndRoles(projectData, window.techAndRolesStats);
 // eslint-disable-next-line no-console
 console.log(window.techAndRolesStats);
-*/
 
 var Vue = window.Vue;
 var axios = window.axios;
@@ -103,6 +97,7 @@ var quotes = new Vue({
             });
     }
 });
+
 /*
 // eslint-disable-next-line no-unused-vars
 var projectsHighlight = new Vue({
@@ -208,6 +203,7 @@ var talks = new Vue({
             .then(function (response) {
                 this.talks = response.data;
                 this.setAllDetailsToHidden();
+                window.techAndRolesStats = listOfTechnologiesAndRoles(response.data, window.techAndRolesStats);
             }.bind(this))
             .catch(function (err) {
                 // TODO: handle error states
@@ -217,17 +213,12 @@ var talks = new Vue({
     }
 });
 
-/*
+
 // eslint-disable-next-line no-unused-vars
 var community = new Vue({
     el: '#community',
     data: {
-        groups: communityData
-    },
-    created: function () {
-        this.groups.forEach(function (group) {
-            Vue.set(group, 'showDetails', false);
-        });
+        groups: []
     },
     methods: {
         toggleCurrentDetails: function (group) {
@@ -237,10 +228,28 @@ var community = new Vue({
             this.groups.forEach(function (group) {
                 group.showDetails = true;
             });
+        },
+        setAllDetailsToHidden: function () {
+            this.groups.forEach(function (group) {
+                Vue.set(group, 'showDetails', false);
+            });
         }
+    },
+    mounted: function () {
+        axios.get('/_scripts/communityData.json')
+            .then(function (response) {
+                this.groups = response.data;
+                this.setAllDetailsToHidden();
+                window.techAndRolesStats = listOfTechnologiesAndRoles(response.data, window.techAndRolesStats);
+            }.bind(this))
+            .catch(function (err) {
+                // TODO: handle error states
+                // eslint-disable-next-line no-console
+                console.log(err);
+            });
     }
 });
-*/
+
 
 // eslint-disable-next-line no-unused-vars
 var footer = new Vue({
