@@ -1,47 +1,4 @@
-/**
- * Takes a charCode  and rotates 47 characters and returns the new charCode
- * @param  {number} charCode The numeric version of a character, 97 would be for 'a'
- * @return {number}          The new charCode after rotation
- */
-function ROT47CharCode (charCode) {
-    if (typeof(charCode) === 'number') {
-        // '!' == 33; 'O' == 79
-        if (charCode >= 33 && charCode <= 79) {
-            charCode = charCode + 47;
-        // 'P' == 80; '~' == 126
-        } else if (charCode >= 80 && charCode <= 126) {
-            charCode = charCode - 47;
-        }
-    }
-
-    return charCode;
-}
-
-/**
- * Loops over the characters in a string, returns a ROT47 version of them
- * @param  {string} str Any string of text.
- * @return {string}     The rotated string, ready for use.
- */
-function ROT47 (str) {
-    var newString = [];
-
-    for (var i = 0; i < str.length; i++) {
-        // a => 97
-        var char = str.charCodeAt(i);
-        // 97 => 50
-        var newChar = ROT47CharCode(char);
-        // 50 => '2'
-        newChar = String.fromCharCode(newChar);
-        // [] => ['2']
-        newString.push(newChar);
-    }
-
-    // ['2'] => '2'
-    newString = newString.join('');
-
-    // '2'
-    return newString;
-}
+/* global axios, Vue */
 
 /**
  * Find out how many times a technology or role is used in the site's Data
@@ -69,18 +26,21 @@ function listOfTechnologiesAndRoles (data, obj) {
     return obj;
 }
 
+// eslint-disable-next-line no-unused-vars
+function requestFailed () {
+    return 'There was an error in making the network request. Please refresh the page. If the issue continues, <a href="http://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io/issues">report it here</a>.';
+}
+
 window.techAndRolesStats = listOfTechnologiesAndRoles([]);
 // eslint-disable-next-line no-console
 console.log(window.techAndRolesStats);
-
-var Vue = window.Vue;
-var axios = window.axios;
 
 // eslint-disable-next-line no-unused-vars
 var projectsHighlight = new Vue({
     el: '#projects-highlight',
     data: {
-        projects: []
+        projects: [],
+        networkRequestFailed: false
     }
 });
 
@@ -90,7 +50,8 @@ var otherProjects = new Vue({
     data: {
         projects: [],
         typesChecked: {},
-        showDetails: false
+        showDetails: false,
+        networkRequestFailed: false
     },
     methods: {
         detailsClassToggle: function (project) {
@@ -149,7 +110,7 @@ var otherProjects = new Vue({
     }
 });
 
-axios.get('/_scripts/projectData.json')
+axios.get('/_scripts/data/projects.json')
     .then(function (response) {
         projectsHighlight.projects = response.data;
         otherProjects.projects = response.data;
@@ -158,7 +119,8 @@ axios.get('/_scripts/projectData.json')
         window.techAndRolesStats = listOfTechnologiesAndRoles(response.data, window.techAndRolesStats);
     }.bind(this))
     .catch(function (err) {
-        // TODO: handle error states
+        projectsHighlight.networkRequestFailed = true;
+        otherProjects.networkRequestFailed = true;
         // eslint-disable-next-line no-console
         console.log(err);
     });
@@ -167,7 +129,8 @@ axios.get('/_scripts/projectData.json')
 var community = new Vue({
     el: '#community',
     data: {
-        groups: []
+        groups: [],
+        networkRequestFailed: false
     },
     methods: {
         toggleCurrentDetails: function (group) {
@@ -185,17 +148,17 @@ var community = new Vue({
         }
     },
     mounted: function () {
-        axios.get('/_scripts/communityData.json')
+        axios.get('/_scripts/data/community.json')
             .then(function (response) {
                 this.groups = response.data;
                 this.setAllDetailsToHidden();
                 window.techAndRolesStats = listOfTechnologiesAndRoles(response.data, window.techAndRolesStats);
             }.bind(this))
             .catch(function (err) {
-                // TODO: handle error states
+                this.networkRequestFailed = true;
                 // eslint-disable-next-line no-console
                 console.log(err);
-            });
+            }.bind(this));
     }
 });
 
@@ -204,7 +167,8 @@ var talks = new Vue({
     el: '#talks',
     data: {
         talks: [],
-        showDetails: false
+        showDetails: false,
+        networkRequestFailed: false
     },
     methods: {
         toggleCurrentDetails: function (talk) {
@@ -224,17 +188,17 @@ var talks = new Vue({
         }
     },
     mounted: function () {
-        axios.get('/_scripts/talkData.json')
+        axios.get('/_scripts/data/talks.json')
             .then(function (response) {
                 this.talks = response.data;
                 this.setAllDetailsToHidden();
                 window.techAndRolesStats = listOfTechnologiesAndRoles(response.data, window.techAndRolesStats);
             }.bind(this))
             .catch(function (err) {
-                // TODO: handle error states
+                this.networkRequestFailed = true;
                 // eslint-disable-next-line no-console
                 console.log(err);
-            });
+            }.bind(this));
     }
 });
 
@@ -242,19 +206,20 @@ var talks = new Vue({
 var quotes = new Vue({
     el: '#quotes',
     data: {
-        quotes: []
+        quotes: [],
+        networkRequestFailed: false
     },
     methods: {},
     mounted: function () {
-        axios.get('/_scripts/quoteData.json')
+        axios.get('/_scripts/data/quotes.json')
             .then(function (response) {
                 this.quotes = response.data;
             }.bind(this))
             .catch(function (err) {
-                // TODO: handle error states
+                this.networkRequestFailed = true;
                 // eslint-disable-next-line no-console
                 console.log(err);
-            });
+            }.bind(this));
     }
 });
 
@@ -262,12 +227,58 @@ var quotes = new Vue({
 var footer = new Vue({
     el: 'footer',
     data: {
-        addr: ROT47('>@4]=:2>8oECF4=:(56C2y69%').replace('@', '<span class="hide">kitten</span>@'),
+        addr: '',
         to: 'mailto:0@0.0'
     },
     methods: {
         changeTo: function () {
-            this.to = ROT47('>2:=E@i%96y2C65(:=4FCEo8>2:=]4@>');
+            this.to = this.ROT47('>2:=E@i%96y2C65(:=4FCEo8>2:=]4@>');
+        },
+        /**
+         * Takes a charCode  and rotates 47 characters and returns the new charCode
+         * @param  {number} charCode The numeric version of a character, 97 would be for 'a'
+         * @return {number}          The new charCode after rotation
+         */
+        ROT47CharCode: function (charCode) {
+            if (typeof(charCode) === 'number') {
+                // '!' == 33; 'O' == 79
+                if (charCode >= 33 && charCode <= 79) {
+                    charCode = charCode + 47;
+                // 'P' == 80; '~' == 126
+                } else if (charCode >= 80 && charCode <= 126) {
+                    charCode = charCode - 47;
+                }
+            }
+
+            return charCode;
+        },
+        /**
+         * Loops over the characters in a string, returns a ROT47 version of them
+         * @param  {string} str Any string of text.
+         * @return {string}     The rotated string, ready for use.
+         */
+        ROT47: function (str) {
+            var newString = [];
+
+            for (var i = 0; i < str.length; i++) {
+                // a => 97
+                var char = str.charCodeAt(i);
+                // 97 => 50
+                var newChar = this.ROT47CharCode(char);
+                // 50 => '2'
+                newChar = String.fromCharCode(newChar);
+                // [] => ['2']
+                newString.push(newChar);
+            }
+
+            // ['2'] => '2'
+            newString = newString.join('');
+
+            // '2'
+            return newString;
         }
+    },
+    created: function () {
+        this.addr = this.ROT47('>@4]=:2>8oECF4=:(56C2y69%').replace('@', '<span class="hide">kitten</span>@');
     }
 });
