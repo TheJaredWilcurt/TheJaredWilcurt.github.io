@@ -150,7 +150,7 @@
   {
     "title": "Finishing the Projects you Start",
     "type": "Meetup Talk",
-    "url": "https://www.meetup.com/preview/Free-Code-Camp-Indy/events/243632614",
+    "url": "https://www.meetup.com/Free-Code-Camp-Indy/events/243632614",
     "description": "This is the most requested talk by the members of the <strong>Free Code Camp Indy</strong> meetup group. It covers effective learning, defining scope, phases of a project, the differences between academic, résumé, &amp; passion projects and how to convert them from one to another.",
     "img": "_imgs/meetup.png",
     "roles": [
@@ -158,6 +158,34 @@
     ],
     "tech": [
       "Google Slides"
+    ]
+  },
+  {
+    "title": "Finishing the Projects you Start",
+    "type": "University Lecture",
+    "url": "_imgs/indycode-css.png",
+    "description": "I was requested to give a talk at IUPUI as part of SIGGRAPH. It was requested that my talk be applicable to anyone, and not just programmers. This talk covers effective learning, defining scope, phases of a project, the differences between academic, résumé, &amp; passion projects and how to convert them from one to another.",
+    "img": "_imgs/iupui.png",
+    "roles": [
+      "Presenter"
+    ],
+    "tech": [
+      "Google Slides"
+    ]
+  },
+  {
+    "title": "Vue-Router: Everything you could possibly know about it",
+    "type": "Meetup Talk",
+    "url": "https://www.meetup.com/vuejsindy/events/245007747",
+    "description": "A complete introduction to the concepts behind routing from a server and client side perspecitve. This talk covers all major features of the Vue-Router plugin.",
+    "img": "_imgs/meetup.png",
+    "roles": [
+      "Presenter"
+    ],
+    "tech": [
+      "Google Slides",
+      "Vue.js",
+      "Vue-Router"
     ]
   }
 ]
