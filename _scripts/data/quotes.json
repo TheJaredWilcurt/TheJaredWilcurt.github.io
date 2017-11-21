@@ -64,5 +64,23 @@
     "quote": "Jared did an awesome job at resolving the issues or misunderstandings that anyone had. It was awesome to get to build the desktop app.",
     "url": "https://www.meetup.com/Free-Code-Camp-Indy/events/241581122/#event_comment-482425583",
     "photo": "_imgs/avatars/david.jpg"
+  },
+  {
+    "name": "David Ragsdale",
+    "quote": "The explanations and slides were very well prepared and progressed nicely.",
+    "url": "https://www.meetup.com/vuejsindy/events/245007747",
+    "photo": "_imgs/avatars/ragsdale.jpg"
+  },
+  {
+    "name": "Alex Wasik",
+    "quote": "Five Stars. Jared was great. Really knowledgeable.",
+    "url": "https://www.meetup.com/vuejsindy/events/245007747",
+    "photo": "_imgs/avatars/alex.jpg"
+  },
+  {
+    "name": "Dave Dozier",
+    "quote": "Really great intro into the capabilities of Vue-Router. Thanks Jared!",
+    "url": "https://www.meetup.com/vuejsindy/events/245007747",
+    "photo": "_imgs/avatars/dozier.jpg"
   }
 ]
