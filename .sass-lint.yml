@@ -14,56 +14,79 @@ files:
     - 'sass/vendor/**/*.*'
 # Rule Configuration
 rules:
-  extends-before-mixins: 2
-
-  extends-before-declarations: 2
-
-  placeholder-in-extend: 2
-
-  mixins-before-declarations:
+  attribute-quotes: 2
+  brace-style:
     - 2
-    -
-      exclude:
-        - breakpoint
-        - mq
-
-  no-warn: 1
-
-  no-debug: 1
-
-  no-important: 2
-
+    - allow-single-line: false
+    - style: '1tbs'
+  declarations-before-nesting: 2
+  empty-args:
+    - 2
+    - include: false
+  extends-before-declarations: 2
+  extends-before-mixins: 2
+  final-newline:
+    - 2
+    - include: true
+  hex-length:
+    - 2
+    - style: short
   hex-notation:
     - 2
-    -
-      style: uppercase
-
+    - style: uppercase
   indentation:
     - 2
-    -
-      size: 4
-
+    - size: 4
+  leading-zero:
+    - 2
+    - include: true
+  mixins-before-declarations:
+    - 2
+    - exclude:
+        - breakpoint
+        - mq
+  no-color-keywords: 1
+  no-debug: 1
+  no-duplicate-properties: 2
+  no-empty-rulesets: 2
+  no-important: 2
+  no-invalid-hex: 1
+  no-mergeable-selectors: 2
+  no-misspelled-properties: 1
+  no-qualifying-elements:
+   - 2
+   - allow-element-with-attribute: true
+   - allow-element-with-class: false
+   - allow-element-with-id: false
+  no-trailing-whitespace: 1
+  no-warn: 1
+  placeholder-in-extend: 2
   property-sort-order:
     - 1
-    -
-      order:
+    - order:
         # Effects if the element exists
         - content
-        # Highest effect of where pixels painting begins
+        # Highest effect of where pixel painting begins
         - position
         - top
         - right
         - bottom
         - left
-        # How the element is display
+        # How the element is displayed
         - display
+        - align-content
         - align-items
         - align-self
+        - flex-basis
         - flex-direction
         - flex-flow
+        - flex-grow
+        - flex-shrink
         - flex-wrap
+        - flex
         - justify-content
         - order
+        # Overall size, max amount of pixels that can be painted
         - width
         - height
         - min-width
@@ -74,9 +97,14 @@ rules:
         - background
         - background-color
         - background-image
+        - background-position
         - background-repeat
+        - background-size
         # Box model
         - border
+        - border-width
+        - border-style
+        - border-color
         - border-top
         - border-top-width
         - border-top-style
@@ -93,10 +121,11 @@ rules:
         - border-left-width
         - border-left-style
         - border-left-color
-        - border-width
-        - border-style
-        - border-color
         - border-radius
+        - border-top-left-radius
+        - border-top-right-radius
+        - border-bottom-right-radius
+        - border-bottom-left-radius
         - margin
         - margin-top
         - margin-right
@@ -112,29 +141,81 @@ rules:
         - direction
         - font-family
         - font-size
+        - -webkit-font-smoothing
+        - font-smoothing
         - font-style
         - font-weight
+        - font-variant
+        - letter-spacing
         - line-height
         - list-style
         - list-style-image
         - list-style-position
         - list-style-type
+        - speak
+        - src
         - text-align
         - text-decoration
+        - text-overflow
+        - text-rendering
         - text-shadow
+        - text-transform
         - unicode-bidi
+        - unicode-range
+        - white-space
+        - word-break
         # Less common properties go to the bottom
         - box-shadow
+        - clear
         - cursor
         - -webkit-filter
         - filter
         - float
         - opacity
+        - outline
+        - outline-offset
         - overflow
         - overflow-x
         - overflow-y
-        - src
+        - perspective
+        - pointer-events
+        - -webkit-transform
+        - transform
+        - -webkit-transition
+        - transition
         - vertical-align
         - visibility
         - z-index
       ignore-custom-properties: true
+  single-line-per-selector: 1
+  space-after-bang:
+    - 2
+    - include: false
+  space-after-colon:
+    - 1
+    - include: true
+  space-after-comma:
+    - 1
+    - include: true
+  space-around-operator:
+    - 1
+    - include: true
+  space-before-bang:
+    - 1
+    - include: true
+  space-before-brace:
+    - 1
+    - include: true
+  space-before-colon:
+    - 1
+    - include: false
+  space-between-parens:
+    - 1
+    - include: false
+  trailing-semicolon:
+    - 1
+    - include: true
+  url-quotes: 1
+  zero-unit:
+    - 1
+    - include: true
