@@ -16,6 +16,19 @@
     ]
   },
   {
+    "title": "Finishing the Projects you Start",
+    "type": "Conference Talk",
+    "url": "_imgs/indycode-projects.png",
+    "description": "This talk covers effective learning, defining scope, phases of a project, the differences between academic, résumé, &amp; passion projects and how to convert them from one to another.",
+    "img": "_imgs/indycode.png",
+    "roles": [
+      "Presenter"
+    ],
+    "tech": [
+      "Google Slides"
+    ]
+  },
+  {
     "title": "Making your first Desktop App",
     "type": "Workshop",
     "url": "https://www.meetup.com/Free-Code-Camp-Indy/events/241581122",
@@ -186,6 +199,21 @@
       "Google Slides",
       "Vue.js",
       "Vue-Router"
+    ]
+  },
+  {
+    "title": "Vue.js is so freaking awesome (An Introduction)",
+    "type": "Meetup Talk",
+    "url": "https://www.meetup.com/Free-Code-Camp-Indy/events/248490760",
+    "description": "A beginner level intro to Vue.js, current usage statistics, it's history, the surrounding ecosystem, and how to use it. We mainly focus on the basics of using it via a CDN, but also touch on Single File Components and Vue-CLI. We walk through the templates and directives, methods, computed, and created.",
+    "img": "_imgs/meetup.png",
+    "roles": [
+      "Presenter"
+    ],
+    "tech": [
+      "Google Slides",
+      "Vue.js",
+      "Vue-CLI"
     ]
   }
 ]
