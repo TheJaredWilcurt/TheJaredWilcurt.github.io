@@ -215,5 +215,19 @@
       "Vue.js",
       "Vue-CLI"
     ]
-  }
+  },
+   {
+    "title": "Crafting the Perfect Developer Résumé",
+    "type": "Meetup Talk",
+    "url": "https://www.meetup.com/Free-Code-Camp-Indy/events/251481598",
+    "description": "This talk covers how to break down your resume into sections for the 3 types of people that will be looking at it (HR/Recruiter, Dev/Team Manager, Senior/Team Lead). How much attention should be placed on each section of the resume, what things to highlight, and more importantly what things to avoid.",
+    "img": "_imgs/meetup.png",
+    "roles": [
+      "Presenter",
+      "Design"
+    ],
+    "tech": [
+      "Google Slides"
+    ]
+  },
 ]
