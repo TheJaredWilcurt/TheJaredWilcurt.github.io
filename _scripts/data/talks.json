@@ -216,7 +216,7 @@
       "Vue-CLI"
     ]
   },
-   {
+  {
     "title": "Crafting the Perfect Developer Résumé",
     "type": "Meetup Talk",
     "url": "https://www.meetup.com/Free-Code-Camp-Indy/events/251481598",
@@ -229,5 +229,5 @@
     "tech": [
       "Google Slides"
     ]
-  },
+  }
 ]
