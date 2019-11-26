@@ -55,7 +55,7 @@ const otherProjects = new Vue({
   },
   methods: {
     detailsClassToggle: function (project) {
-      const detailsClass = 'hide-description';
+      let detailsClass = 'hide-description';
       if (this.showDetails || project.showDetails) {
         detailsClass = 'show-description';
       }
@@ -175,7 +175,7 @@ const talks = new Vue({
       talk.showDetails = !talk.showDetails;
     },
     detailsClassToggle: function () {
-      const detailsClass = 'hide-description';
+      let detailsClass = 'hide-description';
       if (this.showDetails) {
         detailsClass = 'show-description';
       }
@@ -258,13 +258,13 @@ const footer = new Vue({
      * @return {string}     The rotated string, ready for use.
      */
     ROT47: function (str) {
-      const newString = [];
+      let newString = [];
 
-      for (const i = 0; i < str.length; i++) {
+      for (let i = 0; i < str.length; i++) {
         // a => 97
-        const char = str.charCodeAt(i);
+        let char = str.charCodeAt(i);
         // 97 => 50
-        const newChar = this.ROT47CharCode(char);
+        let newChar = this.ROT47CharCode(char);
         // 50 => '2'
         newChar = String.fromCharCode(newChar);
         // [] => ['2']

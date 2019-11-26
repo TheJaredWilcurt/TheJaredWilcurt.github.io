@@ -72,7 +72,7 @@ gulp.task('watch', function () {
 gulp.task('open', function () {
   const url = 'http://localhost:8000';
   const OS = process.platform;
-  const executable = '';
+  let executable = '';
 
   // OS Specific values for opening files.
   if (OS == 'darwin') { executable = 'open "' + url + '"'; }
