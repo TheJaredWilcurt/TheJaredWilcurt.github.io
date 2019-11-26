@@ -7,7 +7,6 @@ const gulp = require('gulp');
 const livereload = require('gulp-livereload');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
-const sassLint = require('gulp-sass-lint');
 const crlf = require('gulp-line-ending-corrector');
 
 // Create expanded and .min versions of Sass styles in the _styles folder as CSS
@@ -28,13 +27,6 @@ gulp.task('sassfont', function () {
     .pipe(crlf({ eolc:'CRLF', encoding:'utf8' }))
     .pipe(gulp.dest('_styles/'))
     .pipe(livereload());
-});
-
-gulp.task('sasslint', function () {
-  gulp.src(['_sass/*.scss', '_sass/*.sass'])
-    .pipe(sassLint())
-    .pipe(sassLint.format())
-    .pipe(sassLint.failOnError());
 });
 
 // Run a local server on port 8000

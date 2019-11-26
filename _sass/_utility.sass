@@ -9,13 +9,13 @@
     transition: 0.3s ease-out all
 
 .hidden
-    line-height: 0
-    opacity: 0
+    line-height: 0px
+    opacity: 0.0
     overflow: hidden
 
 .shown
     line-height: 1.28
-    opacity: 1
+    opacity: 1.0
     overflow: visible
 
 .small
@@ -32,15 +32,15 @@
     text-align: center
 
 .decorated
-    border-top: 3px solid #DEDDD3
-    border-bottom: 3px solid #DEDDD3
+    border-top: 3px solid $lightBorder
+    border-bottom: 3px solid $lightBorder
     margin: 50px 0px
-    box-shadow: #EFEEE3 0px -4px 0px, #DEDDD3 0px -9px 0px, #EFEEE3 0px 4px 0px, #DEDDD3 0px 9px 0px
+    box-shadow: $backgroundColor 0px -4px 0px, $lightBorder 0px -9px 0px, $backgroundColor 0px 4px 0px, $lightBorder 0px 9px 0px
 
 .badge
     display: inline-block
     width: auto
-    background: rgba($primary, 0.8)
+    background: $primary80
     border-radius: 12px
     padding: 1px 6px
     color: $brightText
