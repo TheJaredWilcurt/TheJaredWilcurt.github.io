@@ -8,12 +8,12 @@
     display: inline-flex
     align-items: center
     background: $brightBackground
-    border: 2px solid rgba(88, 87, 83, 0.2)
+    border: 2px solid $primary20
     border-radius: 6px
     margin: 0px 10px 10px 0px
     padding: 22px 14px
     font-size: 20px
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.09)
+    box-shadow: 1px 1px 8px $black09
     vertical-align: top
     img
         max-width: 100px
@@ -37,8 +37,8 @@
         .roles,
         .technology
             padding: 0px
-            line-height: 0
-            opacity: 0
+            line-height: 0.0
+            opacity: 0.0
     .hidden,
     .shown
         .description,
@@ -71,15 +71,14 @@
         input
             display: none
             &:checked + label
-                background: rgba($activeButton, 0.85)
+                background: $activeButton85
                 color: $brightText
                 .badge
                     background: $brightText
                     color: $activeBadgeText
-                    color: #AC3E2F
         label
             display: inline-block
-            background: rgba($primary, 0.1)
+            background: $primary10
             border: 1px solid $primary
             padding: 6px 11px
             cursor: pointer
