@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "Official website of The Jared Wilcurt.",
     "author": "The Jared Wilcurt",
+    "engines": {
+        "node": "11"
+    },
     "scripts": {
         "start": "gulp",
         "serve": "gulp sans-open",
