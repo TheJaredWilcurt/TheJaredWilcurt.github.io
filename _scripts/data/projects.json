@@ -7,7 +7,7 @@
     "url": "https://github.com/scout-app/scout-app",
     "description": "A cross-platform desktop app that manages, watches, and processes Sass into CSS for all your projects. Downloaded over 300,000 times, in 22 languages, in over 20 countries. I've never released a version with a known bug.",
     "img": "_imgs/scout-app.png",
-    "releases": "5 major releases",
+    "releases": "6 major releases",
     "major": true,
     "roles": [
       "Developer",
@@ -521,7 +521,7 @@
     "title": "Scout-App Classic Port",
     "type": "Project",
     "url": "http://scout-app.io/mhs-site-fork/",
-    "description": "The original 2012 version of Scout-App was very successful and has been linked to from many websites. Since the new version is now at a more appropriate URL, there were 2 primary goals of this project. Firstly to preserve the original website for the 2012 version as best we could in code and design. However I did updated some code and better optimize images. The living archive of the 2012 site was moved to its own repo to be accessible on the new Scout-App website under Scout-App.io/classic. The original URL had a new page created to offer visitors looking for Scout-App the original 2012 or new 2017 versions.",
+    "description": "The original 2012 version of Scout-App was very successful and has been linked to from many websites. Since the new version is now at a more appropriate URL, there were 2 primary goals of this project. Firstly to preserve the original website for the 2012 version as best we could in code and design. However I did update some code and better optimize images. The living archive of the 2012 site was moved to its own repo to be accessible on the new Scout-App website under Scout-App.io/classic. The original URL had a new page created to offer visitors looking for Scout-App the original 2012 or new 2017 versions.",
     "img": "_imgs/scout-classic.png",
     "roles": [
       "Developer",
