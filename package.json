@@ -12,7 +12,8 @@
         "installer": "npm install --loglevel=error",
         "lint": "eslint --config=.eslintrc.js _scripts gulpfile.js",
         "sasslint": "gulp sasslint",
-        "fix": "eslint --fix --config=.eslintrc.js _scripts gulpfile.js"
+        "fix": "eslint --fix --config=.eslintrc.js _scripts gulpfile.js",
+        "validate": "npm run lint && npm run sasslint && npm run build"
     },
     "devDependencies": {
         "eslint": "^4.15.0",
