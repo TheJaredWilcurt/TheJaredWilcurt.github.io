@@ -56,7 +56,7 @@
     "tech": [
       "VanillaJS",
       "Node",
-      "NPM",
+      "npm",
       "Bower",
       "Grunt",
       "Gulp",
@@ -234,13 +234,60 @@
     "title": "A Deeper Understanding of CSS",
     "type": "Bootcamp Lecture",
     "url": "#",
-    "description": "I was asked by the director of Kenzie Academy to speak to ~60 currently enrolled students on the topic of CSS specificity, Sass, CSS resets, and the ITCSS methodology.",
+    "description": "I was asked by the director of Kenzie Academy to speak to ~60 currently enrolled students on the topics of CSS specificity, Sass, CSS resets, and the ITCSS methodology.",
     "img": "_imgs/kenzie.png",
     "roles": [
       "Presenter"
     ],
     "tech": [
       "Google Slides"
+    ]
+  },
+  {
+    "title": "Scoped/Componentized Styling in Vue.js",
+    "type": "Meetup Talk",
+    "url": "https://www.meetup.com/vuejsindy/events/265387795",
+    "description": "Given at Vue.js Indy. Talk covered in depth examples of the pro's and con's of various approaches to scoping and componentizing styles. Vue's built-in style scoping, scoping with CSS Modules, passing JS data to CSS via custom properties, selector specificity and adapting ITCSS to Vue, and new features in Sass (@use).",
+    "img": "_imgs/meetup.png",
+    "roles": [
+      "Presenter"
+    ],
+    "tech": [
+      "Google Slides",
+      "CodePen"
+    ]
+  },
+  {
+    "title": "What's new in Vue 3",
+    "type": "Meetup Talk",
+    "url": "https://www.meetup.com/indyjs/events/xdhfjryzpbbc/",
+    "description": "Hosted by Indy.js, this talk acts as a primer and whirlwind tour of Vue, Vue-Router, Vuex, Vue-CLI, and Vue-DevTools. Followed by highlights of the top features and changes coming to Vue 3.",
+    "img": "_imgs/meetup.png",
+    "roles": [
+      "Presenter"
+    ],
+    "tech": [
+      "Google Slides",
+      "Vue-CLI",
+      "JSFiddle",
+      "Vue.js",
+      "Vuex",
+      "Vue-DevTools"
+    ]
+  },
+  {
+    "title": "Vue 3 Composition API Live Demo",
+    "type": "Meetup Talk",
+    "url": "https://www.meetup.com/vuejsindy/events/268545871/",
+    "description": "Performed at Vue.js Indy. This was a live demo of Vue 3's new Composition API. Featuring converting an existing component into the new syntax and differences between ref and reactive. Followed by examples of problems the composition API is best suited for and Q&A.",
+    "img": "_imgs/meetup.png",
+    "roles": [
+      "Presenter"
+    ],
+    "tech": [
+      "Google Slides",
+      "JSFiddle",
+      "Vue.js"
     ]
   }
 ]
