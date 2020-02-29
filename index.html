@@ -130,7 +130,7 @@
       </section>
 
       <section id="talks">
-        <h1 class="projects-title decorated">Talks</h1>
+        <h1 class="projects-title decorated">Talks <span v-if="talks && talks.length">({{ talks.length }})</span></h1>
         <div class="error" v-if="networkRequestFailed" v-html="requestFailed()">asdf</div>
         <div v-if="talks.length > 0 && !networkRequestFailed">
           <label class="toggle-description">
