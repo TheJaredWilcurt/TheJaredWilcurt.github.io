@@ -229,5 +229,18 @@
     "tech": [
       "Google Slides"
     ]
+  },
+  {
+    "title": "A Deeper Understanding of CSS",
+    "type": "Bootcamp Lecture",
+    "url": "#",
+    "description": "I was asked by the director of Kenzie Academy to speak to ~60 currently enrolled students on the topic of CSS specificity, Sass, CSS resets, and the ITCSS methodology.",
+    "img": "_imgs/kenzie.png",
+    "roles": [
+      "Presenter"
+    ],
+    "tech": [
+      "Google Slides"
+    ]
   }
 ]
