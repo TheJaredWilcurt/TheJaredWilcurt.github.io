@@ -25,11 +25,12 @@
 
 
 // ITCSS: COMPONENTS
-@import "_spotlight.sass";           // Styles unique to the highlighted projects
-@import "_project.sass";             // The project cards for completed projects
-@import "_talks.sass";               // Talks section
-@import "_quotes.sass";              // Quotes from talks
-@import "_community.sass";           // Community section styles
+@import "sections/_spotlight.sass";  // Styles unique to the highlighted projects
+@import "sections/_project.sass";    // The project cards for completed projects
+@import "sections/_podcasts.sass";   // Podcasts section
+@import "sections/_talks.sass";      // Talks section
+@import "sections/_quotes.sass";     // Quotes from talks
+@import "sections/_community.sass";  // Community section styles
 
 // ITCSS: CONTAINERS
 @import "_header.sass";              // CSS for the header and navigation at the top of each page
