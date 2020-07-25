@@ -57,6 +57,7 @@
         <h5>Sections:</h5>
         <a href="#projects-highlight">Spotlight</a> |
         <a href="#community">Community</a> |
+        <a href="#podcasts">Podcasts</a> |
         <a href="#talks">Talks</a> |
         <a href="#quotes">Quotes</a> |
         <a href="#other-projects">Projects</a>
@@ -129,14 +130,57 @@
         </div>
       </section>
 
+      <section id="podcasts">
+        <h1 class="projects-title decorated">Podcasts <span v-if="podcasts && podcasts.length">({{ podcasts.length }})</span></h1>
+        <div class="error" v-if="networkRequestFailed" v-html="requestFailed()"></div>
+        <div v-if="podcasts.length > 0 && !networkRequestFailed">
+          <label class="toggle-description">
+            <input type="checkbox" v-model="showDetails">
+            <span v-if="showDetails">Hide</span>
+            <span v-else>Show</span> podcasts details
+          </label>
+
+          <div
+            v-for="(podcast, index) in podcasts"
+            :class="detailsClassToggle"
+            class="project half"
+            @click="toggleCurrentDetails(podcast)"
+          >
+            <img :src="podcast.img" :alt="podcast.title" />
+            <div>
+              <div class="type">
+                <strong>{{ podcast.podcastName }}</strong>
+              </div>
+              <div class="title">
+                <a v-if="podcast.url !== '#'" :href="podcast.url" target="_blank">{{ podcast.title }}</a>
+                <span v-else>{{ podcast.title }}</span>
+                <span v-if="podcast.releases">({{ podcast.releases }})</span>
+              </div>
+              <span :class="showDetails || podcast.showDetails ? 'shown' : 'hidden'">
+                <div class="description" v-html="podcast.description">
+                </div>
+                <div class="roles">
+                  <strong>Role:</strong>
+                  {{ podcasts[index].roles.join(', ') }}
+                </div>
+                <div class="technology" v-if="podcasts[index].tech.length > 0">
+                  <strong>Technology:</strong>
+                  {{ podcasts[index].tech.join(', ') }}
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="talks">
         <h1 class="projects-title decorated">Talks <span v-if="talks && talks.length">({{ talks.length }})</span></h1>
-        <div class="error" v-if="networkRequestFailed" v-html="requestFailed()">asdf</div>
+        <div class="error" v-if="networkRequestFailed" v-html="requestFailed()"></div>
         <div v-if="talks.length > 0 && !networkRequestFailed">
           <label class="toggle-description">
-              <input type="checkbox" v-model="showDetails">
-              <span v-if="showDetails">Hide</span>
-              <span v-else>Show</span> talks details
+            <input type="checkbox" v-model="showDetails">
+            <span v-if="showDetails">Hide</span>
+            <span v-else>Show</span> talks details
           </label>
 
           <div :class="[detailsClassToggle, 'project half']" v-for="(talk, index) in talks" @click="toggleCurrentDetails(talk)">
@@ -169,7 +213,7 @@
 
       <section id="quotes">
         <h1 class="decorated" title="I am generally well received.">Quotes, Testimonials, &amp; Endorsements<br><small>from talks, tutorials, and workshops</small></h1>
-        <div class="error" v-if="networkRequestFailed" v-html="requestFailed()">asdf</div>
+        <div class="error" v-if="networkRequestFailed" v-html="requestFailed()"></div>
         <div class="quote" v-for="quote in quotes" v-if="quotes.length > 0 && !networkRequestFailed">
           <img :src="quote.photo" :alt="'Photo of ' + quote.name">
           <span class="quote-text">{{ quote.quote }}</span>
@@ -192,7 +236,7 @@
           <nav>
             <span v-for="type in allProjectTypes">
               <input type="checkbox" v-model="typesChecked[type]" :id="type.toLowerCase().replace(/ /, '')">
-              <label :for="type.toLowerCase().replace(/ /, '')">{{type}} <span class="badge">{{typesCount[type]}}</span></label>
+              <label :for="type.toLowerCase().replace(/ /, '')">{{ type }} <span class="badge">{{ typesCount[type] }}</span></label>
             </span>
           </nav>
           <div
@@ -247,15 +291,15 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue/2.6.1/vue.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
     <!-- Load local library copies if CDN is unreachable -->
     <script type="text/javascript">
       if (typeof(Vue) == 'undefined') {
-        document.write(unescape("%3Cscript src='/_scripts/ven.vue.min.js' type='text/javascript'%3E%3C/script%3E"));
+        document.write(unescape('%3Cscript src="/_scripts/ven.vue.min.js" type="text/javascript"%3E%3C/script%3E'));
       }
       if (typeof(axios) == 'undefined') {
-        document.write(unescape("%3Cscript src='/_scripts/ven.axios.min.js' type='text/javascript'%3E%3C/script%3E"));
+        document.write(unescape('%3Cscript src="/_scripts/ven.axios.min.js" type="text/javascript"%3E%3C/script%3E'));
       }
     </script>
     <script type="text/javascript" src="_scripts/main.js"></script>

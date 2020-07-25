@@ -289,17 +289,5 @@
       "JSFiddle",
       "Vue.js"
     ]
-  },
-  {
-    "title": "Views on Vue Podcast: Vue/Snapshot Testing",
-    "type": "Podcast",
-    "url": "https://devchat.tv/views-on-vue/vov-099-testing-in-vue-with-the-jared-wilcurt",
-    "description": "I lead a discussion on unit testing with Vue, the benefits of Jest snapshot testing, and avoiding the pitfalls that come with snapshot-based tests. We also cover my Jest-Serializer-Vue-TJW library and how it solves many common Vue-specific snapshot problems for you.",
-    "img": "_imgs/viewsonvue.png",
-    "roles": [
-      "Guest"
-    ],
-    "tech": [
-    ]
   }
 ]
