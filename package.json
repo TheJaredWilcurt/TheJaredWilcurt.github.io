@@ -28,7 +28,7 @@
         "gulp-livereload": "^3.8.1",
         "gulp-rename": "^1.2.2",
         "gulp-sass": "^3.1.0",
-        "node-sass": "^4.13.0",
+        "node-sass": "^4.14.1",
         "npm-free-server": "^1.1.0",
         "sass": "^1.23.7",
         "sass-lint": "^1.13.1",
