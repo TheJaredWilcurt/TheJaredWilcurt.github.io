@@ -1,54 +1,42 @@
 {
-    "name": "the-jared-wilcurt-site",
-    "version": "1.0.0",
-    "description": "Official website of The Jared Wilcurt.",
-    "author": "The Jared Wilcurt",
-    "engines": {
-        "node": "11"
-    },
-    "scripts": {
-        "start": "gulp",
-        "serve": "gulp sans-open",
-        "build": "gulp build",
-        "server": "node ./node_modules/npm-free-server/dist/server.js",
-        "static": "node ./node_modules/npm-free-server/dist/server.js",
-        "installer": "npm install --loglevel=error",
-        "lint": "eslint --config=.eslintrc.js _scripts gulpfile.js",
-        "fix": "eslint --fix --config=.eslintrc.js _scripts gulpfile.js",
-        "sasslint": "sass-lint -c .sass-lint.yml -v -f codeframe",
-        "sassfix": "sass-lint-auto-fix -c .sass-lint.yml",
-        "validate": "npm run lint && npm run sasslint && npm run build"
-    },
-    "devDependencies": {
-        "eslint": "^4.15.0",
-        "eslint-config-tjw-base": "^1.0.0",
-        "express": "^4.16.2",
-        "gulp": "^3.9.1",
-        "gulp-line-ending-corrector": "^1.0.2",
-        "gulp-livereload": "^3.8.1",
-        "gulp-rename": "^1.2.2",
-        "gulp-sass": "^3.1.0",
-        "node-sass": "^4.14.1",
-        "npm-free-server": "^1.1.0",
-        "sass": "^1.23.7",
-        "sass-lint": "^1.13.1",
-        "sass-lint-auto-fix": "^0.19.0",
-        "tjw-sasslint-rules": "^2.1.0"
-    },
-    "sasslintConfig": ".sass-lint.yml",
-    "homepage": "https://TheJaredWilcurt.github.io",
-    "license": "MIT",
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "https://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io/blob/master/LICENSE"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io.git"
-    },
-    "bugs": {
-        "url": "https://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io/issues"
+  "name": "the-jared-wilcurt-site",
+  "version": "1.0.0",
+  "description": "Official website of The Jared Wilcurt.",
+  "author": "The Jared Wilcurt",
+  "engines": {
+    "node": "14"
+  },
+  "scripts": {
+    "start": "node ./node_modules/npm-free-server/dist/server.js",
+    "installer": "npm install --loglevel=error",
+    "lint": "eslint --config=.eslintrc.js _scripts gulpfile.js",
+    "fix": "eslint --fix --config=.eslintrc.js _scripts gulpfile.js",
+    "sasslint": "sass-lint -c .sass-lint.yml -v -f codeframe",
+    "sassfix": "sass-lint-auto-fix -c .sass-lint.yml",
+    "validate": "npm run lint && npm run sasslint"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-tjw-base": "^1.0.0",
+    "npm-free-server": "^1.1.0",
+    "sass": "^1.32.8",
+    "sass-lint": "^1.13.1",
+    "tjw-sasslint-rules": "^2.1.0"
+  },
+  "sasslintConfig": ".sass-lint.yml",
+  "homepage": "https://TheJaredWilcurt.github.io",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io/blob/master/LICENSE"
     }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io/issues"
+  }
 }
