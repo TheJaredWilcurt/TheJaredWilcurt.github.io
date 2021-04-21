@@ -9,8 +9,8 @@
   "scripts": {
     "start": "node ./node_modules/npm-free-server/dist/server.js",
     "installer": "npm install --loglevel=error",
-    "lint": "eslint --config=.eslintrc.js _scripts gulpfile.js",
-    "fix": "eslint --fix --config=.eslintrc.js _scripts gulpfile.js",
+    "lint": "eslint --config=.eslintrc.js _scripts",
+    "fix": "eslint --fix --config=.eslintrc.js _scripts",
     "sasslint": "sass-lint -c .sass-lint.yml -v -f codeframe",
     "sassfix": "sass-lint-auto-fix -c .sass-lint.yml",
     "validate": "npm run lint && npm run sasslint"
