@@ -251,9 +251,13 @@
                 <strong>{{ project.type }}</strong>
               </div>
               <div class="title">
-                <a v-if="project.url !== '#'" :href="project.url" target="_blank">{{ project.title }}</a>
-                <span v-else>{{ project.title }}</span>
+                {{ project.title }}
                 <span v-if="project.releases">({{ project.releases }})</span>
+              </div>
+              <div class="small">
+                <a v-if="project.website" :href="project.website" target="_blank">Website</a>
+                <template v-if="project.website && project.repo">|</template>
+                <a v-if="project.repo" :href="project.repo" target="_blank">Repo</a>
               </div>
               <span :class="showDetails || project.showDetails ? 'shown' : 'hidden'">
                 <div class="description">
