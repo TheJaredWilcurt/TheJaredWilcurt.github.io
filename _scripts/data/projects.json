@@ -27,7 +27,7 @@
       "FS-Extra",
       "Bootswatch",
       "Chokidar",
-      "Node",
+      "Node.js",
       "Bower",
       "ESLint",
       "SassLint",
@@ -425,7 +425,7 @@
     "website": "",
     "repo": "",
     "description": "",
-    "img": "_imgs/vuejsevents.png",
+    "img": "_imgs/vuejsevents.pn"g,
     "releases": "",
     "major": false,
     "roles": [],
@@ -515,7 +515,7 @@
       "jQuery",
       "Bootstrap",
       "Sass",
-      "Node",
+      "Node.js",
       "Bootswatch"
     ]
   },
@@ -540,12 +540,12 @@
       "Support"
     ],
     "tech": [
-      "Vue",
+      "Vue.js",
       "NW.js",
       "Pa11y",
       "PhantomJS",
       "Sass",
-      "Node",
+      "Node.js",
       "FS-Extra",
       "ESLint",
       "SassLint",
@@ -569,13 +569,13 @@
       "Design"
     ],
     "tech": [
-      "Vue",
+      "Vue.js",
       "Sass",
       "Gulp",
       "Rollup",
       "Express",
       "LiveReload",
-      "Node",
+      "Node.js",
       "ESLint",
       "SassLint",
       "GitHub Pages"
@@ -588,7 +588,7 @@
     "repo": "https://github.com/FLIF-hub/UGUI_FLIF",
     "description": "A simple drag and drop tool for converting to and from FLIF image files. The first ever FLIF GUI.",
     "img": "_imgs/flif.png",
-    "releases": "4 major release, 1 upcoming",
+    "releases": "4 major release",
     "major": false,
     "roles": [
       "Developer",
@@ -603,7 +603,7 @@
       "ImageMagick",
       "Sass",
       "jQuery",
-      "Node",
+      "Node.js",
       "Bootstrap",
       "ESLint",
       "SassLint",
@@ -615,12 +615,23 @@
     "type": "App",
     "website": "",
     "repo": "https://github.com/TheJaredWilcurt/UGUI-Defluff",
-    "description": "",
+    "description": "A GUI for the command line tools Defluff, Zopfli, and TruePNG. These are all tools for compressing or ordering a PNG file's data-stream to find better ways of organizing the data resulting in a lossless reduction of filesize.",
     "img": "_imgs/repo.svg",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer"
+    ],
+    "tech": [
+      "NW.js",
+      "UGUI",
+      "defluff",
+      "zopfliPng",
+      "TruePNG",
+      "FS-Extra",
+      "Bootstrap",
+      "Bootswatch"
+    ]
   },
   {
     "title": "GraphMyCSS.com",
@@ -665,7 +676,7 @@
       "Bootstrap",
       "Sass",
       "jQuery",
-      "Node",
+      "Node.js",
       "Bootswatch",
       "WiFi-Control"
     ]
@@ -689,7 +700,7 @@
       "Bootstrap",
       "Sass",
       "jQuery",
-      "Node",
+      "Node.js",
       "Bootswatch"
     ]
   },
@@ -770,7 +781,7 @@
     ],
     "tech": [
       "HTML5 Boiler Plate",
-      "NPM-Free-Server",
+      "npm-Free-Server",
       "Bootstrap",
       "jQuery",
       "GitHub Pages"
@@ -889,7 +900,7 @@
     "type": "Contribution",
     "website": "http://flif.info",
     "repo": "",
-    "description": "I've helped with formatting of content, and structuring of files, and general maintenance.",
+    "description": "I've helped with formatting of content, structuring of files, and general maintenance.",
     "img": "_imgs/flif.png",
     "releases": "",
     "major": false,
@@ -914,7 +925,7 @@
       "Documentation"
     ],
     "tech": [
-      "Node"
+      "Node.js"
     ]
   },
   {
@@ -1030,7 +1041,7 @@
     "tech": [
       "Sass",
       "jQuery",
-      "Node",
+      "Node.js",
       "Gulp",
       "ESLint",
       "SassLint",
@@ -1093,7 +1104,7 @@
       "Documentation"
     ],
     "tech": [
-      "Vue",
+      "Vue.js",
       "Sass"
     ]
   },
@@ -1101,12 +1112,21 @@
     "title": "NWUtils.io",
     "type": "Website",
     "website": "https://nwutils.io",
-    "repo": "",
-    "description": "",
+    "repo": "https://github.com/nwutils/nwutils.github.io",
+    "description": "A website that lists and organizes different libraries, boilerplates, tools, and tutorials for NW.js.",
     "img": "_imgs/nwutils.png",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer"
+    ],
+    "tech": [
+      "Vue.js",
+      "ESLint",
+      "npm-Free-Server",
+      "GitHub Pages",
+      "http-vue-loader"
+      "axios"
+    ],
   }
 ]
