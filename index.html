@@ -247,14 +247,13 @@
           >
             <img :src="project.img" :alt="project.title" />
             <div>
-              <div class="type">
-                <strong>{{ project.type }}</strong>
-              </div>
               <div class="title">
                 {{ project.title }}
                 <span v-if="project.releases">({{ project.releases }})</span>
               </div>
-              <div class="small">
+              <div class="type">
+                {{ project.type }}
+                <template v-if="project.website || project.repo">-</template>
                 <a v-if="project.website" :href="project.website" target="_blank">Website</a>
                 <template v-if="project.website && project.repo">|</template>
                 <a v-if="project.repo" :href="project.repo" target="_blank">Repo</a>
