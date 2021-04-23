@@ -425,7 +425,8 @@
     "website": "",
     "repo": "",
     "description": "",
-    "img": "_imgs/vuejsevents.pn"g,
+    "img": "_imgs/vuejsevents.png"
+    ,
     "releases": "",
     "major": false,
     "roles": [],
@@ -447,49 +448,65 @@
     "title": "mcibique/vue-testing-examples",
     "type": "Contribution",
     "website": "",
-    "repo": "",
-    "description": "",
+    "repo": "https://github.com/mcibique/vue-testing-examples/pull/7",
+    "description": "Improved the English and grammar of a 46 page document on advanced Vue.js testing.",
     "img": "_imgs/vue.svg",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "GitHub"
+    ]
   },
   {
     "title": "dekadentno/vue-unit-testing-cheat-sheet",
     "type": "Contribution",
     "website": "",
-    "repo": "",
-    "description": "",
+    "repo": "https://github.com/dekadentno/vue-unit-testing-cheat-sheet/pull/4",
+    "description": "Improved documentation on snapshot-based unit testing using Jest in a Vue.js applicaiton.",
     "img": "_imgs/vue.svg",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "GitHub"
+    ]
   },
   {
     "title": "dobromir-hristov/vuecommunity",
     "type": "Contribution",
     "website": "",
-    "repo": "",
-    "description": "",
+    "repo": "https://github.com/dobromir-hristov/vuecommunity/pull/113/files",
+    "description": "Updated the Vue Community Guide for information on using Vue to make desktop apps.",
     "img": "_imgs/vue.svg",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "GitHub"
+    ]
   },
   {
     "title": "nwutils/SnowPack-nw",
     "type": "Contribution",
     "website": "",
     "repo": "https://github.com/nwutils/SnowPack-nw",
-    "description": "",
+    "description": "I improved the English translations of the documentation for the VanillaJS and PixiJS boilerplates.",
     "img": "_imgs/nwutils.png",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "GitHub"
+    ]
   },
   {
     "title": "UGUI",
@@ -526,7 +543,7 @@
     "repo": "https://github.com/open-indy/Koa11y",
     "description": "Koa11y is a cross-platform desktop app that allows users to easily check for accessibility (a11y) issues in their webpages. Koa11y spins up a headless browser, navigates to your URL, scans it based on your accessibility guidelines, and gives you a report in several common formats. The reports include the specific line of code that violates a guideline and in many cases direct recommendations on how best to resolve the violation.",
     "img": "_imgs/koa11y.png",
-    "releases": "2 major releases",
+    "releases": "3 major releases",
     "major": true,
     "roles": [
       "Developer",
@@ -684,14 +701,15 @@
   {
     "title": "UGUI: Git Branch Deleter",
     "type": "App",
-    "website": "https://thejaredwilcurt.github.io/UGUI-Git-Branch-Deleter",
-    "repo": "",
-    "description": "This is a tool to easily check the status of tickets in Clubhouse/Jira/GUS/GitHub Enterprise, before easily deleting their local associated Git branch. After each major release at work, I use this to remove all local branches from 2 releases ago.",
+    "website": "http://TheJaredWilcurt.com/UGUI-Git-Branch-Deleter",
+    "repo": "https://github.com/TheJaredWilcurt/UGUI-Git-Branch-Deleter",
+    "description": "This is a tool to easily check the status of tickets in Clubhouse/Jira/GUS/GitHub Enterprise, before easily deleting their local associated Git branch. I use this to delete any branches associated to tickets that were marked as done over 30 days ago.",
     "img": "_imgs/git-branch-deleter.png",
-    "releases": "5 releases",
+    "releases": "6 releases",
     "major": false,
     "roles": [
-      "Developer"
+      "Developer",
+      "UX"
     ],
     "tech": [
       "NW.js",
@@ -1125,8 +1143,8 @@
       "ESLint",
       "npm-Free-Server",
       "GitHub Pages",
-      "http-vue-loader"
+      "http-vue-loader",
       "axios"
-    ],
+    ]
   }
 ]
