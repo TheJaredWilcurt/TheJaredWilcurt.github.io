@@ -408,41 +408,41 @@
     "tech": []
   },
   {
-    "title": "sagalbot/vue-select",
+    "title": "sagalbot/vue-select (Bug fix)",
     "type": "Contribution",
     "website": "",
-    "repo": "",
-    "description": "",
+    "repo": "https://github.com/sagalbot/vue-select/issues/1360",
+    "description": "We ran into an issue at work with a change to this repo that broke our Jest snapshots. I documented the issue, created a PR to fix it, and documented a workaround for others until the PR can be merged.",
     "img": "_imgs/vue.svg",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "Jest",
+      "Vue.js",
+      "GitHub"
+    ]
   },
   {
     "title": "vuejs/Vue.js Events",
     "type": "Contribution",
-    "website": "",
+    "website": "https://events.vuejs.org/meetups/",
     "repo": "",
-    "description": "",
+    "description": "I started the Vue.js Meetups site to help the Vue community find local groups and events, and to help people start meetups with resources, guides, reusable event graphics, and tips. This was later renamed to Vue.js Events and officially added to the Vue.js website.",
     "img": "_imgs/vuejsevents.png"
     ,
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
-  },
-  {
-    "title": "rework/css",
-    "type": "Contribution",
-    "website": "",
-    "repo": "",
-    "description": "",
-    "img": "_imgs/repo.svg",
-    "releases": "",
-    "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "GitHub",
+      "Adobe Photoshop"
+    ]
   },
   {
     "title": "mcibique/vue-testing-examples",
