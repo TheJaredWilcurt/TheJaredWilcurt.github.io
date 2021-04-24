@@ -80,12 +80,6 @@ const otherProjects = new Vue({
     }
   },
   computed: {
-    totalCount: function () {
-      let otherProjects = this.projects.filter(function (project) {
-        return !project.major;
-      });
-      return otherProjects.length;
-    },
     allProjectTypes: function () {
       const allTypes = [];
       this.projects.forEach(function (project) {
@@ -98,8 +92,31 @@ const otherProjects = new Vue({
       });
       return uniqueArray;
     },
-    filteredProjects: function () {
+    projectsWithCompletedDefinition: function () {
       return this.projects.filter(function (project) {
+        return (
+          project &&
+          project.title &&
+          project.type &&
+          (
+            project.website ||
+            project.repo
+          ) &&
+          project.description &&
+          project.img &&
+          !project.major &&
+          project.roles &&
+          project.roles.length &&
+          project.tech &&
+          project.tech.length
+        );
+      });
+    },
+    totalCount: function () {
+      return this.projectsWithCompletedDefinition.length;
+    },
+    filteredProjects: function () {
+      return this.projectsWithCompletedDefinition.filter(function (project) {
         return this.typesChecked[project.type];
       }.bind(this));
     },
@@ -112,6 +129,17 @@ const otherProjects = new Vue({
       });
 
       return typeCounts;
+    }
+  },
+  watch: {
+    projects: function () {
+      const otherProjects = this.projects.filter(function (project) {
+        return !project.major;
+      });
+      if (otherProjects.length > this.projectsWithCompletedDefinition.length) {
+        console.log('Showing ' + this.projectsWithCompletedDefinition.length + ' out of ' + otherProjects.length + ' projects.');
+        console.log((otherProjects.length - this.projectsWithCompletedDefinition.length) + ' projects missing information.');
+      }
     }
   }
 });
