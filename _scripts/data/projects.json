@@ -352,12 +352,26 @@
     "type": "Boilerplate",
     "website": "",
     "repo": "https://github.com/TheJaredWilcurt/vue-desktop-basic",
-    "description": "",
+    "description": "Proof of concept for a bundler-free Vue desktop app.",
     "img": "_imgs/vue.svg",
-    "releases": "",
+    "releases": "1 release",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "ESLint",
+      "http-vue-loader",
+      "NW.js",
+      "Sass",
+      "SassLint",
+      "Vue-DevTools",
+      "Vue-Router",
+      "Vue.js",
+      "Vuex",
+      "nwjs-builder-phoenix"
+    ]
   },
   {
     "title": "xaksis/vue-good-table",
