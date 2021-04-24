@@ -80,6 +80,12 @@ const otherProjects = new Vue({
     }
   },
   computed: {
+    totalCount: function () {
+      let otherProjects = this.projects.filter(function (project) {
+        return !project.major;
+      });
+      return otherProjects.length;
+    },
     allProjectTypes: function () {
       const allTypes = [];
       this.projects.forEach(function (project) {

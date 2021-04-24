@@ -224,7 +224,7 @@
 
       <section id="other-projects" class="projects">
         <h1 class="projects-title decorated">
-          Other Completed Projects (since 2015)
+          {{ totalCount }} Other Completed Projects (since 2015)
         </h1>
         <div class="error" v-if="networkRequestFailed" v-html="requestFailed()"></div>
         <div v-if="projects.length > 0 && !networkRequestFailed">

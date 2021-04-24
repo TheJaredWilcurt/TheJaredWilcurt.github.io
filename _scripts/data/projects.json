@@ -102,7 +102,7 @@
     "repo": "https://github.com/red-perfume/red-perfume",
     "description": "",
     "img": "_imgs/redperfume.png",
-    "releases": "",
+    "releases": "3 pre-releases",
     "major": false,
     "roles": [],
     "tech": []
@@ -375,37 +375,41 @@
     "title": "npm/rfcs",
     "type": "Contribution",
     "website": "",
-    "repo": "",
-    "description": "",
+    "repo": "https://github.com/npm/rfcs/pull/41/files",
+    "description": "I wrote up a proposal for a new feature in npm to allow adding a script to the package.json via command. This RFC was approved and eventually implemented and released. As of npm 7.1 (ships with Node.js 15.5) you can run npm set-script start \"express\" or any other script name and command.",
     "img": "_imgs/npm.svg",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "GitHub",
+      "npm"
+    ]
   },
   {
     "title": "AustinGil/Vuetensils",
     "type": "Contribution",
-    "website": "",
-    "repo": "",
-    "description": "",
+    "website": "https://vuetensils.stegosource.com",
+    "repo": "https://github.com/AustinGil/Vuetensils/pulls?q=is%3Apr+author%3ATheJaredWilcurt+is%3Aclosed",
+    "description": "Vuetensils is a style-free, accessibility-focused, component library. I set up Jest unit testing, snapshot testing, updated dependencies, set up ESLint and relatd plugins (Vue, Jest, Vue-A11y, JSDoc), and set up CI based Pa11y tool to run recursively on component docs, checking for accessibility issues in a headless browser. Updated documentation as needed.",
     "img": "_imgs/vuetensils.png",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
-  },
-  {
-    "title": "antoniandre/vue-cal",
-    "type": "Contribution",
-    "website": "",
-    "repo": "",
-    "description": "",
-    "img": "_imgs/vue.svg",
-    "releases": "",
-    "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Quality Engineer"
+    ],
+    "tech": [
+      "Pa11y",
+      "Jest",
+      "ESLint",
+      "Node.js",
+      "Vue.js",
+      "Jest-Serializer-Vue-TJW"
+    ]
   },
   {
     "title": "sagalbot/vue-select (Bug fix)",
