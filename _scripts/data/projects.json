@@ -76,24 +76,55 @@
     "type": "App",
     "website": "",
     "repo": "https://github.com/TheJaredWilcurt/WuhdAppusDat",
-    "description": "",
+    "description": "Desktop app for streamers that displays what program is currently in focus. This is a common questions asked of code, art, and game dev streamers. It was made at the request of Animation Director, and streamer, Adam Philips (chluaid). The app's UI is completely customizable from the background image that scales to the dimensions of the window, to the font settings. The window it self is completely transparent until hovered, and then the edges are marked for easy resizing/moving. The app even ships with custom artwork provided by Adam Philips.",
     "img": "_imgs/wuhdappusdat.png",
-    "releases": "",
+    "releases": "3 releases",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "UX",
+      "Design",
+      "Branding"
+    ],
+    "tech": [
+      "VanillaJS",
+      "NW.js",
+      "Node.js",
+      "VMWare Workstation",
+      "Adobe Photoshop",
+      "deflOpt",
+      "defluff",
+      "PNG Gauntlet",
+      "PNGOUT Win",
+      "Png Optimizer",
+      "TruePNG",
+      "zopfliPng"
+    ]
   },
   {
     "title": "node-flif",
     "type": "Library",
     "website": "",
     "repo": "https://github.com/FLIF-hub/node-flif",
-    "description": "",
+    "description": "10 months in the making. 52 human readable helpful error messages. 154 files. 232 commits. 1,459 tests written. 7,431 LOC. 100% test coverage. 100% API support. Published to npm. Cross-platform (Win/Lin/OSX). This Node.js library provided a one-to-one API map in JavaScript for the FLIF CLI executable. Allowing easy Node-based automation of encoding, decoding, and transcoding of FLIF image files. It also handled input validation including upper/lower bounds value warnings (previously undocumented).",
     "img": "_imgs/flif.png",
-    "releases": "",
+    "releases": "4 releases",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Quality Engineer",
+      "Support"
+    ],
+    "tech": [
+      "FLIF",
+      "Node.js",
+      "VanillaJS",
+      "npm",
+      "ESLint",
+      "VMWare Workstation",
+      "Oracle VM Virtual Box"
+    ]
   },
   {
     "title": "Red Perfume",
@@ -207,10 +238,10 @@
     "title": "tjw-markdownlint-rules",
     "type": "Library",
     "website": "",
-    "repo": "",
+    "repo": "https://github.com/tjw-lint/tjw-markdownlint-rules",
     "description": "",
     "img": "_imgs/lint.png",
-    "releases": "",
+    "releases": "2 releases",
     "major": false,
     "roles": [],
     "tech": []
@@ -219,22 +250,10 @@
     "title": "eslint-config-tjw-vue",
     "type": "Library",
     "website": "",
-    "repo": "",
+    "repo": "https://github.com/tjw-lint/eslint-config-tjw-vue",
     "description": "",
     "img": "_imgs/lint.png",
-    "releases": "",
-    "major": false,
-    "roles": [],
-    "tech": []
-  },
-  {
-    "title": "ITCSS Specificity Graph",
-    "type": "Library",
-    "website": "",
-    "repo": "",
-    "description": "",
-    "img": "_imgs/repo.svg",
-    "releases": "",
+    "releases": "4 releases",
     "major": false,
     "roles": [],
     "tech": []
@@ -243,13 +262,24 @@
     "title": "nw-vue-devtools",
     "type": "Library",
     "website": "",
-    "repo": "",
-    "description": "",
+    "repo": "https://github.com/nwutils/nw-vue-devtools",
+    "description": "This project would clone down the Vue Devtools repo, tweak some files then do a build so the devTools could run in NW.js. Though as the source repo adopted more complex environment requirements, this became unmaintainable. Fortunately an alternative approach had been discovered based on downloading directly from the chromium web store a prebuilt version and tweaking it, negating the need to dynamically build from source on install. This project is now deprecated and archived.",
     "img": "_imgs/vue.svg",
-    "releases": "",
+    "releases": "6 releases",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "ESLint",
+      "Git",
+      "npm",
+      "NW.js",
+      "Node.js",
+      "Vue-DevTools",
+      "Vue.js"
+    ]
   },
   {
     "title": "nw-vue-cli-example",
@@ -340,7 +370,7 @@
     "type": "Boilerplate",
     "website": "",
     "repo": "https://github.com/nwutils/nw-splash-screen-example",
-    "description": "",
+    "description": "A functioning boilerplate and reference implementation. This repo demos using the nw-splasher library to create a desktop app that loads in the background while a chromeless splash screen is displayed running in a separate process, making its performance unincumbered. The main window is hidden and communicates to the splash screen via websockets when it is ready to be displayed.",
     "img": "_imgs/nwutils.png",
     "releases": "",
     "major": false,
@@ -681,7 +711,7 @@
     "title": "GraphMyCSS.com",
     "type": "Website",
     "website": "http://graphmycss.com",
-    "repo": "",
+    "repo": "https://github.com/TheJaredWilcurt/itcss-specificity-graph",
     "description": "A website where you can paste in any arbitrary CSS and have a graph dynamically generated to show levels of selector specificity throughout the file.",
     "img": "_imgs/graphmycss.png",
     "releases": "2 releases",
