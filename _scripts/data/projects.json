@@ -377,13 +377,22 @@
     "title": "xaksis/vue-good-table",
     "type": "Contribution",
     "website": "",
-    "repo": "https://github.com/xaksis/vue-good-table",
-    "description": "",
+    "repo": "https://github.com/xaksis/vue-good-table/pulls?q=is%3Apr+is%3Aclosed+author%3ATheJaredWilcurt",
+    "description": "Vue-Good-Table is the most popular Vue table component. I decided to use it on our primary project at work. After implementing, as we found bugs, or needed new features, my team would contribute back to the project, improving it for everyone. After several contributions I was added as the second maintainer of the project.",
     "img": "_imgs/vue.svg",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Support"
+    ],
+    "tech": [
+      "Vue.js",
+      "GitHub",
+      "ESLint",
+      "Vue-DevTools"
+    ]
   },
   {
     "title": "npm/rfcs",
