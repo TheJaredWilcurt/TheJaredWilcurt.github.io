@@ -322,12 +322,20 @@
     "type": "Boilerplate",
     "website": "",
     "repo": "https://github.com/nwutils/nw-local-server-example",
-    "description": "",
+    "description": "This is a boilerplate for a cross-platform desktop app that runs off of a built-in local webserver.",
     "img": "_imgs/nwutils.png",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "NW.js",
+      "Express",
+      "Node.js",
+      "VanillaJS"
+    ]
   },
   {
     "title": "nw-tray-example",
