@@ -358,12 +358,17 @@
     "type": "Boilerplate",
     "website": "",
     "repo": "https://github.com/nwutils/nw-jquery-example",
-    "description": "",
+    "description": "A basic boilerplate of NW.js using jQuery.",
     "img": "_imgs/nwutils.png",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer"
+    ],
+    "tech": [
+      "NW.js",
+      "jQuery"
+    ]
   },
   {
     "title": "nw-splash-screen-example",
