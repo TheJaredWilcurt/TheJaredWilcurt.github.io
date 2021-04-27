@@ -239,24 +239,34 @@
     "type": "Library",
     "website": "",
     "repo": "https://github.com/tjw-lint/tjw-markdownlint-rules",
-    "description": "",
+    "description": "A very strict and well documented set of linting rules for Markdown files. Particularly useful in our user-facing app documentation at work.",
     "img": "_imgs/lint.png",
     "releases": "2 releases",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Quality Engineer"
+    ],
+    "tech": [
+      "MarkdownLint-CLI"
+    ]
   },
   {
     "title": "eslint-config-tjw-vue",
     "type": "Library",
     "website": "",
     "repo": "https://github.com/tjw-lint/eslint-config-tjw-vue",
-    "description": "",
+    "description": "My Vue.js specific linting rules, used on various projects and at work.",
     "img": "_imgs/lint.png",
     "releases": "4 releases",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer"
+    ],
+    "tech": [
+      "ESLint"
+    ]
   },
   {
     "title": "NW.js - Vue-CLI Boilerplate",
