@@ -259,6 +259,54 @@
     "tech": []
   },
   {
+    "title": "NW.js - Vue-CLI Boilerplate",
+    "type": "Boilerplate",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-vue-cli-example",
+    "description": "A Vue-CLI boilerplate for NW.js desktop apps. Features 100% Jest test coverage. Jest snapshot tests. Built-in Vue-DevTools in the desktop app. Strict Vue, A11y, and Jest linting. Babel/Webpack via Vue-CLI. Automated builds for web and all desktop platforms.",
+    "img": "_imgs/vue.svg",
+    "releases": "8 releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Quality Engineer",
+      "Support"
+    ],
+    "tech": [
+      "NW.js",
+      "Vue.js",
+      "Vue-CLI",
+      "ESLint",
+      "Jest",
+      "Jest-Serializer-Vue-TJW",
+      "Node.js",
+      "Oracle VM Virtual Box",
+      "Vue-DevTools"
+    ]
+  },
+  {
+    "title": "NW.js - Angular-CLI Boilerplate",
+    "type": "Boilerplate",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-angular-cli-example",
+    "description": "This is a cross-platform desktop app boilerplate for NW.js and Angular 9+. It is based on a standard Angular-CLI setup with many modifications to accomodate running in a desktop app, and building for web and desktop platforms. I was even able to do the whole thing without having to write a line of TypeScript. Unscathed.",
+    "img": "_imgs/angular.svg",
+    "releases": "3 releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "NW.js",
+      "Angular",
+      "Angular-CLI",
+      "Node.js",
+      "Oracle VM Virtual Box"
+    ]
+  },
+  {
     "title": "nw-vue-devtools",
     "type": "Library",
     "website": "",
@@ -280,30 +328,6 @@
       "Vue-DevTools",
       "Vue.js"
     ]
-  },
-  {
-    "title": "nw-vue-cli-example",
-    "type": "Boilerplate",
-    "website": "",
-    "repo": "https://github.com/nwutils/nw-vue-cli-example",
-    "description": "",
-    "img": "_imgs/vue.svg",
-    "releases": "",
-    "major": false,
-    "roles": [],
-    "tech": []
-  },
-  {
-    "title": "nw-angular-cli-example",
-    "type": "Boilerplate",
-    "website": "",
-    "repo": "https://github.com/nwutils/nw-angular-cli-example",
-    "description": "",
-    "img": "_imgs/angular.svg",
-    "releases": "",
-    "major": false,
-    "roles": [],
-    "tech": []
   },
   {
     "title": "window-communication-example",
