@@ -374,8 +374,15 @@
     "img": "_imgs/nwutils.png",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "NW.js",
+      "nw-splasher",
+      "VanillaJS"
+    ]
   },
   {
     "title": "Vue-Desktop-Basic",
