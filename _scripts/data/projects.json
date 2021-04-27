@@ -346,12 +346,17 @@
     "type": "Boilerplate",
     "website": "",
     "repo": "https://github.com/nwutils/frameless-example",
-    "description": "",
+    "description": "This is a demo repo/boilerplate for a frameless (chromeless) app with custom window controls created with CSS. It features a custom title bar for dragging, adjustable background transparency, rounded window corners, Rounded corners are removed when maximized.",
     "img": "_imgs/nwutils.png",
     "releases": "",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer"
+    ],
+    "tech": [
+      "NW.js",
+      "VanillaJS"
+    ]
   },
   {
     "title": "nw-jquery-example",
