@@ -215,12 +215,19 @@
     "type": "Library",
     "website": "",
     "repo": "https://github.com/nwutils/nw-img-vue",
-    "description": "",
+    "description": "A Vue component for desktop and web apps. If running in a desktop app it caches copies of online images locally and loads them first if available.",
     "img": "_imgs/nwutils.png",
-    "releases": "",
+    "releases": "1 release",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "NW.js",
+      "Vue.js",
+      "Node.js"
+    ]
   },
   {
     "title": "nw-electron-adapter",
