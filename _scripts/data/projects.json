@@ -203,12 +203,17 @@
     "type": "Library",
     "website": "",
     "repo": "https://github.com/tjw-lint/eslint-config-tjw-base",
-    "description": "",
+    "description": "My custom ESLint rules re-used across many projects.",
     "img": "_imgs/lint.png",
-    "releases": "",
+    "releases": "1 release",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "ESLint",
+      "npm"
+    ]
   },
   {
     "title": "nw-img-vue",
