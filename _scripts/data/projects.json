@@ -191,12 +191,22 @@
     "type": "Library",
     "website": "",
     "repo": "https://github.com/tjw-lint/tjw-sasslint-rules",
-    "description": "",
+    "description": "My very strict set of Sasslint rules. It features the most comprehensive list of CSS properties on the Internet, merged from lists from MDN, W3C, and Chrome Status Metrics. This list is ordered in a logical manner and has tests to prevent duplicate properties. Every lint rule is documented.",
     "img": "_imgs/lint.png",
-    "releases": "",
+    "releases": "5 releases",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Quality Engineer"
+    ],
+    "tech": [
+      "Sass",
+      "SassLint",
+      "npm",
+      "Node.js",
+      "yaml.js"
+    ]
   },
   {
     "title": "eslint-config-tjw-base",
