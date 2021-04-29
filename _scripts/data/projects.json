@@ -167,12 +167,19 @@
     "type": "Library",
     "website": "",
     "repo": "https://github.com/nwutils/nw-programmatic-folder-select",
-    "description": "",
+    "description": "A library for NW.js to programmatically display the OS dialog box for folder selection. This gives all the same features as NW.js's built in HTML version, but with all DOM specific code abstracted to a simple callback function. Like all my libraries it has robust input validation with human friendly warning messages.",
     "img": "_imgs/nwutils.png",
-    "releases": "",
+    "releases": "5 releases",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "NW.js",
+      "ESlint",
+      "npm"
+    ]
   },
   {
     "title": "Meyer Sass",
