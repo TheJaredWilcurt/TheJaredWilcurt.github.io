@@ -179,12 +179,20 @@
     "type": "Library",
     "website": "",
     "repo": "https://github.com/TheJaredWilcurt/meyer-sass",
-    "description": "",
+    "description": "Eric Meyer's CSS Resets in .sass format, and also .scss, .less, .styl, and manually minified CSS.",
     "img": "_imgs/sass.svg",
-    "releases": "",
+    "releases": "2 releases",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "Sass",
+      "SassLint",
+      "npm",
+      "Bower"
+    ]
   },
   {
     "title": "tjw-sasslint-rules",
