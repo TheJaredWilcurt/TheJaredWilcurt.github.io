@@ -155,12 +155,19 @@
     "type": "Library",
     "website": "",
     "repo": "https://github.com/nwutils/nw-splasher",
-    "description": "",
+    "description": "A library for displaying a splash screen while your desktop app loads in the background. It runs both windows as separate instances, meaning that they run on their own thread. This allows the splash screen to playback smooth 60fps animations without any stuttering from the loading of the other process. The two instances communicate via Node.js web sockets to know when to show/hide windows. Library features a simple API and human readable error message for interface validation. This project was completed in one day at the request of a user in the NW.js chatroom.",
     "img": "_imgs/nwutils.png",
-    "releases": "",
+    "releases": "1 release",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "VanillaJS",
+      "Node.js",
+      "npm"
+    ]
   },
   {
     "title": "nw-programmatic-folder-select",
