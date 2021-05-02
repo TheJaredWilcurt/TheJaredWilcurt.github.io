@@ -143,12 +143,27 @@
     "type": "Library",
     "website": "",
     "repo": "https://github.com/nwutils/find-in-nw",
-    "description": "",
+    "description": "Produces a fully customizable \"Find\" box (via CTRL+F) in NW.js to search for text in a window.",
     "img": "_imgs/nwutils.png",
-    "releases": "",
+    "releases": "4 releases",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Design"
+    ],
+    "tech": [
+      "VanillaJS",
+      "NW.js",
+      "Sass",
+      "SassLint",
+      "ESLint",
+      "Terser",
+      "Travis-CI",
+      "tjw-sasslint-rules",
+      "npm",
+      "eslint-config-tjw-base"
+    ]
   },
   {
     "title": "nw-splasher",
@@ -165,6 +180,7 @@
     ],
     "tech": [
       "VanillaJS",
+      "NW.js",
       "Node.js",
       "npm"
     ]
