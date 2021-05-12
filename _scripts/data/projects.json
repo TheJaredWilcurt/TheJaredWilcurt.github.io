@@ -131,12 +131,24 @@
     "type": "Library",
     "website": "",
     "repo": "https://github.com/red-perfume/red-perfume",
-    "description": "",
+    "description": "A experimental library to convert any HTML/CSS files to atomized css classes. With 100% test coverage. Atomized CSS allows you to write your styles in any way you want and then during a build step massively reduce your total CSS filesize be converting all css properties to individual atomic classes and replacing all references in the markup.",
     "img": "_imgs/redperfume.png",
     "releases": "3 pre-releases",
     "major": false,
-    "roles": [],
-    "tech": []
+    "roles": [
+      "Developer",
+      "Project Manager",
+      "Documentation"
+    ],
+    "tech": [
+      "CSS Parser",
+      "Parse5",
+      "Babel",
+      "ESLint",
+      "Jest",
+      "ESLint-Plugin-JSDoc",
+      "Mock-FS"
+    ]
   },
   {
     "title": "find-in-nw",
