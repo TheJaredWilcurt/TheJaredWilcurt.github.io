@@ -84,7 +84,8 @@
               </div>
               <div class="type">
                 <span class="small" v-if="project.website"><a :href="project.website" target="_blank">Website</a></span>
-                <span class="small" v-if="project.repo"> | <a :href="project.repo" target="_blank">Repo</a></span>
+                <template v-if="project.website && project.repo"> | </template>
+                <span class="small" v-if="project.repo"><a :href="project.repo" target="_blank">Repo</a></span>
               </div>
             </div>
           </div>
