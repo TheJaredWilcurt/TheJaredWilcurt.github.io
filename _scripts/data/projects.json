@@ -40,12 +40,33 @@
     "type": "Website",
     "website": "https://xpda.net",
     "repo": "https://github.com/xpdanet/xpdanet.github.io",
-    "description": "",
+    "description": "A comprehensive list of tools used to make cross-platform desktop apps (XPDA). Including pros/cons, and a wide variety of programming language support. I created this site and maintain it. I personally review and summarize the important details of these various tools to give others a quick \"at a glance\" comparison. Spotlighting the selling points of each tool, but also the downsides that are important to be aware of before adopting. The goal is to save people time when evaluating tooling options before starting a new XPDA. The site allows users to filter based on OS support or programming language requirements.",
     "img": "_imgs/xpda.png",
     "releases": "",
-    "major": false,
-    "roles": [],
-    "tech": []
+    "major": true,
+    "roles": [
+      "Developer",
+      "UX",
+      "Project Manager",
+      "Design",
+      "Branding"
+    ],
+    "tech": [
+      "Vue.js",
+      "vue-sfc-loader",
+      "GitHub Pages",
+      "Adobe Photoshop",
+      "npm-Free-Server",
+      "ESLint",
+      "Sass",
+      "SassLint",
+      "PNG Gauntlet",
+      "PNGOUT Win",
+      "Png Optimizer",
+      "TruePNG",
+      "zopfliPng",
+      "Scout-App"
+    ]
   },
   {
     "title": "Create Desktop Shortcuts",
@@ -55,7 +76,7 @@
     "description": "This is a cross-platform Node.js library that fully supports each OS's unique desktop shortcut creation API. Zero dependencies. Human readable warnings and full API validation. 100% test coverage. End-to-end automated testing for Windows, Linux, and OSX via GitHub Actions.",
     "img": "_imgs/nwutils.png",
     "releases": "8 releases",
-    "major": false,
+    "major": true,
     "roles": [
       "Developer",
       "Documentation",
@@ -80,7 +101,7 @@
     "description": "This library drastically improves the experience of using snapshot testing with Jest and Vue. It removes common problems from snapshot testing, and gives complete formatting controls to developers, and has dozens of features in a simple API with smart defaults. Like all my libraries it features human readable error messages and API input validation. All releases document breaking API and snapshot changes new features, bug fixes, and maintenance notes. 100% Test Coverage.",
     "img": "_imgs/serializer.png",
     "releases": "19 releases",
-    "major": false,
+    "major": true,
     "roles": [
       "Developer",
       "Project Manager",
@@ -103,6 +124,54 @@
       "ESLint-Plugin-JSDoc",
       "Vue.js",
       "npm"
+    ]
+  },
+  {
+    "title": "NWUtils.io",
+    "type": "Website",
+    "website": "https://nwutils.io",
+    "repo": "https://github.com/nwutils/nwutils.github.io",
+    "description": "A website that lists and organizes different libraries, boilerplates, tools, and tutorials for NW.js.",
+    "img": "_imgs/nwutils.png",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Developer"
+    ],
+    "tech": [
+      "Vue.js",
+      "ESLint",
+      "npm-Free-Server",
+      "GitHub Pages",
+      "http-vue-loader",
+      "axios"
+    ]
+  },
+  {
+    "title": "NW.js - Vue-CLI Boilerplate",
+    "type": "Boilerplate",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-vue-cli-example",
+    "description": "A Vue-CLI boilerplate for NW.js desktop apps. Features 100% Jest test coverage. Jest snapshot tests. Built-in Vue-DevTools in the desktop app. Strict Vue, A11y, and Jest linting. Babel/Webpack via Vue-CLI. Automated builds for web and all desktop platforms.",
+    "img": "_imgs/vue.svg",
+    "releases": "8 releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Quality Engineer",
+      "Support"
+    ],
+    "tech": [
+      "NW.js",
+      "Vue.js",
+      "Vue-CLI",
+      "ESLint",
+      "Jest",
+      "Jest-Serializer-Vue-TJW",
+      "Node.js",
+      "Oracle VM Virtual Box",
+      "Vue-DevTools"
     ]
   },
   {
@@ -384,33 +453,6 @@
     ],
     "tech": [
       "ESLint"
-    ]
-  },
-  {
-    "title": "NW.js - Vue-CLI Boilerplate",
-    "type": "Boilerplate",
-    "website": "",
-    "repo": "https://github.com/nwutils/nw-vue-cli-example",
-    "description": "A Vue-CLI boilerplate for NW.js desktop apps. Features 100% Jest test coverage. Jest snapshot tests. Built-in Vue-DevTools in the desktop app. Strict Vue, A11y, and Jest linting. Babel/Webpack via Vue-CLI. Automated builds for web and all desktop platforms.",
-    "img": "_imgs/vue.svg",
-    "releases": "8 releases",
-    "major": false,
-    "roles": [
-      "Developer",
-      "Documentation",
-      "Quality Engineer",
-      "Support"
-    ],
-    "tech": [
-      "NW.js",
-      "Vue.js",
-      "Vue-CLI",
-      "ESLint",
-      "Jest",
-      "Jest-Serializer-Vue-TJW",
-      "Node.js",
-      "Oracle VM Virtual Box",
-      "Vue-DevTools"
     ]
   },
   {
@@ -760,7 +802,7 @@
     "description": "UGUI (The Universal GUI), is a library and framework that makes bootstrapping cross-platform desktop apps a breeze. Primarily designed to let users easily make GUIs for command-line apps, UGUI requires only a basic knowledge of HTML to get started. Despite being easy to pick up, it's incredibly powerful, and both Scout-App and Koa11y were built with it.",
     "img": "_imgs/ugui.png",
     "releases": "8 major releases",
-    "major": true,
+    "major": false,
     "roles": [
       "Developer",
       "UX",
@@ -788,7 +830,7 @@
     "description": "Koa11y is a cross-platform desktop app that allows users to easily check for accessibility (a11y) issues in their webpages. Koa11y spins up a headless browser, navigates to your URL, scans it based on your accessibility guidelines, and gives you a report in several common formats. The reports include the specific line of code that violates a guideline and in many cases direct recommendations on how best to resolve the violation.",
     "img": "_imgs/koa11y.png",
     "releases": "3 major releases",
-    "major": true,
+    "major": false,
     "roles": [
       "Developer",
       "UX",
@@ -823,7 +865,7 @@
     "description": "This website! Rebuilt using Vue.js and completely hand crafted styles in June of 2017 with care and attention. (I even asked someone to spellcheck it).",
     "img": "_imgs/meta/apl-144.png",
     "releases": "4th iteration",
-    "major": true,
+    "major": false,
     "roles": [
       "Developer",
       "UX",
@@ -1368,27 +1410,6 @@
     "tech": [
       "Vue.js",
       "Sass"
-    ]
-  },
-  {
-    "title": "NWUtils.io",
-    "type": "Website",
-    "website": "https://nwutils.io",
-    "repo": "https://github.com/nwutils/nwutils.github.io",
-    "description": "A website that lists and organizes different libraries, boilerplates, tools, and tutorials for NW.js.",
-    "img": "_imgs/nwutils.png",
-    "releases": "",
-    "major": false,
-    "roles": [
-      "Developer"
-    ],
-    "tech": [
-      "Vue.js",
-      "ESLint",
-      "npm-Free-Server",
-      "GitHub Pages",
-      "http-vue-loader",
-      "axios"
     ]
   }
 ]
