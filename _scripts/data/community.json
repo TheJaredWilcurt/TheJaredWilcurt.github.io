@@ -19,7 +19,7 @@
       "Mentor",
       "Presenter"
     ],
-    "time": "4 years"
+    "time": "5 years"
   },
   {
     "name": "Vue.js Indy",
@@ -31,7 +31,7 @@
       "Mentor",
       "Presenter"
     ],
-    "time": "3 years"
+    "time": "4 years"
   },
   {
     "name": "Civic UX Group",
@@ -67,6 +67,16 @@
       "Presenter"
     ],
     "time": "2 years"
+  },
+  {
+    "name": "FreeCodeSchool Indy",
+    "description": "This was a free coding bootcamp that had ~100 enrolled students over 18 months. I was involved in developing curriculum, organizing, and teaching classes.",
+    "role": [
+      "Organizer",
+      "Presenter",
+      "Mentor"
+    ],
+    "time": "1.5 years"
   },
   {
     "name": "Open Indy Brigade",

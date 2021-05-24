@@ -92,20 +92,96 @@ const otherProjects = new Vue({
       });
       return uniqueArray;
     },
-    filteredProjects: function () {
+    projectsWithCompletedDefinition: function () {
       return this.projects.filter(function (project) {
+        return (
+          project &&
+          project.title &&
+          project.type &&
+          (
+            project.website ||
+            project.repo
+          ) &&
+          project.description &&
+          project.img &&
+          !project.major &&
+          project.hasOwnProperty('releases') &&
+          project.roles &&
+          project.roles.length &&
+          project.tech &&
+          project.tech.length
+        );
+      });
+    },
+    projectsWithIncompleteDefinition: function () {
+      return this.projects.filter(function (project) {
+        return !project.major && (
+          !project ||
+          !project.title ||
+          !project.type ||
+          (
+            !project.website &&
+            !project.repo
+          ) ||
+          !project.description ||
+          !project.img ||
+          !project.hasOwnProperty('releases') ||
+          !project.roles ||
+          !project.roles.length ||
+          !project.tech ||
+          !project.tech.length
+        );
+      });
+    },
+    totalCount: function () {
+      return this.projectsWithCompletedDefinition.length;
+    },
+    filteredProjects: function () {
+      return this.projectsWithCompletedDefinition.filter(function (project) {
         return this.typesChecked[project.type];
       }.bind(this));
     },
     typesCount: function () {
       const typeCounts = {};
-      this.projects.forEach(function (project) {
-        if (!project.major) {
-          typeCounts[project.type] = typeCounts[project.type] + 1 || 1;
-        }
+      this.projectsWithCompletedDefinition.forEach(function (project) {
+        typeCounts[project.type] = typeCounts[project.type] + 1 || 1;
       });
 
       return typeCounts;
+    }
+  },
+  watch: {
+    projects: function () {
+      const otherProjects = this.projects.filter(function (project) {
+        return !project.major;
+      });
+      if (otherProjects.length > this.projectsWithCompletedDefinition.length) {
+        console.log('Showing ' + this.projectsWithCompletedDefinition.length + ' out of ' + otherProjects.length + ' projects.');
+        console.log((otherProjects.length - this.projectsWithCompletedDefinition.length) + ' projects missing information.');
+        console.table(this.projectsWithIncompleteDefinition.map(function (project) {
+          let output = { title: project.title || 'BLANK' };
+          if (!project.type) {
+            output.type = 'BLANK';
+          }
+          if (!project.description) {
+            output.description = 'BLANK';
+          }
+          if (!project.img) {
+            output.img = 'BLANK';
+          }
+          if (!project.repo && !project.website) {
+            output.website = 'BLANK';
+            output.repo = 'BLANK';
+          }
+          if (!project.roles || !project.roles.length) {
+            output.roles = 'BLANK';
+          }
+          if (!project.tech || !project.tech.length) {
+            output.tech = 'BLANK';
+          }
+          return output;
+        }));
+      }
     }
   }
 });

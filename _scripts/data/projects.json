@@ -1,11 +1,10 @@
 [
   {
     "title": "Scout-App",
-    "type": "Project",
+    "type": "App",
     "website": "http://scout-app.io",
     "repo": "https://github.com/scout-app/scout-app",
-    "url": "https://github.com/scout-app/scout-app",
-    "description": "A cross-platform desktop app that manages, watches, and processes Sass into CSS for all your projects. Downloaded over 300,000 times, in 22 languages, in over 20 countries. I've never released a version with a known bug.",
+    "description": "A cross-platform desktop app that manages, watches, and processes Sass into CSS for all your projects. Downloaded over 500,000 times, in 22 languages, in over 20 countries. I've never released a version with a known bug.",
     "img": "_imgs/scout-app.png",
     "releases": "6 major releases",
     "major": true,
@@ -28,7 +27,7 @@
       "FS-Extra",
       "Bootswatch",
       "Chokidar",
-      "Node",
+      "Node.js",
       "Bower",
       "ESLint",
       "SassLint",
@@ -37,15 +36,773 @@
     ]
   },
   {
+    "title": "XPDA.net",
+    "type": "Website",
+    "website": "https://xpda.net",
+    "repo": "https://github.com/xpdanet/xpdanet.github.io",
+    "description": "A comprehensive list of tools used to make cross-platform desktop apps (XPDA). Including pros/cons, and a wide variety of programming language support. I created this site and maintain it. I personally review and summarize the important details of these various tools to give others a quick \"at a glance\" comparison. Spotlighting the selling points of each tool, but also the downsides that are important to be aware of before adopting. The goal is to save people time when evaluating tooling options before starting a new XPDA. The site allows users to filter based on OS support or programming language requirements.",
+    "img": "_imgs/xpda.png",
+    "releases": "",
+    "major": true,
+    "roles": [
+      "Developer",
+      "UX",
+      "Project Manager",
+      "Design",
+      "Branding"
+    ],
+    "tech": [
+      "Vue.js",
+      "vue-sfc-loader",
+      "GitHub Pages",
+      "Adobe Photoshop",
+      "npm-Free-Server",
+      "ESLint",
+      "Sass",
+      "SassLint",
+      "PNG Gauntlet",
+      "PNGOUT Win",
+      "Png Optimizer",
+      "TruePNG",
+      "zopfliPng",
+      "Scout-App"
+    ]
+  },
+  {
+    "title": "Create Desktop Shortcuts",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/nwutils/create-desktop-shortcuts",
+    "description": "This is a cross-platform Node.js library that fully supports each OS's unique desktop shortcut creation API. Zero dependencies. Human readable warnings and full API validation. 100% test coverage. End-to-end automated testing for Windows, Linux, and OSX via GitHub Actions. Published to npm.",
+    "img": "_imgs/nwutils.png",
+    "releases": "8 releases",
+    "major": true,
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Quality Engineer",
+      "Support"
+    ],
+    "tech": [
+      "Node.js",
+      "npm",
+      "FS Extra",
+      "Jest",
+      "Mock FS",
+      "ESLint",
+      "eslint-plugin-jsdoc"
+    ]
+  },
+  {
+    "title": "Jest-Serializer-Vue-TJW",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/tjw-lint/jest-serializer-vue-tjw",
+    "description": "This library drastically improves the experience of using snapshot testing with Jest and Vue. It removes common problems from snapshot testing, and gives complete formatting controls to developers. It has dozens of features in a simple API with smart defaults. Like all my libraries it features human readable error messages and full API input validation. All releases document breaking API and snapshot changes, new features, bug fixes, and maintenance notes. Along with full code diffs against previous versions. 100% Test Coverage. Published to npm.",
+    "img": "_imgs/serializer.png",
+    "releases": "19 releases",
+    "major": true,
+    "roles": [
+      "Developer",
+      "Project Manager",
+      "Documentation",
+      "Quality Engineer",
+      "Support"
+    ],
+    "tech": [
+      "Jest",
+      "Vue-Test-Utils",
+      "Babel",
+      "Vue-Template-Compiler",
+      "Vue-Jest",
+      "Node.js",
+      "Lodash",
+      "VanillaJS",
+      "Cheerio",
+      "HTML Parser",
+      "ESLint",
+      "ESLint-Plugin-JSDoc",
+      "Vue.js",
+      "npm"
+    ]
+  },
+  {
+    "title": "NWUtils.io",
+    "type": "Website",
+    "website": "https://nwutils.io",
+    "repo": "https://github.com/nwutils/nwutils.github.io",
+    "description": "A website that lists and organizes different libraries, boilerplates, tools, and tutorials for NW.js.",
+    "img": "_imgs/nwutils.png",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Developer"
+    ],
+    "tech": [
+      "Vue.js",
+      "ESLint",
+      "npm-Free-Server",
+      "GitHub Pages",
+      "http-vue-loader",
+      "axios"
+    ]
+  },
+  {
+    "title": "NW.js - Vue-CLI Boilerplate",
+    "type": "Boilerplate",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-vue-cli-example",
+    "description": "A Vue-CLI boilerplate for NW.js desktop apps. Features 100% Jest test coverage. Jest snapshot tests. Built-in Vue-DevTools in the desktop app. Strict Vue, A11y, and Jest linting. Babel/Webpack via Vue-CLI. Automated builds for web and all desktop platforms.",
+    "img": "_imgs/vue.svg",
+    "releases": "8 releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Quality Engineer",
+      "Support"
+    ],
+    "tech": [
+      "NW.js",
+      "Vue.js",
+      "Vue-CLI",
+      "ESLint",
+      "Jest",
+      "Jest-Serializer-Vue-TJW",
+      "Node.js",
+      "Oracle VM Virtual Box",
+      "Vue-DevTools"
+    ]
+  },
+  {
+    "title": "WuhdAppusDat",
+    "type": "App",
+    "website": "",
+    "repo": "https://github.com/TheJaredWilcurt/WuhdAppusDat",
+    "description": "Desktop app for streamers that displays what program is currently in focus. This is a common questions asked of code, art, and game dev streamers. It was made at the request of Animation Director, and streamer, Adam Philips (chluaid). The app's UI is completely customizable from the background image that scales to the dimensions of the window, to the font settings. The window it self is completely transparent until hovered, and then the edges are marked for easy resizing/moving. The app even ships with custom artwork provided by Adam Philips.",
+    "img": "_imgs/wuhdappusdat.png",
+    "releases": "3 releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "UX",
+      "Design",
+      "Branding"
+    ],
+    "tech": [
+      "VanillaJS",
+      "NW.js",
+      "Node.js",
+      "VMWare Workstation",
+      "Adobe Photoshop",
+      "deflOpt",
+      "defluff",
+      "PNG Gauntlet",
+      "PNGOUT Win",
+      "Png Optimizer",
+      "TruePNG",
+      "zopfliPng"
+    ]
+  },
+  {
+    "title": "node-flif",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/FLIF-hub/node-flif",
+    "description": "10 months in the making. 52 human readable helpful error messages. 154 files. 232 commits. 1,459 tests written. 7,431 LOC. 100% test coverage. 100% API support. Published to npm. Cross-platform (Win/Lin/OSX). This Node.js library provided a one-to-one API map in JavaScript for the FLIF CLI executable. Allowing easy Node-based automation of encoding, decoding, and transcoding of FLIF image files. It also handled input validation including upper/lower bounds value warnings (previously undocumented).",
+    "img": "_imgs/flif.png",
+    "releases": "4 releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Quality Engineer",
+      "Support"
+    ],
+    "tech": [
+      "FLIF",
+      "Node.js",
+      "VanillaJS",
+      "npm",
+      "ESLint",
+      "VMWare Workstation",
+      "Oracle VM Virtual Box"
+    ]
+  },
+  {
+    "title": "Red Perfume",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/red-perfume/red-perfume",
+    "description": "A experimental library to convert any HTML/CSS files to atomized css classes. With 100% test coverage. Atomized CSS allows you to write your styles in any way you want and then during a build step massively reduce your total CSS filesize be converting all css properties to individual atomic classes and replacing all references in the markup.",
+    "img": "_imgs/redperfume.png",
+    "releases": "3 pre-releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Project Manager",
+      "Documentation"
+    ],
+    "tech": [
+      "CSS Parser",
+      "Parse5",
+      "Babel",
+      "ESLint",
+      "Jest",
+      "ESLint-Plugin-JSDoc",
+      "Mock-FS"
+    ]
+  },
+  {
+    "title": "find-in-nw",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/nwutils/find-in-nw",
+    "description": "Produces a fully customizable \"Find\" box (via CTRL+F) in NW.js to search for text in a window.",
+    "img": "_imgs/nwutils.png",
+    "releases": "4 releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Design"
+    ],
+    "tech": [
+      "VanillaJS",
+      "NW.js",
+      "Sass",
+      "SassLint",
+      "ESLint",
+      "Terser",
+      "Travis-CI",
+      "tjw-sasslint-rules",
+      "npm",
+      "eslint-config-tjw-base"
+    ]
+  },
+  {
+    "title": "nw-splasher",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-splasher",
+    "description": "A library for displaying a splash screen while your desktop app loads in the background. It runs both windows as separate instances, meaning that they run on their own thread. This allows the splash screen to playback smooth 60fps animations without any stuttering from the loading of the other process. The two instances communicate via Node.js web sockets to know when to show/hide windows. Library features a simple API and human readable error message for interface validation. This project was completed in one day at the request of a user in the NW.js chatroom.",
+    "img": "_imgs/nwutils.png",
+    "releases": "1 release",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "VanillaJS",
+      "NW.js",
+      "Node.js",
+      "npm"
+    ]
+  },
+  {
+    "title": "nw-programmatic-folder-select",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-programmatic-folder-select",
+    "description": "A library for NW.js to programmatically display the OS dialog box for folder selection. This gives all the same features as NW.js's built in HTML version, but with all DOM specific code abstracted to a simple callback function. Like all my libraries it has robust input validation with human friendly warning messages.",
+    "img": "_imgs/nwutils.png",
+    "releases": "5 releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "NW.js",
+      "ESlint",
+      "npm"
+    ]
+  },
+  {
+    "title": "Meyer Sass",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/TheJaredWilcurt/meyer-sass",
+    "description": "Eric Meyer's CSS Resets in .sass format, and also .scss, .less, .styl, and manually minified CSS.",
+    "img": "_imgs/sass.svg",
+    "releases": "2 releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "Sass",
+      "SassLint",
+      "npm",
+      "Bower"
+    ]
+  },
+  {
+    "title": "tjw-sasslint-rules",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/tjw-lint/tjw-sasslint-rules",
+    "description": "My very strict set of Sasslint rules. It features the most comprehensive list of CSS properties on the Internet, merged from lists from MDN, W3C, and Chrome Status Metrics. This list is ordered in a logical manner and has tests to prevent duplicate properties. Every lint rule is documented.",
+    "img": "_imgs/lint.png",
+    "releases": "5 releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Quality Engineer"
+    ],
+    "tech": [
+      "Sass",
+      "SassLint",
+      "npm",
+      "Node.js",
+      "yaml.js"
+    ]
+  },
+  {
+    "title": "eslint-config-tjw-base",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/tjw-lint/eslint-config-tjw-base",
+    "description": "My custom ESLint rules re-used across many projects.",
+    "img": "_imgs/lint.png",
+    "releases": "1 release",
+    "major": false,
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "ESLint",
+      "npm"
+    ]
+  },
+  {
+    "title": "nw-img-vue",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-img-vue",
+    "description": "A Vue component for desktop and web apps. If running in a desktop app it caches copies of online images locally and loads them first if available.",
+    "img": "_imgs/nwutils.png",
+    "releases": "1 release",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "NW.js",
+      "Vue.js",
+      "Node.js"
+    ]
+  },
+  {
+    "title": "nw-electron-adapter",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-electron-adapter",
+    "description": "An adapter library to convert Electron codebases to NW.js more easily. 100% test coverage.",
+    "img": "_imgs/nwutils.png",
+    "releases": "1 release",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Project Manager",
+      "Documentation",
+      "Quality Engineer",
+      "Support"
+    ],
+    "tech": [
+      "ESLint",
+      "Jest",
+      "npm",
+      "NW.js",
+      "Node.js"
+    ]
+  },
+  {
+    "title": "tjw-markdownlint-rules",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/tjw-lint/tjw-markdownlint-rules",
+    "description": "A very strict and well documented set of linting rules for Markdown files. Particularly useful in our user-facing app documentation at work.",
+    "img": "_imgs/lint.png",
+    "releases": "2 releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Quality Engineer"
+    ],
+    "tech": [
+      "MarkdownLint-CLI"
+    ]
+  },
+  {
+    "title": "eslint-config-tjw-vue",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/tjw-lint/eslint-config-tjw-vue",
+    "description": "My Vue.js specific linting rules, used on various projects and at work.",
+    "img": "_imgs/lint.png",
+    "releases": "4 releases",
+    "major": false,
+    "roles": [
+      "Developer"
+    ],
+    "tech": [
+      "ESLint"
+    ]
+  },
+  {
+    "title": "NW.js - Angular-CLI Boilerplate",
+    "type": "Boilerplate",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-angular-cli-example",
+    "description": "This is a cross-platform desktop app boilerplate for NW.js and Angular 9+. It is based on a standard Angular-CLI setup with many modifications to accomodate running in a desktop app, and building for web and desktop platforms. I was even able to do the whole thing without having to write a line of TypeScript. Unscathed.",
+    "img": "_imgs/angular.svg",
+    "releases": "3 releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "NW.js",
+      "Angular",
+      "Angular-CLI",
+      "Node.js",
+      "Oracle VM Virtual Box"
+    ]
+  },
+  {
+    "title": "nw-vue-devtools",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-vue-devtools",
+    "description": "This project would clone down the Vue Devtools repo, tweak some files then do a build so the devTools could run in NW.js. Though as the source repo adopted more complex environment requirements, this became unmaintainable. Fortunately an alternative approach had been discovered based on downloading directly from the chromium web store a prebuilt version and tweaking it, negating the need to dynamically build from source on install. This project is now deprecated and archived.",
+    "img": "_imgs/vue.svg",
+    "releases": "6 releases",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "ESLint",
+      "Git",
+      "npm",
+      "NW.js",
+      "Node.js",
+      "Vue-DevTools",
+      "Vue.js"
+    ]
+  },
+  {
+    "title": "window-communication-example",
+    "type": "Boilerplate",
+    "website": "",
+    "repo": "https://github.com/nwutils/window-communication-example",
+    "description": "A demo of remotely running functions from different desktop app windows and sharing data between multiple windows.",
+    "img": "_imgs/nwutils.png",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Developer"
+    ],
+    "tech": [
+      "NW.js",
+      "VanillaJS"
+    ]
+  },
+  {
+    "title": "nw-local-server-example",
+    "type": "Boilerplate",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-local-server-example",
+    "description": "This is a boilerplate for a cross-platform desktop app that runs off of a built-in local webserver.",
+    "img": "_imgs/nwutils.png",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "NW.js",
+      "Express",
+      "Node.js",
+      "VanillaJS"
+    ]
+  },
+  {
+    "title": "nw-tray-example",
+    "type": "Boilerplate",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-tray-example",
+    "description": "This is an example project showing how to set up a tray \"only\" app using NW.js. It comes with an optional Window that can be shown but is hidden by default. The app just launches and is placed in the tray of the OS.",
+    "img": "_imgs/nwutils.png",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Developer"
+    ],
+    "tech": [
+      "NW.js",
+      "VanillaJS"
+    ]
+  },
+  {
+    "title": "frameless-example",
+    "type": "Boilerplate",
+    "website": "",
+    "repo": "https://github.com/nwutils/frameless-example",
+    "description": "This is a demo repo/boilerplate for a frameless (chromeless) app with custom window controls created with CSS. It features a custom title bar for dragging, adjustable background transparency, rounded window corners, Rounded corners are removed when maximized.",
+    "img": "_imgs/nwutils.png",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Developer"
+    ],
+    "tech": [
+      "NW.js",
+      "VanillaJS"
+    ]
+  },
+  {
+    "title": "nw-jquery-example",
+    "type": "Boilerplate",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-jquery-example",
+    "description": "A basic boilerplate of NW.js using jQuery.",
+    "img": "_imgs/nwutils.png",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Developer"
+    ],
+    "tech": [
+      "NW.js",
+      "jQuery"
+    ]
+  },
+  {
+    "title": "nw-splash-screen-example",
+    "type": "Boilerplate",
+    "website": "",
+    "repo": "https://github.com/nwutils/nw-splash-screen-example",
+    "description": "A functioning boilerplate and reference implementation. This repo demos using the nw-splasher library to create a desktop app that loads in the background while a chromeless splash screen is displayed running in a separate process, making its performance unincumbered. The main window is hidden and communicates to the splash screen via websockets when it is ready to be displayed.",
+    "img": "_imgs/nwutils.png",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "NW.js",
+      "nw-splasher",
+      "VanillaJS"
+    ]
+  },
+  {
+    "title": "Vue-Desktop-Basic",
+    "type": "Boilerplate",
+    "website": "",
+    "repo": "https://github.com/TheJaredWilcurt/vue-desktop-basic",
+    "description": "Proof of concept for a bundler-free Vue desktop app.",
+    "img": "_imgs/vue.svg",
+    "releases": "1 release",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "ESLint",
+      "http-vue-loader",
+      "NW.js",
+      "Sass",
+      "SassLint",
+      "Vue-DevTools",
+      "Vue-Router",
+      "Vue.js",
+      "Vuex",
+      "nwjs-builder-phoenix"
+    ]
+  },
+  {
+    "title": "xaksis/vue-good-table",
+    "type": "Contribution",
+    "website": "",
+    "repo": "https://github.com/xaksis/vue-good-table/pulls?q=is%3Apr+is%3Aclosed+author%3ATheJaredWilcurt",
+    "description": "Vue-Good-Table is the most popular Vue table component. I decided to use it on our primary project at work. After implementing, as we found bugs, or needed new features, my team would contribute back to the project, improving it for everyone. After several contributions I was added as the second maintainer of the project.",
+    "img": "_imgs/vue.svg",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Support"
+    ],
+    "tech": [
+      "Vue.js",
+      "GitHub",
+      "ESLint",
+      "Vue-DevTools"
+    ]
+  },
+  {
+    "title": "npm/rfcs",
+    "type": "Contribution",
+    "website": "",
+    "repo": "https://github.com/npm/rfcs/pull/41/files",
+    "description": "I wrote up a proposal for a new feature in npm to allow adding a script to the package.json via command. This RFC was approved and eventually implemented and released. As of npm 7.1 (ships with Node.js 15.5) you can run npm set-script start \"express\" or any other script name and command.",
+    "img": "_imgs/npm.svg",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "GitHub",
+      "npm"
+    ]
+  },
+  {
+    "title": "AustinGil/Vuetensils",
+    "type": "Contribution",
+    "website": "https://vuetensils.stegosource.com",
+    "repo": "https://github.com/AustinGil/Vuetensils/pulls?q=is%3Apr+author%3ATheJaredWilcurt+is%3Aclosed",
+    "description": "Vuetensils is a style-free, accessibility-focused, component library. I set up Jest unit testing, snapshot testing, updated dependencies, set up ESLint and relatd plugins (Vue, Jest, Vue-A11y, JSDoc), and set up CI based Pa11y tool to run recursively on component docs, checking for accessibility issues in a headless browser. Updated documentation as needed.",
+    "img": "_imgs/vuetensils.png",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation",
+      "Quality Engineer"
+    ],
+    "tech": [
+      "Pa11y",
+      "Jest",
+      "ESLint",
+      "Node.js",
+      "Vue.js",
+      "Jest-Serializer-Vue-TJW"
+    ]
+  },
+  {
+    "title": "sagalbot/vue-select (Bug fix)",
+    "type": "Contribution",
+    "website": "",
+    "repo": "https://github.com/sagalbot/vue-select/issues/1360",
+    "description": "We ran into an issue at work with a change to this repo that broke our Jest snapshots. I documented the issue, created a PR to fix it, and documented a workaround for others until the PR can be merged.",
+    "img": "_imgs/vue.svg",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "Jest",
+      "Vue.js",
+      "GitHub"
+    ]
+  },
+  {
+    "title": "vuejs/Vue.js Events",
+    "type": "Contribution",
+    "website": "https://events.vuejs.org/meetups/",
+    "repo": "",
+    "description": "I started the Vue.js Meetups site to help the Vue community find local groups and events, and to help people start meetups with resources, guides, reusable event graphics, and tips. This was later renamed to Vue.js Events and officially added to the Vue.js website.",
+    "img": "_imgs/vuejsevents.png"
+    ,
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "GitHub",
+      "Adobe Photoshop"
+    ]
+  },
+  {
+    "title": "mcibique/vue-testing-examples",
+    "type": "Contribution",
+    "website": "",
+    "repo": "https://github.com/mcibique/vue-testing-examples/pull/7",
+    "description": "Improved the English and grammar of a 46 page document on advanced Vue.js testing.",
+    "img": "_imgs/vue.svg",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "GitHub"
+    ]
+  },
+  {
+    "title": "dekadentno/vue-unit-testing-cheat-sheet",
+    "type": "Contribution",
+    "website": "",
+    "repo": "https://github.com/dekadentno/vue-unit-testing-cheat-sheet/pull/4",
+    "description": "Improved documentation on snapshot-based unit testing using Jest in a Vue.js applicaiton.",
+    "img": "_imgs/vue.svg",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "GitHub"
+    ]
+  },
+  {
+    "title": "dobromir-hristov/vuecommunity",
+    "type": "Contribution",
+    "website": "",
+    "repo": "https://github.com/dobromir-hristov/vuecommunity/pull/113/files",
+    "description": "Updated the Vue Community Guide for information on using Vue to make desktop apps.",
+    "img": "_imgs/vue.svg",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "GitHub"
+    ]
+  },
+  {
+    "title": "nwutils/SnowPack-nw",
+    "type": "Contribution",
+    "website": "",
+    "repo": "https://github.com/nwutils/SnowPack-nw",
+    "description": "I improved the English translations of the documentation for the VanillaJS and PixiJS boilerplates.",
+    "img": "_imgs/nwutils.png",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Documentation"
+    ],
+    "tech": [
+      "GitHub"
+    ]
+  },
+  {
     "title": "UGUI",
-    "type": "Project",
+    "type": "Boilerplate",
     "website": "http://ugui.io",
     "repo": "https://github.com/UniversalGUI/UGUI",
-    "url": "https://github.com/UniversalGUI/UGUI",
     "description": "UGUI (The Universal GUI), is a library and framework that makes bootstrapping cross-platform desktop apps a breeze. Primarily designed to let users easily make GUIs for command-line apps, UGUI requires only a basic knowledge of HTML to get started. Despite being easy to pick up, it's incredibly powerful, and both Scout-App and Koa11y were built with it.",
     "img": "_imgs/ugui.png",
     "releases": "8 major releases",
-    "major": true,
+    "major": false,
     "roles": [
       "Developer",
       "UX",
@@ -61,20 +818,19 @@
       "jQuery",
       "Bootstrap",
       "Sass",
-      "Node",
+      "Node.js",
       "Bootswatch"
     ]
   },
   {
     "title": "Koa11y",
-    "type": "Project",
+    "type": "App",
     "website": "https://open-indy.github.io/Koa11y/",
     "repo": "https://github.com/open-indy/Koa11y",
-    "url": "https://github.com/open-indy/Koa11y",
     "description": "Koa11y is a cross-platform desktop app that allows users to easily check for accessibility (a11y) issues in their webpages. Koa11y spins up a headless browser, navigates to your URL, scans it based on your accessibility guidelines, and gives you a report in several common formats. The reports include the specific line of code that violates a guideline and in many cases direct recommendations on how best to resolve the violation.",
     "img": "_imgs/koa11y.png",
-    "releases": "2 major releases",
-    "major": true,
+    "releases": "3 major releases",
+    "major": false,
     "roles": [
       "Developer",
       "UX",
@@ -87,12 +843,12 @@
       "Support"
     ],
     "tech": [
-      "Vue",
+      "Vue.js",
       "NW.js",
       "Pa11y",
       "PhantomJS",
       "Sass",
-      "Node",
+      "Node.js",
       "FS-Extra",
       "ESLint",
       "SassLint",
@@ -103,27 +859,26 @@
   },
   {
     "title": "TheJaredWilcurt.com",
-    "type": "Project",
+    "type": "Website",
     "website": "http://TheJaredWilcurt.com",
     "repo": "http://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io",
-    "url": "http://github.com/TheJaredWilcurt/TheJaredWilcurt.github.io",
     "description": "This website! Rebuilt using Vue.js and completely hand crafted styles in June of 2017 with care and attention. (I even asked someone to spellcheck it).",
     "img": "_imgs/meta/apl-144.png",
     "releases": "4th iteration",
-    "major": true,
+    "major": false,
     "roles": [
       "Developer",
       "UX",
       "Design"
     ],
     "tech": [
-      "Vue",
+      "Vue.js",
       "Sass",
       "Gulp",
       "Rollup",
       "Express",
       "LiveReload",
-      "Node",
+      "Node.js",
       "ESLint",
       "SassLint",
       "GitHub Pages"
@@ -131,11 +886,13 @@
   },
   {
     "title": "UGUI: FLIF",
-    "type": "Project",
-    "url": "http://flif.info/UGUI_FLIF",
+    "type": "App",
+    "website": "http://flif.info/UGUI_FLIF",
+    "repo": "https://github.com/FLIF-hub/UGUI_FLIF",
     "description": "A simple drag and drop tool for converting to and from FLIF image files. The first ever FLIF GUI.",
     "img": "_imgs/flif.png",
-    "releases": "4 major release, 1 upcoming",
+    "releases": "4 major release",
+    "major": false,
     "roles": [
       "Developer",
       "UX",
@@ -149,7 +906,7 @@
       "ImageMagick",
       "Sass",
       "jQuery",
-      "Node",
+      "Node.js",
       "Bootstrap",
       "ESLint",
       "SassLint",
@@ -157,12 +914,37 @@
     ]
   },
   {
+    "title": "UGUI: Defluff",
+    "type": "App",
+    "website": "",
+    "repo": "https://github.com/TheJaredWilcurt/UGUI-Defluff",
+    "description": "A GUI for the command line tools Defluff, Zopfli, and TruePNG. These are all tools for compressing or ordering a PNG file's data-stream to find better ways of organizing the data resulting in a lossless reduction of filesize.",
+    "img": "_imgs/repo.svg",
+    "releases": "",
+    "major": false,
+    "roles": [
+      "Developer"
+    ],
+    "tech": [
+      "NW.js",
+      "UGUI",
+      "defluff",
+      "zopfliPng",
+      "TruePNG",
+      "FS-Extra",
+      "Bootstrap",
+      "Bootswatch"
+    ]
+  },
+  {
     "title": "GraphMyCSS.com",
-    "type": "Project",
-    "url": "http://graphmycss.com",
+    "type": "Website",
+    "website": "http://graphmycss.com",
+    "repo": "https://github.com/TheJaredWilcurt/itcss-specificity-graph",
     "description": "A website where you can paste in any arbitrary CSS and have a graph dynamically generated to show levels of selector specificity throughout the file.",
     "img": "_imgs/graphmycss.png",
     "releases": "2 releases",
+    "major": false,
     "roles": [
       "Developer",
       "Branding"
@@ -179,11 +961,13 @@
   },
   {
     "title": "UGUI: WiFi",
-    "type": "Project",
-    "url": "https://github.com/TheJaredWilcurt/UGUI-Wifi",
+    "type": "App",
+    "website": "",
+    "repo": "https://github.com/TheJaredWilcurt/UGUI-Wifi",
     "description": "Displays a list of Wi-Fi networks (access points) that are within range and allows you to connect directly to them. This was originally created in under an hour to help someone in the NW.js chatroom. Later on, it was re-built live for my talk \"Building a desktop app in under an hour\".",
     "img": "_imgs/ugui-wifi.png",
     "releases": "1 release",
+    "major": false,
     "roles": [
       "Developer",
       "Presenter",
@@ -195,20 +979,23 @@
       "Bootstrap",
       "Sass",
       "jQuery",
-      "Node",
+      "Node.js",
       "Bootswatch",
       "WiFi-Control"
     ]
   },
   {
     "title": "UGUI: Git Branch Deleter",
-    "type": "Project",
-    "url": "https://thejaredwilcurt.github.io/UGUI-Git-Branch-Deleter",
-    "description": "This is a tool to easily check the status of tickets in Jira/GUS/GitHub Enterprise, before easily deleting their local associated Git branch. After each major release at work, I use this to remove all local branches from 2 releases ago.",
+    "type": "App",
+    "website": "http://TheJaredWilcurt.com/UGUI-Git-Branch-Deleter",
+    "repo": "https://github.com/TheJaredWilcurt/UGUI-Git-Branch-Deleter",
+    "description": "This is a tool to easily check the status of tickets in Clubhouse/Jira/GUS/GitHub Enterprise, before easily deleting their local associated Git branch. I use this to delete any branches associated to tickets that were marked as done over 30 days ago.",
     "img": "_imgs/git-branch-deleter.png",
-    "releases": "5 releases",
+    "releases": "6 releases",
+    "major": false,
     "roles": [
-      "Developer"
+      "Developer",
+      "UX"
     ],
     "tech": [
       "NW.js",
@@ -217,16 +1004,19 @@
       "Bootstrap",
       "Sass",
       "jQuery",
-      "Node",
+      "Node.js",
       "Bootswatch"
     ]
   },
   {
     "title": "GLRittenhouse Website Port",
-    "type": "Project",
-    "url": "https://github.com/TheJaredWilcurt/glr",
+    "type": "Website",
+    "website": "",
+    "repo": "https://github.com/TheJaredWilcurt/glr",
     "description": "Porting an old static website over to GitHub's free hosting as a living archive.",
     "img": "_imgs/glr.png",
+    "releases": "",
+    "major": false,
     "roles": [
       "Developer",
       "Project Manager",
@@ -240,10 +1030,12 @@
   {
     "title": "FLIF binary builds",
     "type": "Contribution",
-    "url": "https://github.com/FLIF-hub/FLIF/releases",
+    "website": "",
+    "repo": "https://github.com/FLIF-hub/FLIF/releases",
     "description": "I'm an early member of the FLIF image format community. I'm responsible for creating the command line tools for Windows (32/64), OSX (64), and Ubuntu (32/64). To better enable the spread and usage of the format.",
     "img": "_imgs/flif.png",
     "releases": "2 releases",
+    "major": false,
     "roles": [
       "Developer",
       "Quality Engineer"
@@ -257,10 +1049,13 @@
   },
   {
     "title": "SassNotSASS",
-    "type": "Project",
-    "url": "https://github.com/TheJaredWilcurt/SassNotSASS",
+    "type": "Website",
+    "website": "",
+    "repo": "https://github.com/TheJaredWilcurt/SassNotSASS",
     "description": "One-day novelty project. Created a site to explain the proper capitalization of Sass (not SASS as is often typed).",
     "img": "_imgs/sassnotsass.svg",
+    "releases": "",
+    "major": false,
     "roles": [
       "Developer",
       "UX",
@@ -276,9 +1071,12 @@
   {
     "title": "FCC-JACK",
     "type": "Hackathon",
-    "url": "https://www.meetup.com/Free-Code-Camp-Indy/events/234330061",
+    "website": "https://www.meetup.com/Free-Code-Camp-Indy/events/234330061",
+    "repo": "",
     "description": "A 3 hour project made during a Free Code Camp Indy mini-hackathon. I worked with a team of 3 others and helped mentor and explain coding concepts while working on a short project.",
     "img": "_imgs/free-code-camp.svg",
+    "releases": "",
+    "major": false,
     "roles": [
       "Developer",
       "Project Manager",
@@ -287,7 +1085,7 @@
     ],
     "tech": [
       "HTML5 Boiler Plate",
-      "NPM-Free-Server",
+      "npm-Free-Server",
       "Bootstrap",
       "jQuery",
       "GitHub Pages"
@@ -296,9 +1094,12 @@
   {
     "title": "amEco",
     "type": "Hackathon",
-    "url": "https://playameco.github.io",
+    "website": "https://playameco.github.io",
+    "repo": "",
     "description": "amEco was the result of a 3 Day long hackathon for \"Greater Lafayette Startup Weekend 2016\". I helped to organize and play the role of a project manager, ensuring tasks were scoped to MVP and that no one was waiting on anyone else to continue. The idea behind amEco was to gamify recycling and other environmentally conscious habits. The team came in second place.",
     "img": "_imgs/ameco.png",
+    "releases": "",
+    "major": false,
     "roles": [
       "Product Owner",
       "Project Manager",
@@ -316,9 +1117,12 @@
   {
     "title": "FCC Indy/GDI - Mini-Hack Day",
     "type": "Hackathon",
-    "url": "https://www.meetup.com/Free-Code-Camp-Indy/events/237459434",
+    "website": "https://www.meetup.com/Free-Code-Camp-Indy/events/237459434",
+    "repo": "",
     "description": "A 6 hour hackathon aimed at beginners. This was a collaborative effort between Free Code Camp Indy and Girl Develop-It. I helped organize and run this event, as well as give advise and help to participating teams.",
     "img": "_imgs/free-code-camp.svg",
+    "releases": "",
+    "major": false,
     "roles": [
       "Organizer",
       "Mentor"
@@ -330,9 +1134,12 @@
   {
     "title": "Free Code Camp's first Remote Hack",
     "type": "Hackathon",
-    "url": "https://free-code-camp-indy.github.io/FCC-Remote-Hack",
+    "website": "https://free-code-camp-indy.github.io/FCC-Remote-Hack",
+    "repo": "https://github.com/free-code-camp-indy/FCC-Remote-Hack",
     "description": "This was the first ever remote hackathon for Free Code Camp. Particapants could form teams from around the world to compete in a 24 hour long game jam. I was asked to judge the submitted projects, provide detailed feedback, and give my selection for the winner of the event.",
     "img": "_imgs/free-code-camp.svg",
+    "releases": "",
+    "major": false,
     "roles": [
       "Judge"
     ],
@@ -343,10 +1150,12 @@
   {
     "title": "CSS-Selectors-to-JS-Array",
     "type": "Library",
-    "url": "https://github.com/TheJaredWilcurt/css-selectors-to-js-array",
+    "website": "",
+    "repo": "https://github.com/TheJaredWilcurt/css-selectors-to-js-array",
     "description": "This is a library I created to process any arbitrary string of CSS into a JavaScript array of just the CSS selectors. It was created for GraphMyCSS.com.",
     "img": "_imgs/repo.svg",
     "releases": "2 releases",
+    "major": false,
     "roles": [
       "Developer",
       "Documentation"
@@ -357,10 +1166,13 @@
   },
   {
     "title": "OnTopOfJira",
-    "type": "Project",
-    "url": "https://github.com/TheJaredWilcurt/OnTopOfJira",
+    "type": "App",
+    "website": "",
+    "repo": "https://github.com/TheJaredWilcurt/OnTopOfJira",
     "description": "A short 1 hour project created at the request of a coworker who had to handle customer escalations. He wanted to have a small window set to \"Always on top\" to keep track of escalations in Jira.",
     "img": "_imgs/repo.svg",
+    "releases": "",
+    "major": false,
     "roles": [
       "Developer"
     ],
@@ -372,9 +1184,12 @@
   {
     "title": "Dropzone.js (bug fix)",
     "type": "Contribution",
-    "url": "https://github.com/enyo/dropzone/pull/1226",
+    "website": "",
+    "repo": "https://github.com/enyo/dropzone/pull/1226",
     "description": "I detected a bug in our app at work and tracked it down to the Dropzone.js library. After investigating further, and discussing it on their issues board, I created a pull request to solve the problem.",
     "img": "_imgs/dropzone.png",
+    "releases": "",
+    "major": false,
     "roles": [
       "Developer",
       "Quality Engineer",
@@ -387,9 +1202,12 @@
   {
     "title": "FLIF.info",
     "type": "Contribution",
-    "url": "http://flif.info",
-    "description": "I've helped with formatting of content, and structuring of files, and general maintenance.",
+    "website": "http://flif.info",
+    "repo": "",
+    "description": "I've helped with formatting of content, structuring of files, and general maintenance.",
     "img": "_imgs/flif.png",
+    "releases": "",
+    "major": false,
     "roles": [
       "Developer"
     ],
@@ -398,26 +1216,31 @@
     ]
   },
   {
-    "title": "NPM-Free-Server",
+    "title": "npm-Free-Server",
     "type": "Library",
-    "url": "https://github.com/TheJaredWilcurt/NPM-Free-Server",
+    "website": "",
+    "repo": "https://github.com/TheJaredWilcurt/npm-Free-Server",
     "description": "A very small (both in file size and lines of code) webserver written in vanilla Node, so it can be ran as a standalone file without the need to install any dependencies.",
-    "img": "_imgs/repo.svg",
+    "img": "_imgs/npm.svg",
     "releases": "1 release",
+    "major": false,
     "roles": [
       "Developer",
       "Documentation"
     ],
     "tech": [
-      "Node"
+      "Node.js"
     ]
   },
   {
     "title": "FLIF Benchmarks",
     "type": "Contribution",
-    "url": "https://github.com/FLIF-hub/benchmarks",
+    "website": "",
+    "repo": "https://github.com/FLIF-hub/benchmarks",
     "description": "The FLIF Benchmarks repo is a collection of image sets that vary in content. It is used in the testing of FLIF to ensure that it can succeed as a general purpose image compressor. I've contributed many of my own images and a few image compression corpuses I've collected over the years that I used when testing PNG compression.",
     "img": "_imgs/flif.png",
+    "releases": "",
+    "major": false,
     "roles": [
       "Documentation",
       "Design"
@@ -439,9 +1262,12 @@
   {
     "title": "64or32",
     "type": "Library",
-    "url": "https://github.com/peterhurford/64or32",
+    "website": "",
+    "repo": "https://github.com/peterhurford/64or32",
     "description": "I needed a way of detecting if a user's machine was 32-Bit or 64-Bit so I could display the correct download button for my desktop app websites. The first google result was 64or32.com. Based on the existing code, I rewrote it to be a simple library that others could use, contacted the owner and helped update the site and repo to act more as a library.",
     "img": "_imgs/repo.svg",
+    "releases": "",
+    "major": false,
     "roles": [
       "Developer",
       "Documentation"
@@ -454,9 +1280,12 @@
   {
     "title": "GitHub Corners",
     "type": "Contribution",
-    "url": "https://github.com/tholman/github-corners/issues/5",
+    "website": "",
+    "repo": "https://github.com/tholman/github-corners/issues/5",
     "description": "I created a simple proof of concept for dynamically generating GitHub corners.",
     "img": "_imgs/github-corners.svg",
+    "releases": "",
+    "major": false,
     "roles": [
       "Developer",
       "UX"
@@ -468,10 +1297,13 @@
   },
   {
     "title": "UGUI.io",
-    "type": "Project",
-    "url": "http://ugui.io",
+    "type": "Website",
+    "website": "http://ugui.io",
+    "repo": "",
     "description": "The website for the UGUI framework/library. It has detailed API documentation, and a completely annotated source code for UGUI. I used this website as a means mentor others learning web development, to give them experience on a real world project.",
     "img": "_imgs/ugui.png",
+    "releases": "",
+    "major": false,
     "roles": [
       "Developer",
       "UX",
@@ -492,10 +1324,13 @@
   },
   {
     "title": "Scout-App.io",
-    "type": "Project",
-    "url": "http://scout-app.io",
+    "type": "Website",
+    "website": "http://scout-app.io",
+    "repo": "",
     "description": "The Scout-App website, featuring tutorial video, download links, contributors, mixin library documentation, and more.",
     "img": "_imgs/scout-app.png",
+    "releases": "",
+    "major": false,
     "roles": [
       "Developer",
       "UX",
@@ -510,7 +1345,7 @@
     "tech": [
       "Sass",
       "jQuery",
-      "Node",
+      "Node.js",
       "Gulp",
       "ESLint",
       "SassLint",
@@ -519,10 +1354,13 @@
   },
   {
     "title": "Scout-App Classic Port",
-    "type": "Project",
-    "url": "http://scout-app.io/mhs-site-fork/",
+    "type": "App",
+    "website": "http://scout-app.io/mhs-site-fork",
+    "repo": "",
     "description": "The original 2012 version of Scout-App was very successful and has been linked to from many websites. Since the new version is now at a more appropriate URL, there were 2 primary goals of this project. Firstly to preserve the original website for the 2012 version as best we could in code and design. However I did update some code and better optimize images. The living archive of the 2012 site was moved to its own repo to be accessible on the new Scout-App website under Scout-App.io/classic. The original URL had a new page created to offer visitors looking for Scout-App the original 2012 or new 2017 versions.",
     "img": "_imgs/scout-classic.png",
+    "releases": "",
+    "major": false,
     "roles": [
       "Developer",
       "UX",
@@ -539,11 +1377,13 @@
   },
   {
     "title": "Simple-Donut jQuery",
-    "type": "Project",
-    "url": "https://github.com/simple-donut/simple-donut-jquery",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/simple-donut/simple-donut-jquery",
     "description": "\"Simple-Donut\" is a project I started, in which the same donut chart is recreated in multiple frontend libraries/frameworks. Although it can be used like TodoMVC, as a means of comparing the frameworks, its primary purpose is as a usable component that can be added to existing projects. This version was written taking advantage of jQuery.",
     "img": "_imgs/simple-donut.png",
     "releases": "1 release",
+    "major": false,
     "roles": [
       "Developer",
       "Project Manager",
@@ -556,17 +1396,19 @@
   },
   {
     "title": "Simple-Donut Vue",
-    "type": "Project",
-    "url": "https://github.com/simple-donut/simple-donut-vue",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/simple-donut/simple-donut-vue",
     "description": "This version of the Simple-Donut was built using the Vue.js framework, which is awesome. It can easily be adapted to existing Vue.js projects in need of a simple donut UI element.",
     "img": "_imgs/simple-donut.png",
     "releases": "1 release",
+    "major": false,
     "roles": [
       "Developer",
       "Documentation"
     ],
     "tech": [
-      "Vue",
+      "Vue.js",
       "Sass"
     ]
   }

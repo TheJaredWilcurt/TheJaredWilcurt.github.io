@@ -36,9 +36,9 @@
     <link rel="apple-touch-icon-precomposed" href="_imgs/meta/apl-144.png" type="image/png" sizes="144x144" />
     <link rel="apple-touch-startup-image"    href="_imgs/meta/apl-str.png" type="image/png"                 />
     <link rel="fluid-icon"                   href="_imgs/meta/fluid.png"   type="image/png"                 />
-    <link rel="icon"                         href="favicon.ico"           type="image/x-icon"               />
-    <link rel="shortcut icon"                href="favicon.ico"           type="image/ico"                  />
-    <link rel="stylesheet"                   href="_styles/style.min.css" type="text/css"                   />
+    <link rel="icon"                         href="favicon.ico"            type="image/x-icon"              />
+    <link rel="shortcut icon"                href="favicon.ico"            type="image/ico"                 />
+    <link rel="stylesheet"                   href="_styles/style.css"      type="text/css"                  />
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -84,7 +84,8 @@
               </div>
               <div class="type">
                 <span class="small" v-if="project.website"><a :href="project.website" target="_blank">Website</a></span>
-                <span class="small" v-if="project.repo"> | <a :href="project.repo" target="_blank">Repo</a></span>
+                <template v-if="project.website && project.repo"> | </template>
+                <span class="small" v-if="project.repo"><a :href="project.repo" target="_blank">Repo</a></span>
               </div>
             </div>
           </div>
@@ -224,7 +225,7 @@
 
       <section id="other-projects" class="projects">
         <h1 class="projects-title decorated">
-          Other Completed Projects (since 2015)
+          {{ totalCount }} Other Completed Projects (since 2015)
         </h1>
         <div class="error" v-if="networkRequestFailed" v-html="requestFailed()"></div>
         <div v-if="projects.length > 0 && !networkRequestFailed">
@@ -247,13 +248,16 @@
           >
             <img :src="project.img" :alt="project.title" />
             <div>
-              <div class="type">
-                <strong>{{ project.type }}</strong>
-              </div>
               <div class="title">
-                <a v-if="project.url !== '#'" :href="project.url" target="_blank">{{ project.title }}</a>
-                <span v-else>{{ project.title }}</span>
+                {{ project.title }}
                 <span v-if="project.releases">({{ project.releases }})</span>
+              </div>
+              <div class="type">
+                {{ project.type }}
+                <template v-if="project.website || project.repo">-</template>
+                <a v-if="project.website" :href="project.website" target="_blank">Website</a>
+                <template v-if="project.website && project.repo">|</template>
+                <a v-if="project.repo" :href="project.repo" target="_blank">Repo</a>
               </div>
               <span :class="showDetails || project.showDetails ? 'shown' : 'hidden'">
                 <div class="description">
@@ -285,8 +289,8 @@
         <h2>
           <a class="mirror" @focus="changeTo" @mouseOver="changeTo" :href="to" v-html="addr"></a>
         </h2>
-        <h1 title="If the current year is not 2020, then I have clearly been very busy.">
-          2020
+        <h1 title="If the current year is not 2021, then I have clearly been very busy.">
+          2021
         </h1>
       </div>
     </footer>
@@ -304,6 +308,6 @@
     </script>
     <script type="text/javascript" src="_scripts/main.js"></script>
     <script type="text/javascript" src="_scripts/ven.smoothscroll.min.js"></script>
-    <link rel="stylesheet" href="_styles/fonts.min.css" /> <!-- Render-blocking web fonts -->
+    <link rel="stylesheet" href="_styles/fonts.css" /> <!-- Render-blocking web fonts -->
   </body>
 </html>
