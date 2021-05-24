@@ -212,6 +212,44 @@
         </div>
       </section>
 
+      <section id="articles">
+        <h1 class="projects-title decorated">Articles <span v-if="articles && articles.length">({{ articles.length }})</span></h1>
+        <div class="error" v-if="networkRequestFailed" v-html="requestFailed()"></div>
+        <div v-if="articles.length > 0 && !networkRequestFailed">
+          <label class="toggle-description">
+            <input type="checkbox" v-model="showDetails">
+            <span v-if="showDetails">Hide</span>
+            <span v-else>Show</span> articles details
+          </label>
+
+          <div :class="[detailsClassToggle, 'project half']" v-for="(article, index) in articles" @click="toggleCurrentDetails(article)">
+            <img :src="article.img" :alt="article.title" />
+            <div>
+              <div class="type">
+                <strong>{{ article.type }}</strong>
+              </div>
+              <div class="title">
+                <a v-if="article.url !== '#'" :href="article.url" target="_blank">{{ article.title }}</a>
+                <span v-else>{{ article.title }}</span>
+                <span v-if="article.releases">({{ article.releases }})</span>
+              </div>
+              <span :class="showDetails || article.showDetails ? 'shown' : 'hidden'">
+                <div class="description" v-html="article.description">
+                </div>
+                <div class="roles">
+                  <strong>Roles:</strong>
+                  {{ articles[index].roles.join(', ') }}
+                </div>
+                <div class="technology" v-if="articles[index].tech.length > 0">
+                  <strong>Technology:</strong>
+                  {{ articles[index].tech.join(', ') }}
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="quotes">
         <h1 class="decorated" title="I am generally well received.">Quotes, Testimonials, &amp; Endorsements<br><small>from talks, tutorials, and workshops</small></h1>
         <div class="error" v-if="networkRequestFailed" v-html="requestFailed()"></div>
