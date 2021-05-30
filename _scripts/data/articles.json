@@ -4,7 +4,7 @@
     "type": "Dev.to",
     "url": "https://dev.to/thejaredwilcurt/reducing-app-distribution-size-in-nwjs-3d5f",
     "description": "A throrough and detailed write up of everything there is to know about optimizing an NW.js desktop app to reduce it's filesize.",
-    "img": "_imgs/repo.svg",
+    "img": "_imgs/devto.svg",
     "roles": [
       "Author"
     ],
@@ -30,7 +30,7 @@
     "type": "Dev.to",
     "url": "https://dev.to/thejaredwilcurt/holy-shit-nw-js-is-so-easy-1h6",
     "description": "A TLDR style introduction to making a desktop app in under a minute with NW.js.",
-    "img": "_imgs/repo.svg",
+    "img": "_imgs/devto.svg",
     "roles": [
       "Author"
     ],
@@ -43,7 +43,7 @@
     "type": "Dev.to",
     "url": "https://dev.to/thejaredwilcurt/who-want-s-to-date-a-pre-processor-game-show-edition-4lfd",
     "description": "How do pre-processors (Sass, Less, Stylus) handle parsing/processing modern CSS.",
-    "img": "_imgs/repo.svg",
+    "img": "_imgs/devto.svg",
     "roles": [
       "Author"
     ],
@@ -58,7 +58,7 @@
     "type": "Dev.to",
     "url": "https://dev.to/thejaredwilcurt/everything-you-need-to-know-about-making-animated-gifs-j2d",
     "description": "A detailed technical breakdown of how GIF compression works and techniques used by software to improve their quality and lower their filesize.",
-    "img": "_imgs/repo.svg",
+    "img": "_imgs/devto.svg",
     "roles": [
       "Author"
     ],
@@ -71,7 +71,7 @@
     "type": "Dev.to",
     "url": "https://dev.to/thejaredwilcurt/properly-commenting-code-literal-vs-contextual-comments-1o8h",
     "description": "Walking through the process of code sketching and refactoring. A practice used to improve variable naming and to provide context for code, resulting in cleaner, more maintainable, self-explanatory code.",
-    "img": "_imgs/repo.svg",
+    "img": "_imgs/devto.svg",
     "roles": [
       "Author"
     ],
@@ -84,7 +84,7 @@
     "type": "Dev.to",
     "url": "https://dev.to/thejaredwilcurt/basic-approaches-to-styling-in-vue-pbo",
     "description": "An entire article written as a .vue single file component to demonstrate various techniques of working with basic styling in a Vue component.",
-    "img": "_imgs/repo.svg",
+    "img": "_imgs/devto.svg",
     "roles": [
       "Author"
     ],
@@ -97,7 +97,7 @@
     "type": "Dev.to",
     "url": "https://dev.to/thejaredwilcurt/quotes-about-typescript-2ohf",
     "description": "An organized and currated list of quotes about the experiences and opinions of the oft controversial meta-language TypeScript based on conversations with others in the industry.",
-    "img": "_imgs/repo.svg",
+    "img": "_imgs/devto.svg",
     "roles": [
       "Author"
     ],
@@ -110,7 +110,7 @@
     "type": "Dev.to",
     "url": "https://dev.to/thejaredwilcurt/why-you-should-never-use-tobe-in-jest-48ca",
     "description": "A write up on why using .toBe() is an anti-pattern in Jest code, and reasons why .toEqual() is a better replacement in every use case.",
-    "img": "_imgs/repo.svg",
+    "img": "_imgs/devto.svg",
     "roles": [
       "Author"
     ],
@@ -123,7 +123,7 @@
     "type": "Dev.to",
     "url": "https://dev.to/thejaredwilcurt/coverage-badge-with-github-actions-finally-59fa",
     "description": "I published this to document the results of 6 months of research, trial, and error. In that time, I found no other documentation on how to achieve branch specific test coverage badges while using GitHub Actions as your CI. This article is a step-by-stepy process for setting this up on any repo.",
-    "img": "_imgs/repo.svg",
+    "img": "_imgs/devto.svg",
     "roles": [
       "Author"
     ],
@@ -137,20 +137,7 @@
     "type": "Medium",
     "url": "http://medium.com/@thejaredwilcurt/finishing-the-projects-you-start-c34c27aa6f0f",
     "description": "This is a polished written version of a talk I have given at meetups and conferences. This article covers effective learning, defining scope, phases of a project, the differences between academic, résumé, & passion projects and how to convert them from one to another.",
-    "img": "_imgs/repo.svg",
-    "roles": [
-      "Author"
-    ],
-    "tech": [
-      "NW.js"
-    ]
-  },
-  {
-    "title": "",
-    "type": "Dev.to",
-    "url": "",
-    "description": "",
-    "img": "_imgs/repo.svg",
+    "img": "_imgs/devto.svg",
     "roles": [
       "Author"
     ],
