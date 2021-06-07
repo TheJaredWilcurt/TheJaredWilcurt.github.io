@@ -289,5 +289,19 @@
       "JSFiddle",
       "Vue.js"
     ]
+  },
+  {
+    "title": "Crafting the Perfect Developer Résumé",
+    "type": "Bootcamp Lecture",
+    "url": "#",
+    "description": "I volunteered as an instructor and curriculum developer for FreeCodeSchool Indy. This free coding bootcamp was made in partnership with The Indianapolis Central Public Library, and Tech Congress (of which I am a board member of). This talk covers how to break down your resume into sections for the 3 types of people that will be looking at it (HR/Recruiter, Dev/Team Manager, Senior/Team Lead). How much attention should be placed on each section of the resume, what things to highlight, and more importantly what things to avoid.",
+    "img": "_imgs/freecodeschool.png",
+    "roles": [
+      "Presenter",
+      "Design"
+    ],
+    "tech": [
+      "Google Slides"
+    ]
   }
 ]
