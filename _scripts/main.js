@@ -319,6 +319,46 @@ const talks = new Vue({
 });
 
 // eslint-disable-next-line no-unused-vars
+const articles = new Vue({
+  el: '#articles',
+  data: {
+    articles: [],
+    showDetails: false,
+    networkRequestFailed: false
+  },
+  methods: {
+    toggleCurrentDetails: function (article) {
+      article.showDetails = !article.showDetails;
+    },
+    detailsClassToggle: function () {
+      let detailsClass = 'hide-description';
+      if (this.showDetails) {
+        detailsClass = 'show-description';
+      }
+      return detailsClass;
+    },
+    setAllDetailsToHidden: function () {
+      this.articles.forEach(function (article) {
+        Vue.set(article, 'showDetails', false);
+      });
+    }
+  },
+  mounted: function () {
+    axios.get('/_scripts/data/articles.json')
+      .then(function (response) {
+        this.articles = response.data;
+        this.setAllDetailsToHidden();
+        window.techAndRolesStats = listOfTechnologiesAndRoles(response.data, window.techAndRolesStats);
+      }.bind(this))
+      .catch(function (err) {
+        this.networkRequestFailed = true;
+        // eslint-disable-next-line no-console
+        console.log(err);
+      }.bind(this));
+  }
+});
+
+// eslint-disable-next-line no-unused-vars
 const quotes = new Vue({
   el: '#quotes',
   data: {

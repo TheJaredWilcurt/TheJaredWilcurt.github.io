@@ -75,7 +75,7 @@
     "repo": "https://github.com/nwutils/create-desktop-shortcuts",
     "description": "This is a cross-platform Node.js library that fully supports each OS's unique desktop shortcut creation API. Zero dependencies. Human readable warnings and full API validation. 100% test coverage. End-to-end automated testing for Windows, Linux, and OSX via GitHub Actions. Published to npm.",
     "img": "_imgs/nwutils.png",
-    "releases": "8 releases",
+    "releases": "9 releases",
     "major": true,
     "roles": [
       "Developer",
