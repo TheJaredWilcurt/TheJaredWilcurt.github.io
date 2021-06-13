@@ -154,7 +154,7 @@
     "repo": "https://github.com/nwutils/nw-vue-cli-example",
     "description": "A Vue-CLI boilerplate for NW.js desktop apps. Features 100% Jest test coverage. Jest snapshot tests. Built-in Vue-DevTools in the desktop app. Strict Vue, A11y, and Jest linting. Babel/Webpack via Vue-CLI. Automated builds for web and all desktop platforms.",
     "img": "_imgs/vue.svg",
-    "releases": "8 releases",
+    "releases": "9 releases",
     "major": false,
     "roles": [
       "Developer",

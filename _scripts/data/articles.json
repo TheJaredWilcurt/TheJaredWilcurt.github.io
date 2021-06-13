@@ -1,5 +1,18 @@
 [
   {
+    "title": "Finishing the Projects you Start",
+    "type": "Medium",
+    "url": "http://medium.com/@thejaredwilcurt/finishing-the-projects-you-start-c34c27aa6f0f",
+    "description": "This is a polished written version of a talk I have given at meetups and conferences. This article covers effective learning, defining scope, phases of a project, the differences between academic, résumé, & passion projects and how to convert them from one to another.",
+    "img": "_imgs/medium.svg",
+    "roles": [
+      "Author"
+    ],
+    "tech": [
+      "Photoshop"
+    ]
+  },
+  {
     "title": "Reducing app distribution size in NW.js",
     "type": "Dev.to",
     "url": "https://dev.to/thejaredwilcurt/reducing-app-distribution-size-in-nwjs-3d5f",
@@ -9,60 +22,7 @@
       "Author"
     ],
     "tech": [
-      "NW.js"
-    ]
-  },
-  {
-    "title": "Combining Angular-CLI with NW.js",
-    "type": "Dev.to",
-    "url": "https://dev.to/thejaredwilcurt/angular-cli-and-nwjs-for-development-49gl",
-    "description": "A step-by-step tutorial of creating a new Angular-CLI app and altering the project to be an NW.js desktop app.",
-    "img": "_imgs/angular.svg",
-    "roles": [
-      "Author"
-    ],
-    "tech": [
-      "NW.js"
-    ]
-  },
-  {
-    "title": "Holy shit NW.js is so easy",
-    "type": "Dev.to",
-    "url": "https://dev.to/thejaredwilcurt/holy-shit-nw-js-is-so-easy-1h6",
-    "description": "A TLDR style introduction to making a desktop app in under a minute with NW.js.",
-    "img": "_imgs/devto.svg",
-    "roles": [
-      "Author"
-    ],
-    "tech": [
-      "NW.js"
-    ]
-  },
-  {
-    "title": "Who want's to date a Pre-Processor! Game Show edition!",
-    "type": "Dev.to",
-    "url": "https://dev.to/thejaredwilcurt/who-want-s-to-date-a-pre-processor-game-show-edition-4lfd",
-    "description": "How do pre-processors (Sass, Less, Stylus) handle parsing/processing modern CSS.",
-    "img": "_imgs/devto.svg",
-    "roles": [
-      "Author"
-    ],
-    "tech": [
-      "Sass",
-      "Stylus",
-      "Less"
-    ]
-  },
-  {
-    "title": "Everything you need to know about making Animated GIFs",
-    "type": "Dev.to",
-    "url": "https://dev.to/thejaredwilcurt/everything-you-need-to-know-about-making-animated-gifs-j2d",
-    "description": "A detailed technical breakdown of how GIF compression works and techniques used by software to improve their quality and lower their filesize.",
-    "img": "_imgs/devto.svg",
-    "roles": [
-      "Author"
-    ],
-    "tech": [
+      "NW.js",
       "Photoshop"
     ]
   },
@@ -77,19 +37,6 @@
     ],
     "tech": [
       "VanillaJS"
-    ]
-  },
-  {
-    "title": "Basic approaches to styling in Vue",
-    "type": "Dev.to",
-    "url": "https://dev.to/thejaredwilcurt/basic-approaches-to-styling-in-vue-pbo",
-    "description": "An entire article written as a .vue single file component to demonstrate various techniques of working with basic styling in a Vue component.",
-    "img": "_imgs/devto.svg",
-    "roles": [
-      "Author"
-    ],
-    "tech": [
-      "Vue.js"
     ]
   },
   {
@@ -119,6 +66,19 @@
     ]
   },
   {
+    "title": "Basic approaches to styling in Vue",
+    "type": "Dev.to",
+    "url": "https://dev.to/thejaredwilcurt/basic-approaches-to-styling-in-vue-pbo",
+    "description": "An entire article written as a .vue single file component to demonstrate various techniques of working with basic styling in a Vue component.",
+    "img": "_imgs/devto.svg",
+    "roles": [
+      "Author"
+    ],
+    "tech": [
+      "Vue.js"
+    ]
+  },
+  {
     "title": "Coverage Badge with GitHub Actions - FINALLY!",
     "type": "Dev.to",
     "url": "https://dev.to/thejaredwilcurt/coverage-badge-with-github-actions-finally-59fa",
@@ -133,10 +93,52 @@
     ]
   },
   {
-    "title": "Finishing the Projects you Start",
-    "type": "Medium",
-    "url": "http://medium.com/@thejaredwilcurt/finishing-the-projects-you-start-c34c27aa6f0f",
-    "description": "This is a polished written version of a talk I have given at meetups and conferences. This article covers effective learning, defining scope, phases of a project, the differences between academic, résumé, & passion projects and how to convert them from one to another.",
+    "title": "Combining Angular-CLI with NW.js",
+    "type": "Dev.to",
+    "url": "https://dev.to/thejaredwilcurt/angular-cli-and-nwjs-for-development-49gl",
+    "description": "A step-by-step tutorial of creating a new Angular-CLI app and altering the project to be an NW.js desktop app.",
+    "img": "_imgs/angular.svg",
+    "roles": [
+      "Author"
+    ],
+    "tech": [
+      "NW.js",
+      "Angular-CLI"
+    ]
+  },
+  {
+    "title": "Everything you need to know about making Animated GIFs",
+    "type": "Dev.to",
+    "url": "https://dev.to/thejaredwilcurt/everything-you-need-to-know-about-making-animated-gifs-j2d",
+    "description": "A detailed technical breakdown of how GIF compression works and techniques used by software to improve their quality and lower their filesize.",
+    "img": "_imgs/devto.svg",
+    "roles": [
+      "Author"
+    ],
+    "tech": [
+      "Photoshop"
+    ]
+  },
+  {
+    "title": "Who want's to date a Pre-Processor! Game Show edition!",
+    "type": "Dev.to",
+    "url": "https://dev.to/thejaredwilcurt/who-want-s-to-date-a-pre-processor-game-show-edition-4lfd",
+    "description": "How do pre-processors (Sass, Less, Stylus) handle parsing/processing modern CSS.",
+    "img": "_imgs/devto.svg",
+    "roles": [
+      "Author"
+    ],
+    "tech": [
+      "Sass",
+      "Stylus",
+      "Less"
+    ]
+  },
+  {
+    "title": "Holy shit NW.js is so easy",
+    "type": "Dev.to",
+    "url": "https://dev.to/thejaredwilcurt/holy-shit-nw-js-is-so-easy-1h6",
+    "description": "A TLDR style introduction to making a desktop app in under a minute with NW.js.",
     "img": "_imgs/devto.svg",
     "roles": [
       "Author"
