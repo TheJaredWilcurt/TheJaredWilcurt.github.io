@@ -214,12 +214,14 @@ strong
     font-weight: bold
 
 img
+    max-width: 100%
     max-height: 70px
     margin: 13px 0px 0px 0px
     filter: sepia()
 
 h3
-    width: 170px
+    width: 100%
+    max-width: 170px
     border-top: 1px solid $border
     margin: -8px 0px 0px 0px
     padding: 9px 0px 4px 0px
@@ -228,3 +230,28 @@ h5
     margin: 4px 0px 0px 0px
     font-size: 21px
     font-weight: 700
+
+
+@media screen and (max-width: 586px)
+    body
+        padding: 10px
+    body,
+    .wrapper,
+    .container
+        height: auto
+    .wrapper .container
+        padding: 18px
+    h2
+        font-size: 28px
+    h1
+        font-size: 50px
+        span
+            font-size: 70px
+    .tm
+        font-size: 56px
+        letter-spacing: -9px
+        vertical-align: 3px
+    hr
+        width: 100%
+    input
+        font-size: 24px
