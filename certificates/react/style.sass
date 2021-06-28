@@ -1,0 +1,230 @@
+// JSFiddle Normalizer
+
+// textarea,
+// select,
+// button,
+*,
+body,
+input
+    text-rendering: optimizeLegibility
+    -moz-osx-font-smoothing: grayscale
+
+// dl,
+// dt,
+// dd,
+// ul,
+// ol,
+// li,
+// pre,
+// form,
+// fieldset,
+// p,
+// blockquote,
+// th,
+// td,
+// textarea,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input
+    margin: 0px
+    padding: 0px
+
+// abbr,
+// acronym,
+// fieldset,
+img
+  border: 0px
+
+// address,
+// caption,
+// cite,
+// code,
+// dfn,
+// th,
+// var,
+em,
+strong
+    font-style: normal
+    font-weight: normal
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-size: 100%
+    font-weight: normal
+
+// ol,
+// ul
+//     list-style: none
+
+// caption,
+// th
+//     text-align: left
+
+// table
+//     border-collapse: collapse
+//     border-spacing: 0px
+
+// q:before,
+// q:after
+//     content: ''
+
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap')
+
+
+// variabls
+$background: #FAF1F2
+$text: #3E2D2D
+$border: #7D5B5B
+$title: #783F04
+$minSize: 500px
+
+
+// styles
+*,
+*:before,
+*:after
+    box-sizing: border-box
+
+html,
+body
+    height: 100%
+    border: 0px
+    margin: 0px
+    padding: 0px
+
+body
+    min-height: $minSize + 100px
+    background: $background
+    padding: 50px
+    color: $text
+    font-family: 'Cormorant Garamond', serif
+
+body,
+.wrapper,
+.container
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    width: 100%
+    height: 100%
+
+
+.wrapper
+    position: relative
+    min-height: $minSize + 50px
+    border: 5px solid $border
+    margin: 0px
+    padding: 5px
+    &:before,
+    &:after
+        content: '•'
+        position: absolute
+        top: 5px
+        width: 14px
+        height: 14px
+        border: 2px solid $border
+        color: $border
+        font-size: 14px
+        line-height: 9px
+        text-align: center
+    &:before
+        left: 5px
+    &:after
+        right: 5px
+    .container
+        position: relative
+        min-height: $minSize + 30px
+        border: 2px solid $border
+        padding: 40px
+        text-align: center
+        &:before,
+        &:after
+            content: "•"
+            position: absolute
+            bottom: -2px
+            width: 14px
+            height: 14px
+            border: 2px solid $border
+            color: $border
+            font-size: 14px
+            line-height: 9px
+            text-align: center
+        &:before
+            left: -2px
+        &:after
+            right: -2px
+
+h1
+    color: $title
+    font-family: 'Miss Fajardose'
+    font-size: 80px
+    span
+        font-size: 100px
+
+.tm
+    font-size: 80px
+    letter-spacing: -12px
+    text-shadow: 1px 0px 0px rgba($title, 0.5)
+    vertical-align: 8px
+
+h2
+    margin: 0px auto 15px auto
+    font-size: 36px
+    font-variant: italic
+
+input
+    display: block
+    width: 100%
+    background: transparent
+    border: 0px
+    margin: 20px auto 20px auto
+    padding: 10px 0px
+    color: $border
+    font-family: 'Cormorant Garamond', serif
+    font-size: 40px
+    text-align: center
+    outline: 2px solid transparent
+    transition: 2s ease all
+    &:focus
+        border-radius: 0px
+        outline: 2px solid $border
+        background: rgba($border, 0.2)
+
+hr
+    width: 400px
+    border: 0px
+    border-top: 2px solid $border
+    margin: -20px auto 19px auto
+
+strong
+    font-weight: bold
+
+img
+    max-height: 70px
+    margin: 13px 0px 0px 0px
+    filter: sepia()
+
+h3
+    width: 170px
+    border-top: 1px solid $border
+    margin: -8px 0px 0px 0px
+    padding: 9px 0px 4px 0px
+
+h5
+    margin: 4px 0px 0px 0px
+    font-size: 21px
+    font-weight: 700
