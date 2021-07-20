@@ -1,5 +1,9 @@
 # TheJaredWilcurt.github.io
 
+Visible at:
+
+* https://TheJaredWilcurt.com
+
 Running locally:
 
 1. `npm install`
