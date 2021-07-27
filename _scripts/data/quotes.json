@@ -6,6 +6,12 @@
     "photo": "_imgs/avatars/austin.png"
   },
   {
+    "name": "Luke Diebold (Views On Vue cohost)",
+    "quote": "This one was a lot of fun! @TheJaredWilcurt is a smart guy",
+    "url": "https://twitter.com/LukeDiebold/status/1420129888619712513",
+    "photo": "_imgs/avatars/diebold.jpg"
+  },
+  {
     "name": "Kalalau Cantrell",
     "quote": "Had a great time, learned a good deal about the tools behind desktop apps. Also, it was an added bonus to see a little bit of what Vue can do. Thanks for putting the course together!",
     "url": "https://www.meetup.com/Free-Code-Camp-Indy/events/241581122/#event_comment-482423967",
