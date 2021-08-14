@@ -79,6 +79,19 @@
     ]
   },
   {
+    "title": "Guide to NW.js versions",
+    "type": "Dev.to",
+    "url": "https://dev.to/thejaredwilcurt/guide-to-nw-js-versions-5d38",
+    "description": "A list of important and historical versions of NW.js and why someone may want to use them.",
+    "img": "_imgs/devto.svg",
+    "roles": [
+      "Author"
+    ],
+    "tech": [
+      "NW.js"
+    ]
+  },
+  {
     "title": "Coverage Badge with GitHub Actions - FINALLY!",
     "type": "Dev.to",
     "url": "https://dev.to/thejaredwilcurt/coverage-badge-with-github-actions-finally-59fa",
