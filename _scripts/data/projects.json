@@ -100,7 +100,7 @@
     "repo": "https://github.com/tjw-lint/jest-serializer-vue-tjw",
     "description": "This library drastically improves the experience of using snapshot testing with Jest and Vue. It removes common problems from snapshot testing, and gives complete formatting controls to developers. It has dozens of features in a simple API with smart defaults. Like all my libraries it features human readable error messages and full API input validation. All releases document breaking API and snapshot changes, new features, bug fixes, and maintenance notes. Along with full code diffs against previous versions. 100% Test Coverage. Published to npm.",
     "img": "_imgs/serializer.png",
-    "releases": "19 releases",
+    "releases": "25 releases",
     "major": true,
     "roles": [
       "Developer",
