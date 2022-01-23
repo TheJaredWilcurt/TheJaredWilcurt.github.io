@@ -75,7 +75,7 @@
     "repo": "https://github.com/nwutils/create-desktop-shortcuts",
     "description": "This is a cross-platform Node.js library that fully supports each OS's unique desktop shortcut creation API. Zero dependencies. Human readable warnings and full API validation. 100% test coverage. End-to-end automated testing for Windows, Linux, and OSX via GitHub Actions. Published to npm.",
     "img": "_imgs/nwutils.png",
-    "releases": "9 releases",
+    "releases": "10 releases",
     "major": true,
     "roles": [
       "Developer",
@@ -154,7 +154,7 @@
     "repo": "https://github.com/nwutils/nw-vue-cli-example",
     "description": "A Vue-CLI boilerplate for NW.js desktop apps. Features 100% Jest test coverage. Jest snapshot tests. Built-in Vue-DevTools in the desktop app. Strict Vue, A11y, and Jest linting. Babel/Webpack via Vue-CLI. Automated builds for web and all desktop platforms.",
     "img": "_imgs/vue.svg",
-    "releases": "9 releases",
+    "releases": "10 releases",
     "major": false,
     "roles": [
       "Developer",
@@ -177,11 +177,11 @@
   {
     "title": "WuhdAppusDat",
     "type": "App",
-    "website": "",
+    "website": "https://thejaredwilcurt.com/WuhdAppusDat",
     "repo": "https://github.com/TheJaredWilcurt/WuhdAppusDat",
     "description": "Desktop app for streamers that displays what program is currently in focus. This is a common questions asked of code, art, and game dev streamers. It was made at the request of Animation Director, and streamer, Adam Philips (chluaid). The app's UI is completely customizable from the background image that scales to the dimensions of the window, to the font settings. The window it self is completely transparent until hovered, and then the edges are marked for easy resizing/moving. The app even ships with custom artwork provided by Adam Philips.",
     "img": "_imgs/wuhdappusdat.png",
-    "releases": "3 releases",
+    "releases": "4 releases",
     "major": false,
     "roles": [
       "Developer",
@@ -236,7 +236,7 @@
     "repo": "https://github.com/red-perfume/red-perfume",
     "description": "A experimental library to convert any HTML/CSS files to atomized css classes. With 100% test coverage. Atomized CSS allows you to write your styles in any way you want and then during a build step massively reduce your total CSS filesize be converting all css properties to individual atomic classes and replacing all references in the markup.",
     "img": "_imgs/redperfume.png",
-    "releases": "3 pre-releases",
+    "releases": "5 pre-releases",
     "major": false,
     "roles": [
       "Developer",
@@ -446,7 +446,7 @@
     "repo": "https://github.com/tjw-lint/eslint-config-tjw-vue",
     "description": "My Vue.js specific linting rules, used on various projects and at work.",
     "img": "_imgs/lint.png",
-    "releases": "4 releases",
+    "releases": "5 releases",
     "major": false,
     "roles": [
       "Developer"
@@ -462,7 +462,7 @@
     "repo": "https://github.com/nwutils/nw-angular-cli-example",
     "description": "This is a cross-platform desktop app boilerplate for NW.js and Angular 9+. It is based on a standard Angular-CLI setup with many modifications to accomodate running in a desktop app, and building for web and desktop platforms. I was even able to do the whole thing without having to write a line of TypeScript. Unscathed.",
     "img": "_imgs/angular.svg",
-    "releases": "3 releases",
+    "releases": "4 releases",
     "major": false,
     "roles": [
       "Developer",

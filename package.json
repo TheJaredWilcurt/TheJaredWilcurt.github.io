@@ -11,15 +11,15 @@
     "installer": "npm install --loglevel=error",
     "lint": "eslint --config=.eslintrc.js _scripts",
     "fix": "eslint --fix --config=.eslintrc.js _scripts",
-    "sasslint": "sass-lint -c .sass-lint.yml -v -f codeframe",
+    "sasslint": "sass-lint -c .sass-lint.yml -v -f compact",
     "sassfix": "sass-lint-auto-fix -c .sass-lint.yml",
     "validate": "npm run lint && npm run sasslint"
   },
   "devDependencies": {
-    "eslint": "^7.27.0",
+    "eslint": "^8.7.0",
     "eslint-config-tjw-base": "^1.0.0",
     "npm-free-server": "^1.1.0",
-    "sass": "^1.34.0",
+    "sass": "^1.49.0",
     "sass-lint": "^1.13.1",
     "tjw-sasslint-rules": "^2.1.0"
   },
