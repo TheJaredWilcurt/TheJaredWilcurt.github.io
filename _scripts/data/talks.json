@@ -371,5 +371,19 @@
     "tech": [
       "Google Slides"
     ]
+  },
+  {
+    "title": "Career Advice for the Self-Taught Dev",
+    "type": "Meetup Talk",
+    "url": "https://www.meetup.com/Free-Code-Camp-Indy/events/283088561/",
+    "description": "This semi-interactive talk guides the audience through what fields and roles are available for those with programming, design, and management skills in the world of IT. It briefly borrows from my \"Résumé\" and \"Finishing Projects\" talks. Advice is also given on getting your first dev job and interviewing, with some specific tips for those going into WebDev sprinkled in. Audience questions are answered and audience members are give tailored specific advice that applies directly to their goals and experience.",
+    "img": "_imgs/meetup.png",
+    "roles": [
+      "Presenter",
+      "Design"
+    ],
+    "tech": [
+      "Google Slides"
+    ]
   }
 ]
