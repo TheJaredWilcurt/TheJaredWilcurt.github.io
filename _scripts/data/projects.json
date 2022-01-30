@@ -379,6 +379,24 @@
     ]
   },
   {
+    "title": "get-windows-shortcut-properties",
+    "type": "Library",
+    "website": "",
+    "repo": "https://github.com/nwutils/get-windows-shortcut-properties",
+    "description": "A Node.js library to get the properties of a Windows .lnk or .url shortcut file as a JavaScript object.",
+    "img": "_imgs/nwutils.png",
+    "releases": "1 release",
+    "major": false,
+    "roles": [
+      "Developer",
+      "Documentation"
+    ],
+    "tech": [
+      "Node.js",
+      "ESLint"
+    ]
+  },
+  {
     "title": "nw-img-vue",
     "type": "Library",
     "website": "",
