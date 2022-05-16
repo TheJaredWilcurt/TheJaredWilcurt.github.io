@@ -936,7 +936,7 @@
     "type": "App",
     "website": "https://TheJaredWilcurt.com/botw-armor-upgrade-tracker",
     "repo": "https://github.com/TheJaredWilcurt/botw-armor-upgrade-tracker",
-    "descriptions": "A tool for keeping track of the armor and upgrade materials obtained within the game, The Legend of Zelda: Breath of the Wild."
+    "description": "A tool for keeping track of the armor and upgrade materials obtained within the game, The Legend of Zelda: Breath of the Wild.",
     "img": "_imgs/repo.svg",
     "releases": "",
     "major": false,
