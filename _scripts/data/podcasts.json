@@ -2,7 +2,7 @@
   {
     "title": "Vue/Snapshot Testing",
     "podcastName": "Views on Vue Podcast",
-    "url": "https://viewsonvue.com/99",
+    "url": "https://topenddevs.com/podcasts/views-on-vue/episodes/vov-099-testing-in-vue-with-the-jared-wilcurt",
     "description": "I lead a discussion on unit testing with Vue, the benefits of Jest snapshot testing, and avoiding the pitfalls that come with snapshot-based tests. We also cover my Jest-Serializer-Vue-TJW library and how it solves many common Vue-specific snapshot problems for you.",
     "img": "_imgs/viewsonvue.png",
     "roles": [
@@ -26,7 +26,7 @@
   {
     "title": "Cross-Platform Desktop Apps (XPDA) and Vue.js",
     "podcastName": "Views on Vue Podcast",
-    "url": "https://viewsonvue.com/175",
+    "url": "https://topenddevs.com/podcasts/views-on-vue/episodes/developing-desktop-apps-with-vue-vue-157",
     "description": "I lead a discussion on different tools for creating XPDAs. We also cover my NW-Vue-CLI-Example boilerplate for creating desktop apps with Vue.",
     "img": "_imgs/viewsonvue.png",
     "roles": [
