@@ -333,8 +333,8 @@
         <h2>
           <a class="mirror" @focus="changeTo" @mouseOver="changeTo" :href="to" v-html="addr"></a>
         </h2>
-        <h1 title="If the current year is not 2021, then I have clearly been very busy.">
-          2021
+        <h1>
+          {{ (new Date()).getFullYear() }} 
         </h1>
       </div>
     </footer>
