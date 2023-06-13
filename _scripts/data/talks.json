@@ -19,21 +19,20 @@
     "title": "Finishing the Projects you Start",
     "type": "Conference Talk",
     "url": "_imgs/indycode-projects.png",
-    "description": "A guided, interactive talk, where attendees get to play around with Vue directly, while learning the basics. We cover the parts of Vue that are \"borrowed\" from other frameworks, and how these ideas were simplified and improved upon. We also cover the innovations that Vue has contributed to the world of Open source, many of which, I STILL can't believe haven't been copied by others.",
+    "description": "This talk covers effective learning, defining scope, phases of a project, the differences between academic, résumé, &amp; passion projects and how to convert them from one to another.",
     "img": "_imgs/indycode.png",
     "roles": [
       "Presenter"
     ],
     "tech": [
-      "Google Slides",
-      "JSFiddle"
+      "Google Slides"
     ]
   },
   {
-    "title": "Intro to Vue.js",
+    "title": "Intro to Vue.js",    
     "type": "Conference Talk",
     "url": "_imgs/indycode-vue.png",
-    "description": "This talk covers effective learning, defining scope, phases of a project, the differences between academic, résumé, &amp; passion projects and how to convert them from one to another.",
+    "description": "A guided, interactive talk, where attendees get to play around with Vue directly, while learning the basics. We cover the parts of Vue that are \"borrowed\" from other frameworks, and how these ideas were simplified and improved upon. We also cover the innovations that Vue has contributed to the world of Open source, many of which, I STILL can't believe haven't been copied by others.",
     "img": "_imgs/indycode.png",
     "roles": [
       "Presenter"
