@@ -36,6 +36,12 @@
     "photo": "_imgs/avatars/markm.jpg"
   },
   {
+    "name": "Wiktor Wiśniewski",
+    "quote": "Around 2015-2017 (I don't remember exactly) I was working on my first commercial app ever. It was a product catalog written in JS and NW.js. I also remember getting help from @TheJaredWilcurt with some bug. If not for your help back then, I don't think I would be here now. You are the best!",
+    "url": "https://twitter.com/wwisniewski_/status/1708182561720066404",
+    "photo": "_imgs/avatars/wiktor.jpg"
+  },
+  {
     "name": "Tara Miller",
     "quote": "Upgrading Your CSS was informative, interesting and fun. I got a ton out of it.",
     "url": "https://www.meetup.com/Free-Code-Camp-Indy/events/233012739/comments/469988249/",
